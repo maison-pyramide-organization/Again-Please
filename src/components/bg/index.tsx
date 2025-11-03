@@ -41,7 +41,7 @@ export default function Bg() {
         start: "top center",
         end: "bottom bottom",
         scrub: true,
-        markers: true,
+        // markers: true,
       },
     });
   });

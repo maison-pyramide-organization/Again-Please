@@ -1,5 +1,6 @@
 .p {
   padding-top: 110rem;
+  padding-bottom: 80rem;
   min-height: calc(100vh - var(--h-h) - var(--f-h));
   min-height: calc(100dvh - var(--h-h) - var(--f-h));
 }

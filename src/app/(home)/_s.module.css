@@ -38,6 +38,7 @@ ABOUT SECTION
   position: relative;
   height: 100vh;
   height: 100dvh;
+  min-height: calc(max(100vh, var(--vh)));
   display: grid;
   place-content: center;
 }
@@ -95,7 +96,7 @@ SECTORS SECTION
 }
 .s-s li {
   position: relative;
-  height: 80vh;
+  height: calc(max(80vh, 0.8 * var(--vh)));
   & span {
     font-family: "sg";
     font-size: 30rem;
@@ -121,7 +122,7 @@ SECTORS SECTION
 MODEL SECTION
 ***************/
 .s-m {
-  margin-top: -150rem;
+  /* margin-top: -150rem; */
   padding-inline: var(--p-i);
 }
 .s-m .h h2 {
