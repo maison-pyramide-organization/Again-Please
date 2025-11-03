@@ -184,7 +184,8 @@ FORCE SECTION
   flex-direction: column;
 }
 .ceo h3 {
-  font-size: 22rem;
+  font-size: 20rem;
+  line-height: 25rem;
   font-weight: normal;
 }
 .ceo span {

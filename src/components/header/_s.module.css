@@ -4,10 +4,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+}
+.h:global(.fixed) {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
   z-index: 9999;
 }
 .h-ph {

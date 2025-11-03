@@ -11,8 +11,8 @@ export default function Header() {
 
   return (
     <>
-      <div className={s["h-ph"]} />
-      <header className={s.h}>
+      {path == "/" && <div className={s["h-ph"]} />}
+      <header className={`${s.h} ${path == "/" ? "fixed" : ""}`}>
         <Link className={s.l} href="/">
           <Image src={logoI} alt="Again Please Logo" />
         </Link>

@@ -301,4 +301,5 @@ QUOTE SECTION
   border: 1px solid var(--c-green);
   border-radius: 100px;
   color: var(--c-green);
+  font-family: "sg";
 }

@@ -5,14 +5,15 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useRef } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Bg() {
   const bgR = useRef(null) as any;
+  const path = usePathname();
   gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-  useGSAP(() => {
+  const homeAnimation = () => {
     const $bg = bgR.current as HTMLElement;
-
     gsap.to($bg, {
       y: "20%",
       x: "-30%",
@@ -28,7 +29,7 @@ export default function Bg() {
       autoAlpha: 0,
       scrollTrigger: {
         trigger: "#s-w",
-        start: "top center",
+        start: "top 40%",
         end: "bottom center",
         scrub: true,
       },
@@ -44,6 +45,10 @@ export default function Bg() {
         // markers: true,
       },
     });
+  };
+
+  useGSAP(() => {
+    if (path == "/") homeAnimation();
   });
   return (
     <div className="bg_">
