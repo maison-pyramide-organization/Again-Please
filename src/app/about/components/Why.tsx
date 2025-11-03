@@ -7,7 +7,7 @@ import why from "@/data/why";
 export default function Why() {
   return (
     <section className={s["s-w"]}>
-      <h1>
+      <h1 a-t="r">
         <span>WHY</span>
         AGAIN, PLEASE ? 
       </h1>

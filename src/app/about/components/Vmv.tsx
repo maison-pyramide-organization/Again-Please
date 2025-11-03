@@ -10,7 +10,7 @@ export default function Vmv() {
           <span>VISION</span>
           <span className={s.l} />
         </h2>
-        <p>
+        <p a-t="r">
           To redefine reusability by creating world-class circular ecosystem
           where every reuse reflects responsibility and elevates experiences 
         </p>
@@ -22,7 +22,7 @@ export default function Vmv() {
           <span>MISSION</span>
           <span className={s.l} />
         </h2>
-        <p>
+        <p a-t="r">
           To redefine reusability by creating world-class circular ecosystem
           where every reuse reflects responsibility and elevates experiences 
         </p>
@@ -37,25 +37,25 @@ export default function Vmv() {
           <span className={s.l} />
         </h2>
         <ul>
-          <li>
+          <li a-t="r">
             <h3>Hygiene uncompromised</h3>
             <p>Every return, every wash spotless, safe, and ready</p>
           </li>
-          <li>
+          <li a-t="r">
             <h3>Circularity as a Principle</h3>
             <p>Nothing wasted, everything reused.</p>
           </li>
-          <li>
+          <li a-t="r">
             <h3>Simplicity</h3>
             <p>
               Circular solutions must be as easy as single-use—only smarter 
             </p>
           </li>
-          <li>
+          <li a-t="r">
             <h3>Environmental accountability</h3>
             <p>What gets measured, gets improved </p>
           </li>
-          <li>
+          <li a-t="r">
             <h3>Partnership first</h3>
             <p>We don’t just supply; we collaborate </p>
           </li>

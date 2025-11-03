@@ -6,31 +6,31 @@ import ceoI from "@a/images/about/ceo.png";
 export default function Force() {
   return (
     <section className={s["s-f"]}>
-      <h2>
+      <h2 a-t="r">
         THE FORCE BEHIND
         <br />
         THE CHANGE
       </h2>
       <div className={s.ceo}>
         <figure>
-          <Image src={ceoI} alt="ATHANASIOS POLYCHRONOPOULOS" />
+          <Image a-i="r" src={ceoI} alt="ATHANASIOS POLYCHRONOPOULOS" />
         </figure>
         <div>
-          <h3>ATHANASIOS POLYCHRONOPOULOS</h3>
-          <span>Chairman & CEO of Polygreen Group of Companies </span>
-          <p>
+          <h3 a-t="r">ATHANASIOS POLYCHRONOPOULOS</h3>
+          <span a-t="r">Chairman & CEO of Polygreen Group of Companies </span>
+          <p a-t="r">
             Mr. Athanasios Polychronopoulos is the Founder and President of
             Polygreen S.A., a global leader in circular economy solutions,
             providing innovative, reliable, and cost-effective waste and marine
             pollution management services.
           </p>
-          <p>
+          <p a-t="r">
             A graduate of the University of Piraeus with executive training from
             Stanford and Harvard, he brings over 20 years of experience leading
             some of the most demanding and technically complex environmental
             projects worldwide.
           </p>
-          <p>
+          <p a-t="r">
             In 2021, under his vision and leadership, Polygreen launched the
             flagship initiative Just Go Zero Tilos, a pioneering circular
             economy project in partnership with the Municipality of Tilos. This
@@ -48,10 +48,10 @@ export default function Force() {
         {force.map((f, i) => (
           <li key={i}>
             <figure>
-              <Image src={f.image} alt={f.name} />
+              <Image a-i="r" src={f.image} alt={f.name} />
             </figure>
-            <h4>{f.name}</h4>
-            <p>{f.role}</p>
+            <h4 a-t="r">{f.name}</h4>
+            <p a-t="r">{f.role}</p>
             <a target="_blank" href={f.link}>
               LINKEDIN
             </a>
