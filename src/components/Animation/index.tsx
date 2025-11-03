@@ -2,8 +2,11 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger, DrawSVGPlugin, SplitText, CustomEase } from "gsap/all";
+import { usePathname } from "next/navigation";
 
 export default function Animation() {
+  const pathname = usePathname();
+
   gsap.registerPlugin(
     useGSAP,
     ScrollTrigger,
@@ -62,7 +65,7 @@ export default function Animation() {
       .catch((error) => {
         console.error("Error loading fonts:", error);
       });
-  });
+  }, [pathname]);
 
   return null;
 }
