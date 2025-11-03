@@ -1,0 +1,45 @@
+.h {
+  padding-top: 28rem;
+  padding-inline: 60rem var(--p-i);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.h-ph {
+  height: var(--h-h);
+}
+
+.l {
+  width: 140rem;
+}
+
+.h nav a {
+  font-size: 20rem;
+  display: block;
+  text-align: right;
+  position: relative;
+  &:last-child {
+    margin-top: 6rem;
+  }
+}
+
+.h nav a:global(.active) {
+  &:after {
+    content: "";
+    position: absolute;
+    left: calc(100% + 16rem);
+    top: 50%;
+    transform: translateY(-35%);
+    width: 16rem;
+    height: 16rem;
+    background-color: var(--c-green);
+    filter: blur(4rem);
+    border: 1px solid var(--c-green);
+    border-radius: 20rem;
+  }
+}

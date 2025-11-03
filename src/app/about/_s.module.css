@@ -1,0 +1,248 @@
+/*************** 
+STORY SECTION
+***************/
+.p {
+  padding-top: 72rem;
+}
+.s-s {
+  padding-top: 80rem;
+}
+.s-s h1 {
+  font-size: 50rem;
+  line-height: 1;
+  padding-left: var(--p-i);
+}
+.s-s > p {
+  margin-top: 85rem;
+  font-family: "sg";
+  font-size: 30rem;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  padding-left: 125rem;
+}
+.s-s > div {
+  padding-left: 130rem;
+  display: flex;
+  gap: 95rem;
+}
+
+.s-s .t {
+  margin-top: 45rem;
+}
+.s-s .t p {
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  &:first-child {
+    max-width: 350rem;
+    font-size: 25rem;
+  }
+  &:last-child {
+    max-width: 745rem;
+    font-size: 30rem;
+  }
+}
+
+.s-s .b {
+  margin-top: 105rem;
+}
+.s-s .b span {
+  width: 350rem;
+  font-size: 25rem;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  font-weight: bold;
+}
+.s-s .b p {
+  max-width: 400rem;
+  font-size: 25rem;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+}
+
+/*************** 
+VMV SECTION
+***************/
+.s-vmv {
+  margin-top: 135rem;
+  position: relative;
+}
+.s-vmv h2 {
+  font-size: 50rem;
+  line-height: 40rem;
+  position: relative;
+
+  & span:first-child {
+    display: block;
+    margin-left: 142rem;
+  }
+
+  & .l {
+    display: block;
+    position: absolute;
+    top: 26rem;
+    left: 145rem;
+    height: 4rem;
+    background-color: black;
+    width: 185rem;
+  }
+}
+.s-vmv > div > p {
+  margin-top: 35rem;
+  width: 410rem;
+  font-size: 25rem;
+  line-height: 30rem;
+  letter-spacing: -0.02em;
+}
+.s-vmv .vi {
+  margin-left: var(--p-i);
+}
+.s-vmv .mi {
+  position: absolute;
+  top: 100rem;
+  left: 805rem;
+}
+.s-vmv .va {
+  margin-top: 250rem;
+  margin-left: 120rem;
+  display: flex;
+  align-items: flex-start;
+}
+.va ul {
+  margin-left: 105rem;
+  display: flex;
+  flex-direction: column;
+  gap: 30rem;
+  & p {
+    font-size: 25rem;
+    line-height: 30rem;
+    letter-spacing: -0.02em;
+  }
+}
+.s-vmv h3 {
+  font-size: 25rem;
+  font-weight: 600;
+  font-family: "b";
+  line-height: 30rem;
+  letter-spacing: -0.02em;
+}
+
+/*************** 
+WHY SECTION
+***************/
+.s-w {
+  margin-top: 200rem;
+  position: relative;
+}
+.s-w figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 420rem;
+  aspect-ratio: 42/75;
+}
+.s-w h1 {
+  margin-left: 120rem;
+  font-size: 60rem;
+  & span {
+    display: block;
+    font-family: "b";
+    font-size: 30rem;
+  }
+}
+.s-w > div {
+  margin-top: 90rem;
+  margin-left: 480rem;
+  width: 705rem;
+}
+
+/*************** 
+FORCE SECTION
+***************/
+.s-f {
+  margin-top: 250rem;
+  padding-bottom: 55rem;
+}
+.s-f h2 {
+  font-size: 60rem;
+  line-height: 1;
+  margin-left: 64rem;
+}
+
+.ceo {
+  margin-top: 95rem;
+  display: flex;
+  gap: 85rem;
+  padding-right: var(--p-i);
+}
+.ceo figure {
+  flex: 1;
+  max-width: 445rem;
+}
+
+.ceo > div {
+  max-width: 835rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.ceo h3 {
+  font-size: 22rem;
+  font-weight: normal;
+}
+.ceo span {
+  font-size: 20rem;
+  margin-top: 2rem;
+}
+.ceo p {
+  font-size: 20rem;
+  line-height: 25rem;
+  margin-top: 25rem;
+  &:nth-child(3) {
+    margin-top: 45rem;
+  }
+}
+.ceo a {
+  margin-top: auto;
+  font-size: 15rem;
+  font-family: 'sg';
+  color: var(--c-green);
+  text-decoration: underline;
+}
+
+.s-f ul {
+  margin-top: 125rem;
+  display: flex;
+  gap: 28rem;
+  margin-left: 208rem;
+  padding-right: var(--p-i);
+}
+.s-f li {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 265rem;
+  &:first-child p {
+    margin-top: 24rem;
+  }
+}
+.s-f li figure {
+  aspect-ratio: 4/4.8;
+}
+.s-f li h4 {
+  margin-top: 20rem;
+  font-size: 20rem;
+  line-height: 25rem;
+}
+.s-f li p {
+  margin-top: auto;
+  font-size: 20rem;
+  line-height: 25rem;
+}
+.s-f li a {
+  display: block;
+  margin-top: 24rem;
+  font-family: "sg";
+  font-size: 15rem;
+  color: var(--c-green);
+  text-decoration: underline;
+}

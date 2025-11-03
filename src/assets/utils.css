@@ -1,0 +1,52 @@
+:root {
+  --p-i: 30rem;
+  --h-h: 150rem;
+  --f-h: 165rem;
+}
+
+/*******************
+*  GLOBAL  */
+/******************/
+#p_ {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.bg_ {
+  position: fixed;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  z-index: -1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bg {
+  width: 100%;
+}
+
+/*******************
+*  UTILS  */
+/******************/
+:root {
+  --c-green: #6ba43a;
+  --p-i: 75rem;
+}
+.d-s {
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+}
+.h-s {
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,0 +1,64 @@
+.p {
+  padding-top: 110rem;
+  min-height: calc(100vh - var(--h-h) - var(--f-h));
+  min-height: calc(100dvh - var(--h-h) - var(--f-h));
+}
+.m {
+  box-sizing: content-box;
+  padding-inline: var(--p-i);
+  width: 100%;
+  max-width: 975rem;
+  margin-inline: auto;
+}
+.m h1 {
+  font-size: 50rem;
+  line-height: 40rem;
+  position: relative;
+
+  & span:first-child {
+    display: block;
+    margin-left: 410rem;
+  }
+
+  & .l {
+    display: block;
+    position: absolute;
+    top: 21rem;
+    left: 366rem;
+    height: 4rem;
+    background-color: black;
+    width: 186rem;
+  }
+}
+
+.m form {
+  margin-top: 60rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32rem 155rem;
+}
+
+.m input {
+  display: block;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid black;
+  font-size: 15rem;
+  line-height: 25rem;
+  &::placeholder {
+    color: rbga(0, 0, 0, 0.5);
+  }
+}
+.m input[name="message"] {
+  grid-column: span 2;
+}
+.m button {
+  grid-column: span 2;
+  padding: 8rem 30rem;
+  color: var(--c-green);
+  border: 1px solid var(--c-green);
+  border-radius: 200px;
+  width: fit-content;
+  margin-left: auto;
+  font-family: "sg";
+  font-size: 15rem;
+}

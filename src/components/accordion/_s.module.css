@@ -1,0 +1,29 @@
+.item_t {
+  padding-block: 30rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.item_t span {
+  font-weight: 600;
+  font-size: 30rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.item_t svg {
+  width: 40rem;
+}
+
+.item_b_ {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.2s ease-out;
+}
+
+.item_b {
+  padding-bottom: 40rem;
+  font-size: 25rem;
+  letter-spacing: -0.02rem;
+  max-width: 630rem;
+}
