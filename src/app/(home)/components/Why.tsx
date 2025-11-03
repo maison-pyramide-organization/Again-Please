@@ -59,7 +59,7 @@ export default function Why() {
   });
 
   return (
-    <section className={s["s-w"]}>
+    <section id="s-w" className={s["s-w"]}>
       <h2 a-t="r">
         WHY CHOOSE
         <br />

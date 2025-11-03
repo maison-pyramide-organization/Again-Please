@@ -7,31 +7,31 @@
 
     <!-- Marker 1 -->
     <g id="marker-1" fill="white">
-        <circle cx="842" cy="25" r="23.5" fill="white" stroke="#6BA43A" />
+        <circle cx="842" cy="25" r="23.5" stroke="#6BA43A" />
         <circle cx="842.5" cy="24.5" r="10.5" fill="#6BA43A" filter="url(#filter0_f_2330_314)" />
     </g>
 
     <!-- Marker 2 -->
     <g id="marker-2" fill="white">
-        <circle cx="506" cy="239" r="23.5" fill="white" stroke="#6BA43A" />
+        <circle cx="506" cy="239" r="23.5" stroke="#6BA43A" />
         <circle cx="506.5" cy="238.5" r="10.5" fill="#6BA43A" filter="url(#filter2_f_2330_314)" />
     </g>
 
     <!-- Marker 3 -->
     <g id="marker-3" fill="white">
-        <circle cx="813" cy="410" r="23.5" fill="white" stroke="#6BA43A" />
+        <circle cx="813" cy="410" r="23.5" stroke="#6BA43A" />
         <circle cx="813.5" cy="409.5" r="10.5" fill="#6BA43A" filter="url(#filter1_f_2330_314)" />
     </g>
 
     <!-- Marker 4 -->
     <g id="marker-4" fill="white">
-        <circle cx="475" cy="536" r="23.5" fill="white" stroke="#6BA43A" />
+        <circle cx="475" cy="536" r="23.5" stroke="#6BA43A" />
         <circle cx="475.5" cy="535.5" r="10.5" fill="#6BA43A" filter="url(#filter3_f_2330_314)" />
     </g>
 
     <!-- Marker 5 -->
     <g id="marker-5" fill="white">
-        <circle cx="861" cy="715" r="23.5" fill="white" stroke="#6BA43A" />
+        <circle cx="861" cy="715" r="23.5" stroke="#6BA43A" />
         <circle cx="861.5" cy="714.5" r="10.5" fill="#6BA43A" filter="url(#filter4_f_2330_314)" />
     </g>
 

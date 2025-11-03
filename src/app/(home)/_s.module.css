@@ -2,6 +2,7 @@
 HERO SECTION
 ***************/
 .line_ {
+  opacity: 0;
 }
 
 .s-he {
@@ -87,11 +88,6 @@ SECTORS SECTION
     font-size: 30rem;
     line-height: 1;
   }
-  & p {
-    margin-top: 30rem;
-    font-size: 20rem;
-    line-height: 25rem;
-  }
 }
 
 .s-s .r {
@@ -125,6 +121,7 @@ SECTORS SECTION
 MODEL SECTION
 ***************/
 .s-m {
+  margin-top: -150rem;
   padding-inline: var(--p-i);
 }
 .s-m .h h2 {
@@ -132,6 +129,7 @@ MODEL SECTION
   font-size: 50rem;
   line-height: 40rem;
   color: black;
+  margin-top: 0;
   & span {
     display: block;
     margin-top: 18rem;
@@ -144,9 +142,10 @@ MODEL SECTION
   font-size: 25rem;
   line-height: 30rem;
   letter-spacing: -0.02em;
+  max-width: 690rem;
 }
 .s-m h2 {
-  margin-top: 65rem;
+  margin-top: 150rem;
   font-size: 50rem;
   line-height: 40rem;
   color: var(--c-green);
@@ -201,7 +200,7 @@ MODEL SECTION
   }
 }
 .s-m .imgs {
-  width: 240rem;
+  width: 220rem;
   position: absolute;
   right: 0;
   top: 0;
@@ -228,7 +227,7 @@ MODEL SECTION
 WHY SECTION
 ***************/
 .s-w {
-  padding-top: 120rem;
+  padding-top: 150rem;
 }
 .s-w h2 {
   font-size: 60rem;
@@ -281,7 +280,7 @@ WHY SECTION
 QUOTE SECTION
 ***************/
 .s-q {
-  padding-top: 230rem;
+  padding-top: 300rem;
   padding-bottom: 120rem;
   text-align: center;
 }

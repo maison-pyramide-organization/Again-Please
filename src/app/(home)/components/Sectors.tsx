@@ -9,10 +9,6 @@ export default function Sectors() {
     <section className={s["s-s"]}>
       <div className={s.l}>
         <h2 a-t="r">SECTORS WE SERVE</h2>
-        <p a-t="r">
-          Our systems are designed for any setting, from large stadiums and
-          festivals to hotels and HoReCa spaces. 
-        </p>
       </div>
       <div className={s.r}>
         <ul>

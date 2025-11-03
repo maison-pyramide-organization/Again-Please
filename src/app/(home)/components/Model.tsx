@@ -9,7 +9,7 @@ export default function Model() {
   const [activeInd, setActiveInd] = useState(0);
 
   return (
-    <section className={s["s-m"]}>
+    <section id="s-m" className={s["s-m"]}>
       <div className={s.h}>
         <h2 a-t="r">
           ONE PARTNER
