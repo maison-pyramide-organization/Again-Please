@@ -1,7 +1,7 @@
 .f {
   border-top: 1px solid white;
   padding-inline: var(--p-i);
-  padding-block: 28rem 40rem;
+  padding-block: 24rem;
   display: flex;
   align-items: center;
 }
@@ -13,7 +13,7 @@
 
 .f div:nth-of-type(2) {
   flex-shrink: 0;
-  width: 110rem;
+  width: 90rem;
 }
 
 .f div:nth-of-type(3) {
@@ -22,5 +22,5 @@
   align-items: center;
   justify-content: flex-end;
   gap: 15rem;
-  font-size: 20rem;
+  font-size: 12rem;
 }

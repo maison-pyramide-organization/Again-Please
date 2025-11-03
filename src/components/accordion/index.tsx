@@ -3,6 +3,7 @@
 import s from "./_s.module.css";
 import { useRef, useState } from "react";
 import Iplus from "@a/icons/plus.svg";
+import Iminus from "@a/icons/minus.svg";
 
 export default function Accordion(props: any) {
   const { title, children } = props;
@@ -24,7 +25,7 @@ export default function Accordion(props: any) {
     <div onClick={handleClick}>
       <div className={s.item_t}>
         <span>{title}</span>
-        <Iplus className={active ? "active" : ""} />
+        {active ? <Iminus /> : <Iplus />}
       </div>
 
       <div className={s.item_b_} ref={itemBodyW}>
