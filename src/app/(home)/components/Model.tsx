@@ -34,13 +34,13 @@ export default function Model() {
               <h3>{_.title}</h3>
               {/* </div> */}
               <div className={s.co}>
-                <figure className={i == activeInd ? s.active : ""} key={i}>
-                  <Image src={_.image} alt={_.title} />
-                </figure>
                 <p>
                   <span>{_.p_title}</span>
                   {_.p_body}
                 </p>
+                <figure className={i == activeInd ? s.active : ""} key={i}>
+                  <Image src={_.image} alt={_.title} />
+                </figure>
               </div>
             </li>
           ))}

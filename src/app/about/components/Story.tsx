@@ -12,7 +12,7 @@ export default function Story() {
       </div>
       <ul>
         <li>
-          <span a-t="r">01</span>
+          <span a-t="r">01.</span>
           <h3 a-t="r">End-to-End Reuse Solutions</h3>
           <p a-t="r">
             We design and run end-to-end reuse programs, from design and
@@ -20,7 +20,7 @@ export default function Story() {
           </p>
         </li>
         <li>
-          <span a-t="r">02</span>
+          <span a-t="r">02.</span>
           <h3 a-t="r">Connected, Scalable, Circular</h3>
           <p a-t="r">
             The result is a smooth, sanitary service that guests prefer. For us,
@@ -30,7 +30,7 @@ export default function Story() {
           </p>
         </li>
         <li>
-          <span a-t="r">03</span>
+          <span a-t="r">03.</span>
           <h3 a-t="r">About Polygreen</h3>
           <p a-t="r">
             Polygreen, founded in 2018 in Cyprus, is a global network active

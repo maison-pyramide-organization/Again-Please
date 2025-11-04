@@ -50,11 +50,13 @@ export default function Force() {
             <figure>
               <Image a-i="r" src={f.image} alt={f.name} />
             </figure>
-            <h4 a-t="r">{f.name}</h4>
-            <p a-t="r">{f.role}</p>
-            <a target="_blank" href={f.link}>
-              LINKEDIN
-            </a>
+            <div className={s.b}>
+              <h4 a-t="r">{f.name}</h4>
+              <p a-t="r">{f.role}</p>
+              <a target="_blank" href={f.link}>
+                LINKEDIN
+              </a>
+            </div>
           </li>
         ))}
       </ul>

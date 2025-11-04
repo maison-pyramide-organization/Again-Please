@@ -1,13 +1,20 @@
 "use client";
-import Link from "next/link";
 import s from "./_s.module.css";
+import Link from "next/link";
 import Image from "next/image";
 import logoI from "@a/images/logo.png";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 export default function Header() {
   const path = usePathname();
   // if (path == "/") return;
+  const [isOpened, setIsOpened] = useState(false);
+
+  const handleClick = () => {
+    setIsOpened(!isOpened);
+    document.body.classList.toggle("d-s");
+  };
 
   return (
     <>
@@ -31,7 +38,24 @@ export default function Header() {
             Contact us
           </Link>
         </nav>
+
+        <button id="menu-btn" onClick={handleClick}>
+          <div className={`${s.menu_i} ${isOpened ? s.open : ""}`}>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
       </header>
+      {isOpened && (
+        <div className={s.menu}>
+          <Link href="/about" onClick={handleClick}>
+            About us
+          </Link>
+          <Link href="/contact-us" onClick={handleClick}>
+            Contact us
+          </Link>
+        </div>
+      )}
     </>
   );
 }

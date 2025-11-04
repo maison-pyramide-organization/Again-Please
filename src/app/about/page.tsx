@@ -1,4 +1,4 @@
-import s from './_s.module.css'
+import s from "./_s.module.css";
 import Force from "./components/Force";
 import Story from "./components/Story";
 import Vmv from "./components/Vmv";

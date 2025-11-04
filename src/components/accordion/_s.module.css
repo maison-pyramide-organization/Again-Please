@@ -1,18 +1,28 @@
 .item_t {
-  padding-block: 30rem;
+  padding-block: 24rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  @media (width > 770px) {
+    padding-block: 30rem;
+  }
 }
 .item_t span {
+  font-size: 18rem;
+  line-height: 22rem;
   font-weight: 600;
-  font-size: 30rem;
-  line-height: 1;
   text-transform: uppercase;
+  @media (width > 770px) {
+    font-size: 30rem;
+    line-height: 1;
+  }
 }
 .item_t svg {
-  width: 40rem;
+  width: 30rem;
+  @media (width > 770px) {
+    width: 40rem;
+  }
 }
 
 .item_b_ {
@@ -22,8 +32,12 @@
 }
 
 .item_b {
-  padding-bottom: 40rem;
-  font-size: 25rem;
+  padding-bottom: 30rem;
+  font-size: 16rem;
   letter-spacing: -0.02rem;
   max-width: 630rem;
+  @media (width > 770px) {
+    padding-bottom: 40rem;
+    font-size: 25rem;
+  }
 }

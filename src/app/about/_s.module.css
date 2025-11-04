@@ -2,251 +2,428 @@
 STORY SECTION
 ***************/
 .p {
+  padding-top: 70rem;
   @media (width > 770px) {
     padding-top: 72rem;
   }
 }
 .s-s {
-  padding-top: 80rem;
 }
 .s-s .h {
   padding-inline: var(--p-i);
+  @media (width > 770px) {
+  }
 }
 .s-s .h h1 {
-  font-size: 30rem;
+  font-size: 12rem;
   font-weight: 400;
   font-family: "b";
   line-height: 1;
+  @media (width > 770px) {
+    font-size: 30rem;
+  }
 }
 .s-s .h p {
-  font-size: 50rem;
+  margin-top: 8rem;
+  font-size: 20rem;
   letter-spacing: -0.02em;
   font-family: "sg";
-  line-height: 130%;
-  margin-top: 15rem;
+  line-height: 120%;
+  @media (width > 770px) {
+    margin-top: 15rem;
+    font-size: 50rem;
+    line-height: 130%;
+  }
 }
 .s-s ul {
-  padding-inline: 129rem;
-  margin-top: 110rem;
+  margin-top: 40rem;
+  padding-inline: 30rem;
   display: flex;
   flex-direction: column;
-  gap: 65rem;
+  gap: 30rem;
+  @media (width > 770px) {
+    padding-inline: 129rem;
+    margin-top: 110rem;
+    gap: 65rem;
+  }
 }
 .s-s li {
   display: flex;
-  align-items: flex-start;
-  gap: 40rem;
+  align-items: center;
+  gap: 10rem 24rem;
+  flex-wrap: wrap;
+  @media (width > 770px) {
+    flex-wrap: nowrap;
+    gap: 40rem;
+  }
 }
 .s-s li span {
-  width: 210rem;
-  font-size: 18rem;
+  width: 20rem;
+  font-size: 12rem;
   line-height: 120%;
   letter-spacing: -0.02em;
+  @media (width > 770px) {
+    width: 210rem;
+    font-size: 18rem;
+  }
 }
 .s-s li h3 {
-  width: 412rem;
+  width: calc(100% - 20rem - 24rem);
   font-family: "b";
   font-size: 18rem;
   line-height: 120%;
   letter-spacing: -0.02em;
   font-weight: 600;
+  @media (width > 770px) {
+    width: 412rem;
+  }
 }
 .s-s li p {
-  width: 480rem;
-  font-size: 20rem;
+  width: 100%;
+  font-size: 15rem;
   line-height: 120%;
   letter-spacing: -0.02em;
+  margin-left: calc(20rem + 24rem);
+  @media (width > 770px) {
+    font-size: 20rem;
+    width: 480rem;
+  }
 }
 
 /*************** 
 VMV SECTION
 ***************/
 .s-vmv {
-  margin-top: 135rem;
-  position: relative;
-  height: 615rem;
+  margin-top: 80rem;
+  @media (width > 770px) {
+    position: relative;
+    margin-top: 135rem;
+    height: 615rem;
+  }
 }
 .s-vmv h2 {
-  font-size: 50rem;
-  line-height: 40rem;
+  font-size: 22rem;
+  line-height: 25rem;
   position: relative;
-
   & span:first-child {
+    margin-left: 70rem;
     display: block;
-    margin-left: 142rem;
   }
 
-  & .l {
-    display: block;
-    position: absolute;
+  @media (width > 770px) {
+    font-size: 50rem;
+    line-height: 40rem;
+    & span:first-child {
+      margin-left: 142rem;
+    }
+  }
+}
+.s-vmv h2 .l {
+  display: block;
+  position: absolute;
+  top: 15rem;
+  left: 72rem;
+  height: 4rem;
+  background-color: black;
+  width: 60rem;
+  @media (width > 770px) {
+    width: 185rem;
     top: 26rem;
     left: 145rem;
-    height: 4rem;
-    background-color: black;
-    width: 185rem;
   }
 }
 .s-vmv > div > p {
-  margin-top: 35rem;
-  width: 410rem;
-  font-size: 20rem;
-  line-height: 22rem;
+  margin-top: 16rem;
+  max-width: 240rem;
+  font-size: 15rem;
+  line-height: 18rem;
   letter-spacing: -0.02em;
-}
-.s-vmv .vi {
-  margin-left: var(--p-i);
-}
-.s-vmv .mi {
-  position: absolute;
-  top: 365rem;
-  left: 160;
-}
-.s-vmv .va {
-  position: absolute;
-  top: 130rem;
-  left: 830rem;
-}
-.va ul {
-  width: 430rem;
-  margin-top: 35rem;
-  display: flex;
-  flex-direction: column;
-  gap: 30rem;
-  & p {
+  @media (width > 770px) {
+    margin-top: 35rem;
+    width: 410rem;
+    max-width: unset;
     font-size: 20rem;
     line-height: 22rem;
-    letter-spacing: -0.02em;
+  }
+}
+.s-vmv .vi {
+  margin-left: 40rem;
+  @media (width > 770px) {
+    margin-left: var(--p-i);
+  }
+}
+.s-vmv .mi {
+  margin-top: 55rem;
+  margin-left: 165rem;
+  & > p {
+    width: 216rem;
+  }
+  @media (width > 770px) {
+    margin-top: 0;
+    margin-left: 0;
+    position: absolute;
+    top: 365rem;
+    left: 160;
+    & > p {
+      width: 410rem;
+    }
+  }
+}
+.s-vmv .va {
+  margin-top: 55rem;
+  margin-left: 40rem;
+  @media (width > 770px) {
+    margin-top: 0;
+    position: absolute;
+    top: 130rem;
+    left: 830rem;
+  }
+}
+.va ul {
+  margin-top: 16rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+  max-width: 250rem;
+  @media (width > 770px) {
+    max-width: unset;
+    margin-top: 35rem;
+    width: 430rem;
+    gap: 30rem;
   }
 }
 .s-vmv h3 {
-  font-size: 20rem;
+  font-size: 15rem;
+  line-height: 18rem;
   font-weight: 600;
   font-family: "b";
-  line-height: 22rem;
   letter-spacing: -0.02em;
+  @media (width > 770px) {
+    font-size: 20rem;
+    line-height: 22rem;
+  }
+}
+.va ul p {
+  font-size: 15rem;
+  line-height: 18rem;
+  letter-spacing: -0.02em;
+  @media (width > 770px) {
+    font-size: 20rem;
+    line-height: 22rem;
+  }
 }
 
 /*************** 
 WHY SECTION
 ***************/
 .s-w {
-  margin-top: 200rem;
+  margin-top: 80rem;
+  margin-inline: var(--p-i);
   position: relative;
+  @media (width > 770px) {
+    margin-inline: 0;
+    margin-top: 200rem;
+  }
 }
 .s-w figure {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
   width: 420rem;
   aspect-ratio: 42/75;
+  @media (width > 770px) {
+    display: unset;
+  }
 }
 .s-w h1 {
-  margin-left: 120rem;
-  font-size: 60rem;
+  font-size: 30rem;
   & span {
     display: block;
+    font-size: 12rem;
     font-family: "b";
-    font-size: 30rem;
+    margin-bottom: 8rem;
+  }
+  @media (width > 770px) {
+    margin-left: 120rem;
+    font-size: 60rem;
+    & span {
+      font-size: 30rem;
+    }
   }
 }
 .s-w > div {
-  margin-top: 90rem;
-  margin-left: 480rem;
-  width: 705rem;
+  margin-top: 24rem;
+  @media (width > 770px) {
+    margin-top: 90rem;
+    margin-left: 480rem;
+    width: 705rem;
+  }
 }
 
 /*************** 
 FORCE SECTION
 ***************/
 .s-f {
-  margin-top: 250rem;
+  margin-top: 80rem;
   padding-bottom: 55rem;
+  @media (width > 770px) {
+    margin-top: 250rem;
+  }
 }
 .s-f h2 {
-  font-size: 60rem;
-  line-height: 1;
-  margin-left: 64rem;
+  font-size: 30rem;
+  line-height: 33rem;
+  margin-inline: var(--p-i);
+  @media (width > 770px) {
+    margin-left: 64rem;
+    font-size: 60rem;
+    line-height: 1;
+  }
 }
 
 .ceo {
-  margin-top: 95rem;
-  display: flex;
-  gap: 85rem;
-  padding-right: var(--p-i);
+  margin-top: 24rem;
+  @media (width > 770px) {
+    margin-top: 95rem;
+    padding-right: var(--p-i);
+    display: flex;
+    gap: 85rem;
+  }
 }
+
 .ceo figure {
-  flex: 1;
-  max-width: 445rem;
+  margin-left: var(--p-i);
+  @media (width > 770px) {
+    flex: 1;
+    max-width: 445rem;
+    margin-left: 0;
+  }
 }
 
 .ceo > div {
-  max-width: 835rem;
-  flex: 1;
   display: flex;
   flex-direction: column;
+  padding-inline: var(--p-i);
+  margin-top: 16rem;
+  @media (width > 770px) {
+    margin-top: 0;
+    padding-inline: 0;
+    max-width: 835rem;
+    flex: 1;
+  }
 }
 .ceo h3 {
-  font-size: 20rem;
-  line-height: 25rem;
+  font-size: 15rem;
+  line-height: 18rem;
   font-weight: normal;
+  @media (width > 770px) {
+    font-size: 20rem;
+    line-height: 25rem;
+  }
 }
 .ceo span {
-  font-size: 20rem;
-  margin-top: 2rem;
+  font-size: 12rem;
+  @media (width > 770px) {
+    font-size: 20rem;
+    margin-top: 2rem;
+  }
 }
 .ceo p {
-  font-size: 20rem;
-  line-height: 25rem;
-  margin-top: 25rem;
-  &:nth-child(3) {
-    margin-top: 45rem;
+  font-size: 12rem;
+  line-height: 16rem;
+  margin-top: 16rem;
+  @media (width > 770px) {
+    font-size: 20rem;
+    line-height: 25rem;
+    margin-top: 25rem;
+    &:nth-child(3) {
+      margin-top: 45rem;
+    }
   }
 }
 .ceo a {
-  margin-top: auto;
-  font-size: 15rem;
-  font-family: "sg";
-  color: var(--c-green);
-  text-decoration: underline;
-}
-
-.s-f ul {
-  margin-top: 125rem;
-  display: flex;
-  gap: 28rem;
-  margin-left: 208rem;
-  padding-right: var(--p-i);
-}
-.s-f li {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  min-width: 265rem;
-  &:nth-child(2) p {
-    margin-top: 28rem;
-  }
-  &:nth-child(1) a {
-    margin-top: 39rem;
-  }
-}
-.s-f li figure {
-  aspect-ratio: 4/4.8;
-}
-.s-f li h4 {
-  margin-top: 20rem;
-  font-size: 20rem;
-  line-height: 25rem;
-}
-.s-f li p {
-  margin-top: 53rem;
-  font-size: 18rem;
-  line-height: 20rem;
-}
-.s-f li a {
-  display: block;
-  margin-top: auto;
+  margin-top: 16rem;
   font-size: 12rem;
   font-family: "sg";
   color: var(--c-green);
   text-decoration: underline;
+  @media (width > 770px) {
+    margin-top: auto;
+    font-size: 15rem;
+  }
+}
+
+.s-f ul {
+  margin-top: 40rem;
+  padding-inline: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+  @media (width > 770px) {
+    margin-top: 125rem;
+    margin-left: 208rem;
+    padding-right: var(--p-i);
+    flex-direction: row;
+    gap: 28rem;
+  }
+}
+.s-f li {
+  flex: 1;
+  min-width: 265rem;
+  display: flex;
+  gap: 24rem;
+  align-items: center;
+  &:nth-child(even) figure {
+    order: 1;
+  }
+  @media (width > 770px) {
+    display: block;
+    &:nth-child(2) p {
+      margin-top: 27rem;
+    }
+  }
+}
+.s-f li figure {
+  aspect-ratio: 4/4.8;
+  flex: 1 1 0;
+}
+.s-f .b {
+  flex: 1 1 0;
+  margin-top: 20rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  @media (width >770px) {
+    height: 155rem;
+  }
+}
+.s-f li h4 {
+  font-size: 15rem;
+  line-height: 18rem;
+  @media (width >770px) {
+    font-size: 20rem;
+    line-height: 25rem;
+  }
+}
+.s-f li p {
+  font-size: 12rem;
+  line-height: 18rem;
+  @media (width >770px) {
+    margin-top: 48rem;
+    font-size: 18rem;
+    line-height: 20rem;
+  }
+}
+.s-f li a {
+  display: block;
+  margin-top: 18rem;
+  font-size: 12rem;
+  font-family: "sg";
+  color: var(--c-green);
+  text-decoration: underline;
+  @media (width >770px) {
+    font-size: 12rem;
+    margin-top: auto;
+  }
 }
