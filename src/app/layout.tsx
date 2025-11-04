@@ -4,8 +4,8 @@ import "@a/reset.css";
 import Lenis from "@/components/lenis";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import Bg from "@/components/bg";
-import Animation from "@/components/Animation";
+// import Bg from "@/components/bg";
+// import Animation from "@/components/Animation";
 
 export const metadata: Metadata = {
   title: "Again Please",
