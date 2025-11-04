@@ -9,13 +9,13 @@ import Why from "./components/Why";
 export default function Home() {
   return (
     <>
-      <Hero />
+      {/* <Hero />
       <About />
-      <Sectors />
+      <Sectors /> */}
       <Model />
       <Why />
       <Quote />
-      <Animation />
+      {/* <Animation /> */}
     </>
   );
 }

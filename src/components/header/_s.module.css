@@ -1,10 +1,14 @@
 .h {
-  padding-top: 28rem;
-  padding-inline: 33rem 45rem;
+  padding-top: 35rem;
+  padding-inline: var(--p-i);
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  @media (width > 770px) {
+    padding-inline: 33rem 45rem;
+    padding-top: 28rem;
+  }
 }
 .h:global(.fixed) {
   position: fixed;
@@ -17,12 +21,18 @@
 }
 
 .l {
-  width: 120rem;
+  width: 80rem;
+  @media (width > 770px) {
+    width: 120rem;
+  }
 }
 
 .h nav {
-  display: flex;
-  gap: 64rem;
+  display: none;
+  @media (width > 770px) {
+    display: flex;
+    gap: 64rem;
+  }
 }
 .h nav a {
   width: fit-content;

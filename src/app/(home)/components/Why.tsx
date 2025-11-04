@@ -3,13 +3,15 @@ import s from "../_s.module.css";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { DrawSVGPlugin, ScrollTrigger } from "gsap/all";
-import Iline from "@a/icons/why-line.svg";
+import IlineD from "@a/icons/why-line-d.svg";
+import IlineM from "@a/icons/why-line-m.svg";
 
 export default function Why() {
   gsap.registerPlugin(DrawSVGPlugin, ScrollTrigger);
 
   useGSAP(() => {
-    const $why_line = document.getElementById("why-line") as HTMLElement;
+    return null;
+    const $why_line = document.getElementById("why-line-d") as HTMLElement;
     const $why_path = $why_line.querySelector("path");
 
     const texts_tl = gsap
@@ -87,7 +89,8 @@ export default function Why() {
           <span>05</span>
           <p>Build measurable ESG impact</p>
         </div>
-        <Iline id="why-line" />
+        <IlineD id="why-line-d" />
+        <IlineM id="why-line-m" />
       </div>
     </section>
   );

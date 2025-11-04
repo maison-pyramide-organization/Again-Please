@@ -26,8 +26,8 @@ export default function RootLayout({
             <Header />
             {children}
             <Footer />
-            <Bg />
-            <Animation />
+            {/* <Bg /> */}
+            {/* <Animation /> */}
           </div>
         </Lenis>
       </body>

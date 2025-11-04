@@ -1,0 +1,71 @@
+<svg width="400" height="790" viewBox="0 0 400 790" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- connecting path (as original) -->
+    <path
+        d="M49.0002 22.5C40.1668 52 33.2 104.2 86 123C152 146.5 195.5 160 189.5 196.5C184.43 227.343 82.4999 307 59 351.5C10.152 444 147.74 469.905 183 529.5C218.5 589.5 128 626 93.5 654.5C65.9 677.3 68 723.667 72.5 744"
+        stroke="#6BA43A" stroke-opacity="0.5" stroke-width="8" />
+
+    <!-- Marker 1 (top) -->
+    <g id="marker-1" fill="white">
+        <!-- outer circle (stroke) -->
+        <circle cx="51" cy="21" r="13.5" stroke="#6BA43A" stroke-width="1" />
+        <!-- inner/blurred circle -->
+        <circle cx="51" cy="21" r="6" fill="#6BA43A" filter="url(#filter0_f_433_57)" />
+    </g>
+
+    <!-- Marker 2 -->
+    <g id="marker-2" fill="white">
+        <circle cx="187" cy="536.5" r="14" stroke="#6BA43A" stroke-width="1" />
+        <circle cx="187" cy="536.5" r="6" fill="#6BA43A" filter="url(#filter1_f_433_57)" />
+    </g>
+
+    <!-- Marker 3 -->
+    <g id="marker-3" fill="white">
+        <circle cx="187.5" cy="195" r="13.5" stroke="#6BA43A" stroke-width="1" />
+        <circle cx="187.5" cy="195" r="6" fill="#6BA43A" filter="url(#filter2_f_433_57)" />
+    </g>
+
+    <!-- Marker 4 -->
+    <g id="marker-4" fill="white">
+        <circle cx="58.5" cy="354" r="13.5" stroke="#6BA43A" stroke-width="1" />
+        <circle cx="58.5" cy="354" r="6" fill="#6BA43A" filter="url(#filter3_f_433_57)" />
+    </g>
+
+    <!-- Marker 5 -->
+    <g id="marker-5" fill="white">
+        <circle cx="72.5" cy="740.5" r="14" stroke="#6BA43A" stroke-width="1" />
+        <circle cx="72.5" cy="740.5" r="6" fill="#6BA43A" filter="url(#filter4_f_433_57)" />
+    </g>
+
+    <defs>
+        <filter id="filter0_f_433_57" x="35" y="5" width="32" height="32" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="5" result="effect1_foregroundBlur_433_57" />
+        </filter>
+        <filter id="filter1_f_433_57" x="171" y="520" width="32" height="32" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="5" result="effect1_foregroundBlur_433_57" />
+        </filter>
+        <filter id="filter2_f_433_57" x="172" y="179" width="32" height="32" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="5" result="effect1_foregroundBlur_433_57" />
+        </filter>
+        <filter id="filter3_f_433_57" x="42" y="338" width="33" height="32" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="5" result="effect1_foregroundBlur_433_57" />
+        </filter>
+        <filter id="filter4_f_433_57" x="56" y="724" width="33" height="32" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="5" result="effect1_foregroundBlur_433_57" />
+        </filter>
+    </defs>
+</svg>

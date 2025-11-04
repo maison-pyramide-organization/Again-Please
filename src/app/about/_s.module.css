@@ -2,7 +2,9 @@
 STORY SECTION
 ***************/
 .p {
-  padding-top: 72rem;
+  @media (width > 770px) {
+    padding-top: 72rem;
+  }
 }
 .s-s {
   padding-top: 80rem;

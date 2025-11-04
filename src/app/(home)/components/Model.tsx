@@ -1,7 +1,7 @@
 "use client";
 
-import model from "@/data/model";
 import s from "../_s.module.css";
+import model from "@/data/model";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -12,7 +12,7 @@ export default function Model() {
     <section id="s-m" className={s["s-m"]}>
       <div className={s.h}>
         <h2 a-t="r">
-          ONE PARTNER
+          ONE PARTNER.
           <span>EVERY STOP COVERED.</span>
         </h2>
         <p a-t="r">
@@ -29,12 +29,23 @@ export default function Model() {
               className={i == activeInd ? s.active : ""}
               onMouseEnter={() => setActiveInd(i)}
             >
+              {/* <div className={s.h}> */}
               <span>0{i + 1}</span>
               <h3>{_.title}</h3>
+              {/* </div> */}
+              <div className={s.co}>
+                <figure className={i == activeInd ? s.active : ""} key={i}>
+                  <Image src={_.image} alt={_.title} />
+                </figure>
+                <p>
+                  <span>{_.p_title}</span>
+                  {_.p_body}
+                </p>
+              </div>
             </li>
           ))}
         </ul>
-        <div className={s.txts}>
+        {/* <div className={s.txts}>
           {model.map((_, i) => (
             <p className={i == activeInd ? s.active : ""} key={i}>
               <span>{_.p_title}</span>
@@ -48,7 +59,7 @@ export default function Model() {
               <Image src={_.image} alt={_.title} />
             </figure>
           ))}
-        </div>
+        </div> */}
       </div>
       <div className={s.b}>
         LESS WASTE, LOWER LONG-TERM COSTS, AND A POWERFUL CIRCULAR ECONOMY/
