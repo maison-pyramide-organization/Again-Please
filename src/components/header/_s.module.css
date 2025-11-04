@@ -1,6 +1,6 @@
 .h {
   padding-top: 28rem;
-  padding-inline: 60rem var(--p-i);
+  padding-inline: 33rem 45rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,28 +17,29 @@
 }
 
 .l {
-  width: 140rem;
+  width: 120rem;
 }
 
+.h nav {
+  display: flex;
+  gap: 64rem;
+}
 .h nav a {
-  font-size: 20rem;
+  width: fit-content;
+  font-size: 15rem;
   display: block;
-  text-align: right;
   position: relative;
-  &:last-child {
-    margin-top: 6rem;
-  }
 }
 
 .h nav a:global(.active) {
   &:after {
     content: "";
     position: absolute;
-    left: calc(100% + 16rem);
-    top: 50%;
-    transform: translateY(-35%);
-    width: 16rem;
-    height: 16rem;
+    top: 60%;
+    left: -12rem;
+    transform: translate(-100%, -50%);
+    width: 14rem;
+    height: 14rem;
     background-color: var(--c-green);
     filter: blur(4rem);
     border: 1px solid var(--c-green);

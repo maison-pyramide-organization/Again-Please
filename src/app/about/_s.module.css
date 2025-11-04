@@ -221,10 +221,10 @@ FORCE SECTION
   flex-direction: column;
   min-width: 265rem;
   &:nth-child(2) p {
-    margin-top: 21rem;
+    margin-top: 28rem;
   }
   &:nth-child(1) a {
-    margin-top: 24rem;
+    margin-top: 39rem;
   }
 }
 .s-f li figure {
@@ -236,15 +236,15 @@ FORCE SECTION
   line-height: 25rem;
 }
 .s-f li p {
-  margin-top: 49rem;
+  margin-top: 53rem;
   font-size: 18rem;
   line-height: 20rem;
 }
 .s-f li a {
   display: block;
   margin-top: auto;
-  font-family: "sg";
   font-size: 12rem;
+  font-family: "sg";
   color: var(--c-green);
   text-decoration: underline;
 }
