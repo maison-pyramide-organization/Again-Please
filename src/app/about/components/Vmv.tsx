@@ -23,8 +23,9 @@ export default function Vmv() {
           <span className={s.l} />
         </h2>
         <p a-t="r">
-          To redefine reusability by creating world-class circular ecosystem
-          where every reuse reflects responsibility and elevates experiences 
+          To deliver end-to-end circular solutions empowering businesses and
+          communities to move seamlessly beyond single use & set a new benchmark
+          for reusability 
         </p>
       </div>
 

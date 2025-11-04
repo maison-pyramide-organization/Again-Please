@@ -7,36 +7,57 @@
 .m {
   box-sizing: content-box;
   padding-inline: var(--p-i);
-  width: 100%;
-  max-width: 975rem;
   margin-inline: auto;
+  @media (width > 770px) {
+    width: 100%;
+    max-width: 975rem;
+  }
 }
 .m h1 {
-  font-size: 50rem;
+  font-size: 30rem;
   line-height: 40rem;
   position: relative;
 
   & span:first-child {
     display: block;
-    margin-left: 410rem;
+    margin-top: 12rem;
+    @media (width > 770px) {
+      margin-top: 0;
+      margin-left: 410rem;
+    }
   }
 
   & .l {
     display: block;
+    width: 75rem;
     position: absolute;
-    top: 21rem;
-    left: 366rem;
+    top: 20rem;
+    left: 220rem;
     height: 4rem;
     background-color: black;
-    width: 186rem;
+    @media (width > 770px) {
+      top: 21rem;
+      left: 366rem;
+      width: 186rem;
+    }
+  }
+
+  @media (width > 770px) {
+    font-size: 50rem;
+    line-height: 40rem;
   }
 }
 
 .m form {
   margin-top: 60rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32rem 155rem;
+  grid-template-columns: 1fr;
+  gap: 32rem;
+  width: 100%;
+  @media (width > 770px) {
+    gap: 32rem 135rem;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .m input {
@@ -49,11 +70,14 @@
     color: rbga(0, 0, 0, 0.5);
   }
 }
+
 .m input[name="message"] {
-  grid-column: span 2;
+  @media (width > 770px) {
+    grid-column: span 2;
+  }
 }
 .m button {
-  grid-column: span 2;
+  /* grid-column: span 2; */
   padding: 8rem 30rem;
   color: var(--c-green);
   border: 1px solid var(--c-green);
@@ -62,4 +86,7 @@
   margin-left: auto;
   font-family: "sg";
   font-size: 15rem;
+  @media (width > 770px) {
+    grid-column: span 2;
+  }
 }

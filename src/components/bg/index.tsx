@@ -29,8 +29,8 @@ export default function Bg() {
       autoAlpha: 0,
       scrollTrigger: {
         trigger: "#s-w",
-        start: "top 40%",
-        end: "bottom center",
+        start: "top bottom",
+        end: "top center",
         scrub: true,
       },
     });
@@ -39,10 +39,10 @@ export default function Bg() {
       autoAlpha: 1,
       scrollTrigger: {
         trigger: "#s-q",
-        start: "top center",
-        end: "bottom bottom",
+        start: "top bottom",
+        end: "bottom 80%",
         scrub: true,
-        // markers: true,
+        markers: true,
       },
     });
   };

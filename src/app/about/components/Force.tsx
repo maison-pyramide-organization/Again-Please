@@ -16,7 +16,7 @@ export default function Force() {
           <Image a-i="r" src={ceoI} alt="ATHANASIOS POLYCHRONOPOULOS" />
         </figure>
         <div>
-          <h3 a-t="r">ATHANASIOS POLYCHRONOPOULOS</h3>
+          <h3 a-t="r">Athanasios Polychronopoulos</h3>
           <span a-t="r">Chairman & CEO of Polygreen Group of Companies </span>
           <p a-t="r">
             Mr. Athanasios Polychronopoulos is the Founder and President of

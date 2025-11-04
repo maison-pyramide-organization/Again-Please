@@ -8,7 +8,7 @@ const force = [
   {
     image: iF2,
     name: "Kyriakos Kofinas",
-    role: "Executive Consulting Director at Polygreen",
+    role: "Executive Advisor",
     link: "https://www.linkedin.com/in/kyriakoskofinas",
   },
   {

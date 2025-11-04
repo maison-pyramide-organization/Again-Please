@@ -1,8 +1,12 @@
 :root {
-  --p-i: 30rem;
+  --c-green: #6ba43a;
+  --p-i: 25rem;
   --h-h: 150rem;
-  --f-h: 165rem;
+  --f-h: 128rem;
   --vh: calc(100vw * 9 / 16);
+  @media (width > 770px) {
+    --p-i: 75rem;
+  }
 }
 
 /*******************
@@ -34,10 +38,7 @@
 /*******************
 *  UTILS  */
 /******************/
-:root {
-  --c-green: #6ba43a;
-  --p-i: 75rem;
-}
+
 .d-s {
   height: 100vh;
   height: 100dvh;
