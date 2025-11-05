@@ -37,12 +37,9 @@ export default function Sectors() {
   };
 
   return (
-    <section className={s["s-s"]}>
+    <section id="s-s" className={s["s-s"]}>
       <div className={s.l}>
-        <h2 a-t="r">
-          SECTORS <br />
-          WE SERVE
-        </h2>
+        <h2 a-t="r">SECTORS WE SERVE</h2>
       </div>
       <div className={s.r}>
         <nav>

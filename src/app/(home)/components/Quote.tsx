@@ -1,3 +1,4 @@
+import Link from "next/link";
 import s from "../_s.module.css";
 
 export default function Quote() {
@@ -7,7 +8,9 @@ export default function Quote() {
         READY TO <br /> GO CIRCULAR?
       </h2>
       <p a-t="r">Let’s design a reusable system that fits your operations </p>
-      <button>REQUEST A QUOTE</button>
+      <button>
+        <Link href="/contact">REQUEST A QUOTE</Link>
+      </button>
     </section>
   );
 }

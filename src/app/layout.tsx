@@ -5,7 +5,7 @@ import Lenis from "@/components/lenis";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 // import Bg from "@/components/bg";
-// import Animation from "@/components/Animation";
+import Animation from "@/components/Animation";
 
 export const metadata: Metadata = {
   title: "Again Please",
@@ -22,12 +22,12 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Lenis>
-          <div id="p_">
+          <div id="p_" className="d-s">
             <Header />
             {children}
             <Footer />
             {/* <Bg /> */}
-            {/* <Animation /> */}
+            <Animation />
           </div>
         </Lenis>
       </body>

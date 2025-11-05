@@ -1,7 +1,7 @@
 :root {
   --c-green: #6ba43a;
   --p-i: 20rem;
-  --h-h: 150rem;
+  --h-h: 108rem;
   --f-h: 128rem;
   --vh: calc(100vw * 9 / 16);
   @media (width > 770px) {
@@ -13,8 +13,8 @@
 *  GLOBAL  */
 /******************/
 #p_ {
-  /* opacity: 0;
-  visibility: hidden; */
+  opacity: 0;
+  visibility: hidden;
 }
 
 .bg_ {

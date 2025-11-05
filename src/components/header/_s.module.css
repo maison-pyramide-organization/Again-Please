@@ -2,7 +2,7 @@
   padding-top: var(--p-i);
   padding-inline: var(--p-i);
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
   width: 100%;
   position: relative;
@@ -23,9 +23,9 @@
 }
 
 .l {
-  width: 70rem;
+  width: 50rem;
   @media (width > 770px) {
-    width: 120rem;
+    width: 80rem;
   }
 }
 
@@ -62,7 +62,7 @@
 /****************
 MENU
 *****************/
-#menu-btn {
+:global(#menu-btn) {
   margin-left: auto;
   position: relative;
   z-index: 999;

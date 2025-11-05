@@ -1,15 +1,19 @@
 /*************** 
 HERO SECTION
 ***************/
-.line_ {
-  /* opacity: 0; */
-}
 
 .s-he {
   position: relative;
 }
+.s-he img {
+  position: fixed;
+  width: 208rem;
+  height: auto;
+  top: 359rem;
+  left: 60rem;
+}
 .s-he .c {
-  display: none;
+  /* display: none; */
   pointer-events: none;
   position: fixed;
   width: 100%;
@@ -21,13 +25,14 @@ HERO SECTION
 .s-he h1 {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 630rem;
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  transform: translateY(-50%);
   font-size: 50rem;
   line-height: 1;
   font-weight: normal;
   max-width: 750rem;
-  text-align: center;
 }
 .s-he .t2 {
 }
@@ -40,10 +45,15 @@ ABOUT SECTION
   height: 100vh;
   height: 100dvh;
   min-height: calc(max(100vh, var(--vh)));
-  display: grid;
-  place-content: center;
+  overflow-x: hidden;
 }
-.s-a > div {
+.s-a .c {
+  position: absolute;
+  top: 50%;
+  left: 510rem;
+  transform: translateY(-50%);
+}
+.s-a .c > div {
   font-size: 30rem;
   line-height: 1;
   font-family: "sg";
@@ -51,8 +61,8 @@ ABOUT SECTION
   max-width: 660rem;
   &:last-of-type {
     color: black;
-    margin-block: 60rem 90rem;
-    margin-left: 195rem;
+    margin-top: 48rem;
+    margin-left: 125rem;
   }
 }
 
@@ -94,10 +104,9 @@ SECTORS SECTION
 .s-s .l h2 {
   font-size: 30rem;
   line-height: 1;
+  max-width: 200rem;
   @media (width > 770px) {
-    & br {
-      display: none;
-    }
+    max-width: unset;
   }
 }
 
@@ -514,16 +523,21 @@ QUOTE SECTION
 }
 .s-q button {
   margin-top: 20rem;
-  padding: 8rem 12rem;
   display: inline;
   font-size: 10rem;
   font-family: "sg";
   color: var(--c-green);
   border: 1px solid var(--c-green);
   border-radius: 100px;
+  & a {
+    display: block;
+    padding: 8rem 12rem;
+  }
   @media (width > 770px) {
     margin-top: 44rem;
-    padding: 16rem 20rem;
     font-size: 15rem;
+    & a {
+      padding: 16rem 20rem;
+    }
   }
 }
