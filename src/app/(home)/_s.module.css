@@ -4,6 +4,10 @@ HERO SECTION
 
 .s-he {
   position: relative;
+  display: none;
+  @media (width > 770px) {
+    display: block;
+  }
 }
 .s-he img {
   position: absolute;
@@ -49,6 +53,10 @@ ABOUT SECTION
   height: 100dvh;
   min-height: calc(max(100vh, var(--vh))); */
   overflow-x: hidden;
+  display: none;
+  @media (width > 770px) {
+    display: block;
+  }
 }
 .s-a .c {
   position: absolute;
@@ -88,6 +96,7 @@ ABOUT SECTION
 SECTORS SECTION
 ***************/
 .s-s {
+  padding-top: 80rem;
   @media (width > 770px) {
     padding-top: 200rem;
     display: flex;
