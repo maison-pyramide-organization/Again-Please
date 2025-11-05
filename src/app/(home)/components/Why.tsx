@@ -12,9 +12,9 @@ export default function Why() {
   return (
     <section id="s-w" className={s["s-w"]}>
       <h2 a-t="r">
-        WHY CHOOSE
+        WHY
         <br />
-        CIRCULAR? 
+        CHOOSE US? 
       </h2>
 
       <div className={s.c}>

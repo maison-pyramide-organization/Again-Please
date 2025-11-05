@@ -7,7 +7,9 @@ export default function Quote() {
       <h2 a-t="r">
         READY TO <br /> GO CIRCULAR?
       </h2>
-      <p a-t="r">Let’s design a reusable system that fits your operations </p>
+      <p a-t="r">
+        Contact us to design a reusable system that fits your operations 
+      </p>
       <button>
         <Link href="/contact">REQUEST A QUOTE</Link>
       </button>

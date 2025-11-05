@@ -1,8 +1,8 @@
 import Accordion from "@/components/accordion";
 import s from "../_s.module.css";
-import cupsI from "@a/images/about/cups.png";
 import Image from "next/image";
 import why from "@/data/why";
+import cupsI from "@a/images/about/cups.png";
 
 export default function Why() {
   return (

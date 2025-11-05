@@ -45,25 +45,11 @@ export default function Model() {
             </li>
           ))}
         </ul>
-        {/* <div className={s.txts}>
-          {model.map((_, i) => (
-            <p className={i == activeInd ? s.active : ""} key={i}>
-              <span>{_.p_title}</span>
-              {_.p_body}
-            </p>
-          ))}
+
+        <div className={s.b}>
+          LESS WASTE, LOWER LONG-TERM COSTS, AND A POWERFUL CIRCULAR ECONOMY
+          STORY.
         </div>
-        <div className={s.imgs}>
-          {model.map((_, i) => (
-            <figure className={i == activeInd ? s.active : ""} key={i}>
-              <Image src={_.image} alt={_.title} />
-            </figure>
-          ))}
-        </div> */}
-      </div>
-      <div className={s.b}>
-        LESS WASTE, LOWER LONG-TERM COSTS, AND A POWERFUL CIRCULAR ECONOMY/
-        SUSTAINABILITY STORY.
       </div>
     </section>
   );

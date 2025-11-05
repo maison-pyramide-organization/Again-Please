@@ -5,10 +5,10 @@ import Image from "next/image";
 import logoI from "@a/images/logo.png";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import Animation from "./_animation";
 
 export default function Header() {
   const path = usePathname();
-  // if (path == "/") return;
   const [isOpened, setIsOpened] = useState(false);
 
   const handleClick = () => {
@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <>
-      {path != "/" && <div className={s["h-ph"]} />}
+      {/* {path != "/" && <div className={s["h-ph"]} />} */}
       <header id="h" className={`${s.h} ${path == "/" ? "fixed" : ""}`}>
         <Link className={s.l} href="/">
           <Image src={logoI} alt="Again Please Logo" />
@@ -56,6 +56,7 @@ export default function Header() {
           </Link>
         </div>
       )}
+      <Animation />
     </>
   );
 }

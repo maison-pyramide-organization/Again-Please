@@ -13,32 +13,6 @@ export default function Animation() {
     CustomEase
   );
 
-  const headerA = () => {
-    gsap.from("#h", {
-      autoAlpha: 0,
-      duration: 0.1,
-      scrollTrigger: {
-        trigger: "#s-a",
-        // endTrigger:'#s-s',
-        start: "top center",
-        end: "bottom top",
-        toggleActions: "play reverse play reverse",
-        markers: true,
-      },
-    });
-
-    // gsap.to("#h", {
-    //   autoAlpha: 0,
-    //   scrollTrigger: {
-    //     trigger: "#s-a",
-    //     start: "top center",
-    //     end: "bottom top",
-    //     toggleActions: "play none none reverse",
-    //     markers: true,
-    //   },
-    // });
-  };
-
   // Hero
   const heroA = () => {
     const $p_ = document.getElementById("p_") as HTMLElement;
@@ -47,7 +21,6 @@ export default function Animation() {
     const $he_path2 = $he_line?.querySelector("path:last-child") as any;
     const $he_t1 = document.querySelector("[g-s='he-t1']");
     const he_t2_split = SplitText.create("[g-s='he-t2']", { type: "lines" });
-    const $he_logo = document.querySelector("[g-s='he-logo']") as any;
 
     gsap.set($p_, { autoAlpha: 1 });
 
@@ -60,11 +33,9 @@ export default function Animation() {
         scrub: true,
         start: "top 90%",
         end: "bottom 80%",
-        // markers: true,
       },
     });
 
-    // .from($he_path2, { drawSVG: "0", duration: 4 })
     he_tl
       .fromTo(
         $he_path2,
@@ -121,17 +92,17 @@ export default function Animation() {
       })
       .add(he_tl, 0);
 
-    gsap.to($he_logo, {
-      autoAlpha: 0,
-      duration: 0.5,
-      scrollTrigger: {
-        trigger: "#s-a",
-        toggleActions: "play none none reverse",
-        start: "top bottom",
-        end: "top 80%",
-        scrub: true,
-      },
-    });
+    // gsap.to($he_logo, {
+    //   autoAlpha: 0,
+    //   duration: 0.5,
+    //   scrollTrigger: {
+    //     trigger: "#s-a",
+    //     toggleActions: "play none none reverse",
+    //     start: "top bottom",
+    //     end: "top 80%",
+    //     scrub: true,
+    //   },
+    // });
   };
 
   // About
@@ -170,7 +141,6 @@ export default function Animation() {
         scrub: true,
         start: "top 70%",
         end: "center 10% ",
-        // markers: true,
       },
     });
   };
@@ -229,7 +199,6 @@ export default function Animation() {
   useGSAP(() => {
     document.fonts.ready
       .then(() => {
-        headerA();
         heroA();
         aboutA();
         whyA();

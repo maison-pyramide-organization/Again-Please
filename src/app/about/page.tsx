@@ -1,3 +1,4 @@
+import Animation from "./_animation";
 import s from "./_s.module.css";
 import Force from "./components/Force";
 import Story from "./components/Story";
@@ -11,6 +12,7 @@ export default function () {
       <Vmv />
       <Why />
       <Force />
+      <Animation />
     </div>
   );
 }

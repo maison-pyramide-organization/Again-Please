@@ -2,7 +2,7 @@
   padding-top: var(--p-i);
   padding-inline: var(--p-i);
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   justify-content: space-between;
   width: 100%;
   position: relative;
@@ -33,7 +33,7 @@
   display: none;
   @media (width > 770px) {
     display: flex;
-    gap: 64rem;
+    gap: 40rem;
   }
 }
 .h nav a {
@@ -50,10 +50,10 @@
     top: 60%;
     left: -12rem;
     transform: translate(-100%, -50%);
-    width: 14rem;
-    height: 14rem;
+    width: 8rem;
+    height: 8rem;
     background-color: var(--c-green);
-    filter: blur(4rem);
+    filter: blur(2rem);
     border: 1px solid var(--c-green);
     border-radius: 20rem;
   }

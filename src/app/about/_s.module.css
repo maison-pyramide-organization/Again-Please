@@ -97,7 +97,7 @@ VMV SECTION
   margin-top: 80rem;
   @media (width > 770px) {
     position: relative;
-    margin-top: 135rem;
+    margin-top: 180rem;
     height: 615rem;
   }
 }
@@ -222,7 +222,7 @@ WHY SECTION
   position: relative;
   @media (width > 770px) {
     margin-inline: 0;
-    margin-top: 200rem;
+    margin-top: 120rem;
   }
 }
 .s-w figure {
@@ -230,10 +230,11 @@ WHY SECTION
   position: absolute;
   top: 0;
   left: 0;
-  width: 420rem;
-  aspect-ratio: 42/75;
+  width: 360rem;
+  aspect-ratio: 36/72;
   @media (width > 770px) {
     display: unset;
+    top: -165rem;
   }
 }
 .s-w h1 {
@@ -245,7 +246,7 @@ WHY SECTION
     margin-bottom: 8rem;
   }
   @media (width > 770px) {
-    margin-left: 120rem;
+    margin-left: 360rem;
     font-size: 60rem;
     & span {
       font-size: 30rem;
@@ -256,7 +257,7 @@ WHY SECTION
   margin-top: 24rem;
   @media (width > 770px) {
     margin-top: 90rem;
-    margin-left: 480rem;
+    margin-left: 500rem;
     width: 705rem;
   }
 }
@@ -268,7 +269,7 @@ FORCE SECTION
   margin-top: 80rem;
   padding-bottom: 55rem;
   @media (width > 770px) {
-    margin-top: 250rem;
+    margin-top: 180rem;
   }
 }
 .s-f h2 {
