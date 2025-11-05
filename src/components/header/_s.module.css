@@ -7,10 +7,14 @@
   width: 100%;
   position: relative;
   z-index: 9999;
+  /* opacity: 1 !important;
+  visibility: visible !important; */
 
   @media (width > 770px) {
     padding-inline: 33rem 45rem;
     padding-top: 28rem;
+    /* opacity: 0;
+    visibility: hidden; */
   }
 }
 .h:global(.fixed) {

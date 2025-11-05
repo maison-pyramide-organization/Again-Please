@@ -96,7 +96,7 @@ ABOUT SECTION
 SECTORS SECTION
 ***************/
 .s-s {
-  padding-top: 80rem;
+  padding-top: 150rem;
   @media (width > 770px) {
     padding-top: 200rem;
     display: flex;
@@ -277,7 +277,23 @@ MODEL SECTION
 .s-m li {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
   @media (width > 770px) {
+    position: unset;
+  }
+}
+.s-m li svg {
+  position: absolute;
+  right: -10rem;
+  top: 12rem;
+  width: 20rem;
+  margin-left: auto;
+  &.active {
+    transform: rotate(180deg);
+    transition: transform 0.2s ease-in-out;
+  }
+  @media (width > 770px) {
+    display: none;
   }
 }
 .s-m li.active h3 {

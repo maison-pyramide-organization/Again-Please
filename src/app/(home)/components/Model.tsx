@@ -4,6 +4,7 @@ import s from "../_s.module.css";
 import model from "@/data/model";
 import Image from "next/image";
 import { useState } from "react";
+import Iarr from "@a/icons/arr.svg";
 
 export default function Model() {
   const [activeInd, setActiveInd] = useState(0);
@@ -32,6 +33,9 @@ export default function Model() {
               {/* <div className={s.h}> */}
               <span>0{i + 1}</span>
               <h3>{_.title}</h3>
+              <Iarr
+              className={i == activeInd ? s.active : ""}
+               />
               {/* </div> */}
               <div className={s.co}>
                 <p>
