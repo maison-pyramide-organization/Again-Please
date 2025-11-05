@@ -112,6 +112,7 @@
   width: fit-content;
   font-family: "sg";
   font-size: 15rem;
+  color: black;
   @media (width > 770px) {
     color: var(--c-green);
     border-color: var(--c-green);
