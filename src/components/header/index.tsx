@@ -30,7 +30,6 @@ export default function Header() {
     }
   };
 
-
   return (
     <>
       {/* {path != "/" && <div className={s["h-ph"]} />} */}
@@ -69,7 +68,9 @@ export default function Header() {
           <Link href="/contact-us" onClick={handleClick}>
             Contact us
           </Link>
-          <Image src={bgI} alt="again please" />
+          <figure className={s.bg}>
+            <Image src={bgI} alt="again please" />
+          </figure>
         </div>
       )}
       <Animation />

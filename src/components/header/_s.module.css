@@ -133,7 +133,7 @@ MENU DRAWER
   font-size: 30rem;
   font-family: "sg";
 }
-.menu img {
+.menu .bg {
   width: 1000rem;
   position: absolute;
   top: 320rem;
