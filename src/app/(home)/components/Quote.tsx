@@ -11,7 +11,7 @@ export default function Quote() {
         Contact us to design a reusable system that fits your operations 
       </p>
       <button>
-        <Link href="/contact">REQUEST A QUOTE</Link>
+        <Link href="/contact-us">REQUEST A QUOTE</Link>
       </button>
     </section>
   );

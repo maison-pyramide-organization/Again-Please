@@ -63,9 +63,9 @@
   }
 }
 
-/****************
-MENU
-*****************/
+/*******************
+MENU BUTTON / ICON
+********************/
 :global(#menu-btn) {
   margin-left: auto;
   position: relative;
@@ -108,6 +108,9 @@ MENU
   transform: rotate(-45deg);
 }
 
+/*******************
+MENU DRAWER
+********************/
 .menu {
   width: 100%;
   height: 100vh;
@@ -120,8 +123,8 @@ MENU
   align-items: center;
   justify-content: center;
   gap: 24rem;
-  background-color: var(--c-green);
   z-index: 999;
+  background-color: white;
   @media (width > 770px) {
     display: none;
   }
@@ -129,4 +132,11 @@ MENU
 .menu a {
   font-size: 30rem;
   font-family: "sg";
+}
+.menu img {
+  width: 1000rem;
+  position: absolute;
+  top: 320rem;
+  left: -235rem;
+  z-index: -1;
 }

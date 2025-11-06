@@ -9,9 +9,10 @@
 }
 .m {
   box-sizing: content-box;
-  padding-inline: var(--p-i);
+  padding-inline: 24rem;
   margin-inline: auto;
   @media (width > 770px) {
+    padding-inline: var(--p-i);
     width: 100%;
     max-width: 975rem;
   }
@@ -107,11 +108,11 @@
 .m button {
   /* grid-column: span 2; */
   padding: 8rem 30rem;
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 200px;
   width: fit-content;
   font-family: "sg";
-  font-size: 15rem;
+  font-size: 12rem;
   color: black;
   @media (width > 770px) {
     color: var(--c-green);

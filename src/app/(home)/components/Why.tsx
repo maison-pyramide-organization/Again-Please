@@ -1,13 +1,9 @@
 "use client";
 import s from "../_s.module.css";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { DrawSVGPlugin, ScrollTrigger } from "gsap/all";
 import IlineD from "@a/icons/why-line-d.svg";
 import IlineM from "@a/icons/why-line-m.svg";
 
 export default function Why() {
-  gsap.registerPlugin(DrawSVGPlugin, ScrollTrigger);
 
   return (
     <section id="s-w" className={s["s-w"]}>
@@ -38,8 +34,10 @@ export default function Why() {
           <span>05</span>
           <p>Build measurable ESG impact</p>
         </div>
-        <IlineD id="why-line-d" />
-        <IlineM id="why-line-m" />
+        <div id="why-line" className={s.line}>
+          <IlineM g-s="why-line-m"  />
+          <IlineD  g-s="why-line-d" />
+        </div>
       </div>
     </section>
   );

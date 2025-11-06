@@ -6,15 +6,30 @@ import logoI from "@a/images/logo.png";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Animation from "./_animation";
+import bgI from "@a/images/bg.png";
+import { useLenis } from "lenis/react";
 
 export default function Header() {
   const path = usePathname();
   const [isOpened, setIsOpened] = useState(false);
 
+  const lenis = useLenis();
+
   const handleClick = () => {
-    setIsOpened(!isOpened);
-    document.body.classList.toggle("d-s");
+    const next = !isOpened;
+    setIsOpened(next);
+
+    // toggle class based on the new state
+    document.body.classList.toggle("d-s", next);
+
+    // call lenis based on the new state
+    if (next) {
+      lenis?.stop();
+    } else {
+      lenis?.start();
+    }
   };
+
 
   return (
     <>
@@ -54,6 +69,7 @@ export default function Header() {
           <Link href="/contact-us" onClick={handleClick}>
             Contact us
           </Link>
+          <Image src={bgI} alt="again please" />
         </div>
       )}
       <Animation />

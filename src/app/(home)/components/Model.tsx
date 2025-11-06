@@ -3,11 +3,23 @@
 import s from "../_s.module.css";
 import model from "@/data/model";
 import Image from "next/image";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Iarr from "@a/icons/arr.svg";
+import { DimensionContext } from "@/contexts/dimensionsContext";
 
 export default function Model() {
-  const [activeInd, setActiveInd] = useState(0);
+  const [activeInd, setActiveInd] = useState(-1);
+  const { isMobile } = useContext(DimensionContext);
+
+  const onMouseEnter = (ind) => {
+    if (isMobile) return;
+    setActiveInd(ind);
+  };
+  const onClick = (ind) => {
+    if (!isMobile) return;
+    if (activeInd == ind) setActiveInd(-1);
+    else setActiveInd(ind);
+  };
 
   return (
     <section id="s-m" className={s["s-m"]}>
@@ -28,14 +40,13 @@ export default function Model() {
             <li
               key={i}
               className={i == activeInd ? s.active : ""}
-              onMouseEnter={() => setActiveInd(i)}
+              onMouseEnter={() => onMouseEnter(i)}
+              onClick={() => onClick(i)}
             >
               {/* <div className={s.h}> */}
               <span>0{i + 1}</span>
               <h3>{_.title}</h3>
-              <Iarr
-              className={i == activeInd ? s.active : ""}
-               />
+              <Iarr className={i == activeInd ? s.active : ""} />
               {/* </div> */}
               <div className={s.co}>
                 <p>

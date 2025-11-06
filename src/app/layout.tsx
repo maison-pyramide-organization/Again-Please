@@ -7,6 +7,7 @@ import Footer from "@/components/footer";
 import Bg from "@/components/bg";
 import Animation from "@/components/Animation";
 import { FontsProvider } from "@/contexts/fontsContext";
+import { DimensionProvider } from "@/contexts/dimensionsContext";
 
 export const metadata: Metadata = {
   title: "Again Please",
@@ -23,15 +24,17 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Lenis>
-          <FontsProvider>
-            <div id="p_" className="d-s">
-              <Header />
-              {children}
-              <Footer />
-              <Bg />
-              <Animation />
-            </div>
-          </FontsProvider>
+          <DimensionProvider>
+            <FontsProvider>
+              <div id="p_" className="d-s">
+                <Header />
+                {children}
+                <Footer />
+                <Bg />
+                <Animation />
+              </div>
+            </FontsProvider>
+          </DimensionProvider>
         </Lenis>
       </body>
     </html>

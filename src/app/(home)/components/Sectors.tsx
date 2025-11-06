@@ -63,7 +63,7 @@ export default function Sectors() {
             <span a-t="r">03</span>
             <Image a-i="r" src={iS3} alt="" />
             <p a-t="r">
-              SMEs including independent venues, smaller HoReCa spaces.
+              SMEs including independent venues, smaller HoReCa spaces
             </p>
           </li>
         </ul>

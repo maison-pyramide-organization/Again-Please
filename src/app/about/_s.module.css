@@ -31,8 +31,8 @@ STORY SECTION
   line-height: 120%;
   @media (width > 770px) {
     margin-top: 15rem;
-    font-size: 50rem;
-    line-height: 130%;
+    font-size: 40rem;
+    line-height: unset;
   }
 }
 .s-s ul {
@@ -53,6 +53,7 @@ STORY SECTION
   gap: 10rem 24rem;
   flex-wrap: wrap;
   @media (width > 770px) {
+    align-items: flex-start;
     flex-wrap: nowrap;
     gap: 40rem;
   }

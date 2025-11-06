@@ -4,17 +4,34 @@ HERO SECTION
 
 .s-he {
   position: relative;
-  display: none;
+  padding-top: 380rem;
   @media (width > 770px) {
-    display: block;
+    padding-top: 0;
   }
 }
 .s-he img {
   position: absolute;
-  width: 208rem;
   height: auto;
-  top: 359rem;
-  left: 60rem;
+  width: 170rem;
+  top: 280rem;
+  left: 50rem;
+  @media (width > 770px) {
+    width: 208rem;
+    top: 359rem;
+    left: 60rem;
+  }
+}
+
+.s-he svg:first-child {
+  @media (width > 770px) {
+    display: none;
+  }
+}
+.s-he svg:last-child {
+  display: none;
+  @media (width > 770px) {
+    display: unset;
+  }
 }
 .s-he .c {
   /* display: none; */
@@ -29,19 +46,46 @@ HERO SECTION
 .s-he h1 {
   position: absolute;
   top: 50%;
-  left: 630rem;
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%); */
+  left: 70rem;
   transform: translateY(-50%);
-  font-size: 50rem;
+  font-size: 30rem;
   line-height: 1;
   font-weight: normal;
-  max-width: 750rem;
+  max-width: 220rem;
+  @media (width > 770px) {
+    position: absolute;
+    top: 50%;
+    left: 630rem;
+    max-width: 750rem;
+  }
 }
 .s-he .t2 {
-  font-size: 40rem;
+  font-size: 20rem;
   line-height: 120%;
-  max-width: 690rem;
+  max-width: 300rem;
+  @media (width > 770px) {
+    font-size: 40rem;
+    max-width: 690rem;
+  }
+}
+.he_ab {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 70rem;
+  @media (width > 770px) {
+    display: none;
+  }
+}
+.he_ab > div {
+  max-width: 300rem;
+  font-size: 20rem;
+  line-height: 120%;
+  font-family: "sg";
+}
+.s-he .c .t3 {
+  color: var(--c-green);
+  margin-bottom: 32rem;
 }
 
 /*************** 
@@ -85,10 +129,8 @@ ABOUT SECTION
   padding: 12rem 32rem;
   font-family: "sg";
 } */
+
 .s-a svg {
-  /* position: absolute;
-  bottom: 0;
-  left: 0; */
   pointer-events: none;
 }
 
@@ -264,14 +306,15 @@ MODEL SECTION
   }
 }
 .s-m ul {
-  width: fit-content;
   display: flex;
   flex-direction: column;
   gap: 35rem;
-  margin-left: calc(50rem - var(--p-i));
+  padding-left: calc(50rem - var(--p-i));
+  width: 100%;
 
   @media (width > 770px) {
-    margin-left: 0;
+    width: fit-content;
+    padding-left: 0;
   }
 }
 .s-m li {
@@ -282,11 +325,28 @@ MODEL SECTION
     position: unset;
   }
 }
+.s-m li > span {
+  font-size: 10rem;
+  @media (width > 770px) {
+    font-size: 20rem;
+    width: 25rem;
+  }
+}
+.s-m li h3 {
+  margin-top: 8rem;
+  margin-left: 8rem;
+  font-size: 18rem;
+  @media (width > 770px) {
+    margin-left: 14rem;
+    margin-top: 12rem;
+    font-size: 30rem;
+  }
+}
 .s-m li svg {
   position: absolute;
-  right: -10rem;
+  right: 0;
   top: 12rem;
-  width: 20rem;
+  width: 16rem;
   margin-left: auto;
   &.active {
     transform: rotate(180deg);
@@ -310,24 +370,6 @@ MODEL SECTION
   opacity: 1;
 }
 
-.s-m li > span {
-  font-size: 10rem;
-  @media (width > 770px) {
-    font-size: 20rem;
-    width: 25rem;
-  }
-}
-.s-m li h3 {
-  margin-top: 8rem;
-  margin-left: 8rem;
-  font-size: 20rem;
-  @media (width > 770px) {
-    margin-left: 14rem;
-    margin-top: 12rem;
-    font-size: 30rem;
-  }
-}
-
 .s-m li .co {
   margin-top: 20rem;
   flex-basis: 100%;
@@ -336,6 +378,7 @@ MODEL SECTION
   display: none;
   padding-left: 18rem;
   @media (width > 770px) {
+    margin-top: 0;
     padding-left: 0;
     display: flex;
   }
@@ -490,6 +533,21 @@ WHY SECTION
 .s-w :global(#why-line-m) {
   @media (width > 770px) {
     display: none;
+  }
+}
+
+.s-w .line svg:first-child {
+  @media (width > 770px) {
+    display: none;
+  }
+}
+.s-w .line {
+  position: unset !important;
+}
+.s-w .line svg:last-child {
+  display: none;
+  @media (width > 770px) {
+    display: unset;
   }
 }
 .s-w svg g {

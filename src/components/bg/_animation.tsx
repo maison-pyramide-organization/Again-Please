@@ -1,5 +1,6 @@
 "use client";
 
+import { DimensionContext } from "@/contexts/dimensionsContext";
 import { FontsContext } from "@/contexts/fontsContext";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -11,6 +12,7 @@ export default function Animation() {
   gsap.registerPlugin(ScrollTrigger);
   const path = usePathname();
   const { loaded } = useContext(FontsContext);
+  const { isMobile } = useContext(DimensionContext);
 
   const homeA = () => {
     const $bg = document.getElementById("bg");
@@ -90,6 +92,58 @@ export default function Animation() {
     );
   };
 
+  const homeAM = () => {
+    gsap.set("#bg", {
+      width: "1500rem",
+    });
+    // --- background move
+    gsap.to("#bg", {
+      top: "-180rem",
+      left: "-440rem",
+      immediateRender: false,
+      ease: "none",
+      scrollTrigger: {
+        trigger: "#s-s",
+        start: "top center",
+        end: "top top",
+        scrub: true,
+      },
+    });
+
+    gsap.to("#bg", {
+      opacity: 0,
+      scrollTrigger: {
+        trigger: "#s-m",
+        start: "top center",
+        end: "top top",
+        scrub: true,
+      },
+    });
+
+    gsap.fromTo(
+      "#bg",
+      {
+        opacity: 0,
+        width: "1500rem",
+        top: "-90rem",
+        left: "-360rem",
+      },
+      {
+        opacity: 1,
+        top: "-90rem",
+        left: "-360rem",
+        duration: 0.3,
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: "#s-q",
+          start: "bottom bottom",
+          toggleActions: "play none none reverse",
+          //   markers: true,
+        },
+      }
+    );
+  };
+
   const aboutA = () => {
     gsap.set("#bg", {
       top: "-45rem",
@@ -138,6 +192,14 @@ export default function Animation() {
     );
   };
 
+  const aboutAM = () => {
+    gsap.set("#bg", {
+      top: "-40rem",
+      left: "-395rem",
+      width: "1300rem",
+    });
+  };
+
   const contactA = () => {
     gsap.set("#bg", {
       top: "225rem",
@@ -149,14 +211,14 @@ export default function Animation() {
   useGSAP(
     () => {
       // only run on home page
-      if (!loaded) return;
-      if (path == "/") homeA();
-      if (path == "/about") aboutA();
+      if (!loaded || isMobile == null) return;
+      if (path == "/") isMobile ? homeAM() : homeA();
+      if (path == "/about") isMobile ? aboutAM() : aboutA();
       if (path == "/contact-us") contactA();
     },
     {
-      dependencies: [path, loaded],
-      // revertOnUpdate: true, // ensures cleanup when path changes
+      dependencies: [path, loaded, isMobile],
+      revertOnUpdate: true, // ensures cleanup when path changes
     }
   );
 
