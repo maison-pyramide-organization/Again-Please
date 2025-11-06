@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className={s["s-he"]}>
+    <section id="s-he" className={s["s-he"]}>
       <Image g-s="he-logo" src={logoI} alt="again,please" />
       <div className={s.c}>
         <h1 g-s="he-t1" className={s.t1}>

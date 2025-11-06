@@ -1,10 +1,16 @@
 "use client";
 
+import { FontsContext } from "@/contexts/fontsContext";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger, DrawSVGPlugin, SplitText, CustomEase } from "gsap/all";
+import { usePathname } from "next/navigation";
+import { useContext } from "react";
 
 export default function Animation() {
+  const path = usePathname();
+  const { loaded } = useContext(FontsContext);
+
   gsap.registerPlugin(
     useGSAP,
     ScrollTrigger,
@@ -85,7 +91,7 @@ export default function Animation() {
     lo_tl
       .from($he_path1, {
         drawSVG: 0,
-        duration: 2,
+        duration: 1,
         onComplete: () => {
           $p_.classList.remove("d-s");
         },
@@ -197,16 +203,11 @@ export default function Animation() {
   };
 
   useGSAP(() => {
-    document.fonts.ready
-      .then(() => {
+    if(!loaded) return
         heroA();
         aboutA();
         whyA();
-      })
-      .catch((error) => {
-        console.error("Error loading fonts:", error);
-      });
-  });
+  }, [path, loaded]);
 
   return null;
 }
