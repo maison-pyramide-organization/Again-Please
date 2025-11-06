@@ -17,9 +17,9 @@ export default function () {
       message: form.message.value,
       company: form.company.value,
     };
-    console.log(formData);
+    // console.log(formData);
 
-    // await sendEmail(formData);
+    await sendEmail(formData);
     form.reset()
   };
   return (
