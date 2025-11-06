@@ -1,0 +1,123 @@
+.p {
+  padding-top: 64rem;
+  padding-bottom: 80rem;
+  min-height: calc(100vh - var(--h-h) - var(--f-h));
+  min-height: calc(100dvh - var(--h-h) - var(--f-h));
+  @media (width > 770px) {
+    padding-top: 110rem;
+  }
+}
+.m {
+  box-sizing: content-box;
+  padding-inline: 24rem;
+  margin-inline: auto;
+  @media (width > 770px) {
+    padding-inline: var(--p-i);
+    width: 100%;
+    max-width: 975rem;
+  }
+}
+.m h1 {
+  font-size: 30rem;
+  line-height: 40rem;
+  position: relative;
+
+  & span:first-child {
+    display: block;
+    margin-top: -6rem;
+    @media (width > 770px) {
+      margin-top: 0;
+      margin-left: 410rem;
+    }
+  }
+
+  & .l {
+    display: block;
+    width: 75rem;
+    position: absolute;
+    top: 20rem;
+    left: 220rem;
+    height: 4rem;
+    background-color: black;
+    @media (width > 770px) {
+      top: 21rem;
+      left: 366rem;
+      width: 186rem;
+    }
+  }
+
+  @media (width > 770px) {
+    font-size: 50rem;
+    line-height: 40rem;
+  }
+}
+
+.m form {
+  margin-top: 40rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32rem;
+  width: 100%;
+  @media (width > 770px) {
+    margin-top: 60rem;
+    gap: 32rem 135rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.m input {
+  display: block;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid black;
+  padding-left: 4rem;
+  font-size: 12rem;
+  line-height: 25rem;
+  &::placeholder {
+    color: rbga(0, 0, 0, 0.5);
+  }
+  @media (width > 770px) {
+    font-size: 15rem;
+  }
+}
+
+.m textarea {
+  margin-top: 16rem;
+  background-color: transparent;
+  height: 120rem;
+  border: 1px solid black;
+  padding-top: 10rem;
+  padding-left: 16rem;
+  font-family: "b";
+  font-size: 12rem;
+  line-height: 25rem;
+  outline: none;
+  &::placeholder {
+    color: rbga(0, 0, 0, 0.5);
+  }
+  @media (width > 770px) {
+    padding-top: 0;
+    padding-left: 4rem;
+    margin-top: 0;
+    border: none;
+    border-bottom: 1px solid black;
+    height: auto;
+    grid-column: span 2;
+    font-size: 15rem;
+  }
+}
+.m button {
+  /* grid-column: span 2; */
+  padding: 8rem 30rem;
+  border: 1px solid black;
+  border-radius: 200px;
+  width: fit-content;
+  font-family: "sg";
+  font-size: 12rem;
+  color: black;
+  @media (width > 770px) {
+    color: var(--c-green);
+    border-color: var(--c-green);
+    margin-left: auto;
+    grid-column: span 2;
+  }
+}

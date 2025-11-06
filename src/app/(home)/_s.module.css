@@ -4,7 +4,7 @@ HERO SECTION
 
 .s-he {
   position: relative;
-  padding-top: 380rem;
+  padding-top: 369rem;
   @media (width > 770px) {
     padding-top: 0;
   }
@@ -12,9 +12,9 @@ HERO SECTION
 .s-he img {
   position: absolute;
   height: auto;
-  width: 170rem;
-  top: 280rem;
-  left: 50rem;
+  width: 173rem;
+  top: 277rem;
+  left: 51rem;
   @media (width > 770px) {
     width: 208rem;
     top: 359rem;
@@ -216,15 +216,24 @@ SECTORS SECTION
     font-size: 30rem;
   }
 }
-.s-s li img {
+.s-s li figure {
   aspect-ratio: 3/4;
   width: 310rem;
-  height: auto;
   margin-top: 16rem;
+  & img:last-child {
+    display: none;
+  }
   @media (width > 770px) {
     margin-top: 0;
     aspect-ratio: unset;
     width: 720rem;
+    height: auto;
+    & img:first-child {
+      display: none;
+    }
+    & img:last-child {
+      display: unset;
+    }
   }
 }
 .s-s li p {

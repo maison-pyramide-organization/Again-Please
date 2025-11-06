@@ -43,15 +43,22 @@ export default function Animation() {
     });
   };
 
-  useGSAP(() => {
-    document.fonts.ready
-      .then(() => {
-        animation();
-      })
-      .catch((error) => {
-        console.error("Error loading fonts:", error);
-      });
-  }, [path]);
+  useGSAP(
+    () => {
+      document.fonts.ready
+        .then(() => {
+          animation();
+        })
+        .catch((error) => {
+          console.error("Error loading fonts:", error);
+        });
+    },
+    {
+      dependencies: [path],
+
+      revertOnUpdate: true, // ensures cleanup when path changes
+    }
+  );
 
   return <></>;
 }

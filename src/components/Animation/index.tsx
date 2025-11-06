@@ -60,10 +60,16 @@ export default function Animation() {
     });
   };
 
-  useGSAP(() => {
-    if (!loaded) return;
-    animation();
-  }, [path, loaded]);
+  useGSAP(
+    () => {
+      if (!loaded) return;
+      animation();
+    },
+    {
+      dependencies: [path, loaded],
+      revertOnUpdate: true, // ensures cleanup when path changes
+    }
+  );
 
   return null;
 }

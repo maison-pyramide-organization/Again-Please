@@ -328,12 +328,18 @@ export default function Animation() {
       .add(texts_tl, 0);
   };
 
-  useGSAP(() => {
-    if (!loaded) return;
-    isMobile ? heroAM() : heroA();
-    !isMobile && aboutA();
-    isMobile ? whyAM() : whyA();
-  }, [path, loaded]);
+  useGSAP(
+    () => {
+      if (!loaded) return;
+      isMobile ? heroAM() : heroA();
+      !isMobile && aboutA();
+      isMobile ? whyAM() : whyA();
+    },
+    {
+      dependencies: [path, loaded],
+      revertOnUpdate: true, // ensures cleanup when path changes
+    }
+  );
 
   return null;
 }

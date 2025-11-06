@@ -145,19 +145,20 @@ export default function Animation() {
   };
 
   const aboutA = () => {
-    gsap.set("#bg", {
+    const t1 = gsap.set("#bg", {
+      opacity: 1,
       top: "-45rem",
       left: "285rem",
       width: "1500rem",
     });
 
-    gsap.from("#bg", {
+    const t2 = gsap.from("#bg", {
       opacity: 0,
       duration: 1,
       ease: "power2.inOut",
     });
 
-    gsap.to("#bg", {
+    const t3 = gsap.to("#bg", {
       opacity: 0,
       immediateRender: false,
       scrollTrigger: {
@@ -168,7 +169,7 @@ export default function Animation() {
       },
     });
 
-    gsap.fromTo(
+    const t4 = gsap.fromTo(
       "#bg",
       {
         opacity: 0,
@@ -193,7 +194,8 @@ export default function Animation() {
   };
 
   const aboutAM = () => {
-    gsap.set("#bg", {
+    const t1 = gsap.set("#bg", {
+      opacity: 1,
       top: "-40rem",
       left: "-395rem",
       width: "1300rem",
@@ -202,6 +204,7 @@ export default function Animation() {
 
   const contactA = () => {
     gsap.set("#bg", {
+      opacity: 1,
       top: "225rem",
       left: "-430rem",
       width: "1000rem",
@@ -211,6 +214,7 @@ export default function Animation() {
   useGSAP(
     () => {
       // only run on home page
+
       if (!loaded || isMobile == null) return;
       if (path == "/") isMobile ? homeAM() : homeA();
       if (path == "/about") isMobile ? aboutAM() : aboutA();
@@ -218,7 +222,7 @@ export default function Animation() {
     },
     {
       dependencies: [path, loaded, isMobile],
-      // revertOnUpdate: true, // ensures cleanup when path changes
+      revertOnUpdate: true, // ensures cleanup when path changes
     }
   );
 

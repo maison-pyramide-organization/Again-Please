@@ -3,6 +3,9 @@ import s from "../_s.module.css";
 import iS1 from "@a/images/sector-1.png";
 import iS2 from "@a/images/sector-2.png";
 import iS3 from "@a/images/sector-3.png";
+import iS1m from "@a/images/s1-m.png";
+import iS2m from "@a/images/s2-m.png";
+import iS3m from "@a/images/s3-m.png";
 import Image from "next/image";
 import Ichev from "@a/icons/chev.svg";
 import { useRef } from "react";
@@ -49,19 +52,28 @@ export default function Sectors() {
         <ul ref={listR}>
           <li>
             <span a-t="r">01</span>
-            <Image a-i="r" src={iS1} alt="" />
+            <figure>
+              <Image a-i="r" src={iS1m} alt="" />
+              <Image a-i="r" src={iS1} alt="" />
+            </figure>
             <p a-t="r">
               Event Venues, Arenas, Entertainment Parks, Exhibition Centers
             </p>
           </li>
           <li>
             <span a-t="r">02</span>
-            <Image a-i="r" src={iS2} alt="" />
+            <figure>
+              <Image a-i="r" src={iS2m} alt="" />
+              <Image a-i="r" src={iS2} alt="" />
+            </figure>
             <p a-t="r">HoReCa Chains</p>
           </li>
           <li>
             <span a-t="r">03</span>
-            <Image a-i="r" src={iS3} alt="" />
+            <figure>
+              <Image a-i="r" src={iS3m} alt="" />
+              <Image a-i="r" src={iS3} alt="" />
+            </figure>
             <p a-t="r">
               SMEs including independent venues, smaller HoReCa spaces
             </p>
