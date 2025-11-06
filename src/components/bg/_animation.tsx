@@ -7,9 +7,8 @@ import { ScrollTrigger } from "gsap/all";
 import { usePathname } from "next/navigation";
 import { useContext } from "react";
 
-gsap.registerPlugin(ScrollTrigger);
-
 export default function Animation() {
+  gsap.registerPlugin(ScrollTrigger);
   const path = usePathname();
   const { loaded } = useContext(FontsContext);
 
@@ -93,9 +92,57 @@ export default function Animation() {
 
   const aboutA = () => {
     gsap.set("#bg", {
-      top: "-190rem",
-      left: "-680rem",
-      width: "2000rem",
+      top: "-45rem",
+      left: "285rem",
+      width: "1500rem",
+    });
+
+    gsap.from("#bg", {
+      opacity: 0,
+      duration: 1,
+      ease: "power2.inOut",
+    });
+
+    gsap.to("#bg", {
+      opacity: 0,
+      immediateRender: false,
+      scrollTrigger: {
+        trigger: "#s-w",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true,
+      },
+    });
+
+    gsap.fromTo(
+      "#bg",
+      {
+        opacity: 0,
+        width: "2000rem",
+        top: "-20rem",
+        left: "-1065rem",
+      },
+      {
+        opacity: 1,
+        top: "-20rem",
+        left: "-1065rem",
+        duration: 0.3,
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: "#s-f",
+          start: "bottom bottom",
+          toggleActions: "play none none reverse",
+          //   markers: true,
+        },
+      }
+    );
+  };
+
+  const contactA = () => {
+    gsap.set("#bg", {
+      top: "225rem",
+      left: "-430rem",
+      width: "1000rem",
     });
   };
 
@@ -105,10 +152,11 @@ export default function Animation() {
       if (!loaded) return;
       if (path == "/") homeA();
       if (path == "/about") aboutA();
+      if (path == "/contact-us") contactA();
     },
     {
       dependencies: [path, loaded],
-      revertOnUpdate: true, // ensures cleanup when path changes
+      // revertOnUpdate: true, // ensures cleanup when path changes
     }
   );
 

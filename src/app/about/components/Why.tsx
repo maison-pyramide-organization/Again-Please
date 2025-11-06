@@ -6,7 +6,7 @@ import cupsI from "@a/images/about/cups.png";
 
 export default function Why() {
   return (
-    <section className={s["s-w"]}>
+    <section id="s-w" className={s["s-w"]}>
       <h1 a-t="r">
         <span>WHY</span>
         AGAIN, PLEASE ? 

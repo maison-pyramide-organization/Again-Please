@@ -1,10 +1,16 @@
 "use client";
 
+import { FontsContext } from "@/contexts/fontsContext";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { usePathname } from "next/navigation";
+import { useContext } from "react";
 
 export default function Animation() {
+  const path = usePathname();
+  const { loaded } = useContext(FontsContext);
+
   gsap.registerPlugin(useGSAP, ScrollTrigger);
 
   const animation = () => {
@@ -13,14 +19,9 @@ export default function Animation() {
   };
 
   useGSAP(() => {
-    document.fonts.ready
-      .then(() => {
-        animation();
-      })
-      .catch((error) => {
-        console.error("Error loading fonts:", error);
-      });
-  });
+    if (!loaded) return;
+    animation();
+  },[path,loaded]);
 
-  return <></>;
+  return null;
 }

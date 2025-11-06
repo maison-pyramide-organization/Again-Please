@@ -5,7 +5,7 @@ import ceoI from "@a/images/about/ceo.png";
 
 export default function Force() {
   return (
-    <section className={s["s-f"]}>
+    <section id='s-f' className={s["s-f"]}>
       <h2 a-t="r">
         THE FORCE BEHIND
         <br />
