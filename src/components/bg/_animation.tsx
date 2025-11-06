@@ -218,7 +218,7 @@ export default function Animation() {
     },
     {
       dependencies: [path, loaded, isMobile],
-      revertOnUpdate: true, // ensures cleanup when path changes
+      // revertOnUpdate: true, // ensures cleanup when path changes
     }
   );
 

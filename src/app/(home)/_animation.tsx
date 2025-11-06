@@ -24,9 +24,6 @@ export default function Animation() {
   // Hero
   const heroA = () => {
     const $p_ = document.getElementById("p_") as HTMLElement;
-    // const $he_line = document.getElementById("he-line") as HTMLElement;
-    // const $he_path1 = $he_line?.querySelector("path") as any;
-    // const $he_path2 = $he_line?.querySelector("path:last-child") as any;
     const $he_t1 = document.querySelector("[g-s='he-t1']");
     const he_t2_split = SplitText.create("[g-s='he-t2']", { type: "lines" });
 
@@ -118,23 +115,26 @@ export default function Animation() {
     const he_t2_split = SplitText.create("[g-s='he-t2']", { type: "lines" });
 
     gsap.set($p_, { autoAlpha: 1 });
-
     $p_.classList.remove("d-s");
-    // const lo_tl = gsap.timeline();
+    const lo_tl = gsap.timeline();
 
     const he_tl = gsap.timeline({
       defaults: { duration: 1 },
       scrollTrigger: {
-        trigger: '[g-s="he-line-m"]',
-        start: "top center",
+        trigger: '[g-s="he-line-m"] path:last-child',
+        start: "top 90%",
         end: "bottom center",
         scrub: true,
-        markers: true,
+        // markers: true,
       },
     });
 
     he_tl
-      .from("[g-s='he-line-m'] path", { drawSVG: "0", duration: 4 })
+      .from("[g-s='he-line-m'] path:last-child", {
+        drawSVG: "0",
+        duration: 4,
+        ease: "sine.in",
+      })
       .from(
         $he_t1,
         {
@@ -174,12 +174,23 @@ export default function Animation() {
         3
       )
       .from("[g-s='he-ab']", {
+        y: "80%",
         opacity: 0,
       })
       .to("[g-s='he-ab']", {
-        y: "-50%",
+        y: "-80%",
         opacity: 0,
       });
+
+    lo_tl
+      .from('[g-s="he-line-m"] path', {
+        drawSVG: 0,
+        duration: 1,
+        onComplete: () => {
+          $p_.classList.remove("d-s");
+        },
+      })
+      .add(he_tl, 0);
   };
 
   // About
