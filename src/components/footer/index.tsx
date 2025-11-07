@@ -16,6 +16,7 @@ export default function Footer() {
         >
           Linkedin
         </a>
+
         <span>|</span>
         <a target="_blank" href="https://www.instagram.com/againpleaseact">
           Instagram
