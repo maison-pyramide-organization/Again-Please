@@ -10,26 +10,26 @@ export default function Footer() {
         <Image src={iLogo} alt="Again Please Logo" />
       </div>
       <div>
-        <a target="_blank" href="https://www.linkedin.com/company/again-please">
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/company/again-please/"
+        >
           Linkedin
         </a>
         <span>|</span>
-        <a target="_blank" href="https://www.instagram.com/againpleaseco">
+        <a target="_blank" href="https://www.instagram.com/againpleaseact">
           Instagram
         </a>
         <span>|</span>
-        <a target="_blank" href="https://www.tiktok.com/@againpleaseco">
+        <a target="_blank" href="https://www.tiktok.com/@againpleaseact">
           Tiktok
         </a>
         <span>|</span>
-        <a target="_blank" href="https://www.facebook.com/againpleaseco">
+        <a target="_blank" href="https://www.facebook.com/againpleaseact">
           Facebook
         </a>
         <span>|</span>
-        <a
-          target="_blank"
-          href="https://x.com/againpleaseco?s=21&t=5vfxftGUvF7w8oIiPXz7jA"
-        >
+        <a target="_blank" href="https://x.com/againpleaseact">
           X
         </a>
       </div>
