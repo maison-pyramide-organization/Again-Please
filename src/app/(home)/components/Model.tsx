@@ -3,13 +3,17 @@
 import s from "../_s.module.css";
 import model from "@/data/model";
 import Image from "next/image";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Iarr from "@a/icons/arr.svg";
 import { DimensionContext } from "@/contexts/dimensionsContext";
 
 export default function Model() {
   const [activeInd, setActiveInd] = useState(-1);
   const { isMobile } = useContext(DimensionContext);
+
+  useEffect(() => {
+    if (!isMobile) setActiveInd(0);
+  }, []);
 
   const onMouseEnter = (ind) => {
     if (isMobile) return;

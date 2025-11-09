@@ -229,11 +229,11 @@ export default function Animation() {
 
   const heroAM = () => {
     const $p_ = document.getElementById("p_") as HTMLElement;
+    $p_.classList.remove("d-s");
+
     const $he_t1 = document.querySelector("[g-s='he-t1']");
     const he_t2_split = SplitText.create("[g-s='he-t2']", { type: "lines" });
 
-    gsap.set($p_, { autoAlpha: 1 });
-    $p_.classList.remove("d-s");
     const lo_tl = gsap.timeline();
 
     const he_tl = gsap.timeline({
@@ -435,9 +435,8 @@ export default function Animation() {
       scrollTrigger: {
         trigger: "[g-s='why-line-m']",
         scrub: true,
-        start: "top center",
+        start: "top 70%",
         end: "bottom center",
-        // markers: true,
       },
     });
     why_tl
@@ -446,15 +445,17 @@ export default function Animation() {
       .add(texts_tl, 0);
   };
 
-  useGSAP(() => {
-    if (!loaded) return;
-
+  const initA = () => {
     // Page
     gsap.set("#p_", {
       autoAlpha: 1,
     });
+  };
 
-    // aboutA();
+  useGSAP(() => {
+    if (!loaded) return;
+
+    initA();
     textsA();
     headerA();
     isMobile ? bgAM() : bgA();
