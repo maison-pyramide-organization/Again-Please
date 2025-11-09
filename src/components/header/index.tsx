@@ -5,7 +5,6 @@ import Image from "next/image";
 import logoI from "@a/images/logo.png";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import Animation from "./_animation";
 import bgI from "@a/images/bg.png";
 import { useLenis } from "lenis/react";
 
@@ -73,7 +72,6 @@ export default function Header() {
           </figure>
         </div>
       )}
-      <Animation />
     </>
   );
 }

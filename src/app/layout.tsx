@@ -5,7 +5,6 @@ import Lenis from "@/components/lenis";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Bg from "@/components/bg";
-import Animation from "@/components/Animation";
 import { FontsProvider } from "@/contexts/fontsContext";
 import { DimensionProvider } from "@/contexts/dimensionsContext";
 
@@ -31,7 +30,6 @@ export default function RootLayout({
                 {children}
                 <Footer />
                 <Bg />
-                <Animation />
               </div>
             </FontsProvider>
           </DimensionProvider>

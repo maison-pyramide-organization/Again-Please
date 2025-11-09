@@ -4,30 +4,37 @@ import { FontsContext } from "@/contexts/fontsContext";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import { usePathname } from "next/navigation";
 import { useContext } from "react";
 
 export default function Animation() {
-  const path = usePathname();
   const { loaded } = useContext(FontsContext);
 
   gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-  const animation = () => {
+  const bgA = () => {
+    gsap.set("#bg", {
+      opacity: 1,
+      top: "225rem",
+      left: "-430rem",
+      width: "1000rem",
+    });
+  };
+
+  const initA = () => {
+    // Page
+    gsap.set("#p_", {
+      autoAlpha: 1,
+    });
+
     const $p_ = document.getElementById("p_") as HTMLElement;
     $p_.classList.remove("d-s");
   };
 
-  useGSAP(
-    () => {
-      if (!loaded) return;
-      animation();
-    },
-    {
-      dependencies: [path, loaded],
-      revertOnUpdate: true, // ensures cleanup when path changes
-    }
-  );
+  useGSAP(() => {
+    if (!loaded) return;
+    initA();
+    bgA();
+  });
 
   return null;
 }
