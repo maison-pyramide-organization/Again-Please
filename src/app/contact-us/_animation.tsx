@@ -34,7 +34,7 @@ export default function Animation() {
     if (!loaded) return;
     initA();
     bgA();
-  });
+  }, [loaded]);
 
   return null;
 }
