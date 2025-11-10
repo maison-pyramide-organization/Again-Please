@@ -154,7 +154,7 @@ export default function Animation() {
       scrollTrigger: {
         trigger: '[g-s="he-line-d"] path:last-child',
         start: "top 90%",
-        end: "bottom 80%",
+        end: "bottom center",
         scrub: true,
       },
     });
