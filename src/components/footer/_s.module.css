@@ -25,7 +25,7 @@
   flex-shrink: 0;
   width: 55rem;
   @media (width > 770px) {
-    width: 110rem;
+    width: 80rem;
   }
 }
 
