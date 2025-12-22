@@ -5,7 +5,7 @@ import ceoI from "@a/images/about/ceo.png";
 
 export default function Force() {
   return (
-    <section id='s-f' className={s["s-f"]}>
+    <section id="s-f" className={s["s-f"]}>
       <h2 a-t="r">
         THE FORCE BEHIND
         <br />
@@ -40,7 +40,9 @@ export default function Force() {
             private-sector innovation can successfully collaborate with local
             governance to achieve lasting environmental impact.
           </p>
-          <a href="https://www.linkedin.com/in/kyriakoskofinas/">LINKEDIN</a>
+          <a href="https://www.linkedin.com/in/athanasios-polychronopoulos-44824933/" target="_blank">
+            LINKEDIN
+          </a>
         </div>
       </div>
 
