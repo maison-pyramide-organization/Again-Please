@@ -44,7 +44,7 @@ export default function Vmv() {
           </li>
           <li a-t="r">
             <h3>Circularity as a Principle</h3>
-            <p>Nothing wasted, everything reused.</p>
+            <p>Nothing wasted, everything reused</p>
           </li>
           <li a-t="r">
             <h3>Simplicity</h3>

@@ -381,7 +381,8 @@ FORCE SECTION
   }
   @media (width > 770px) {
     display: block;
-    &:nth-child(2) p {
+    &:nth-child(2) p,
+    &:nth-child(6) p {
       margin-top: 27rem;
     }
   }

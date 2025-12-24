@@ -21,7 +21,7 @@ export default function Story() {
             management, recycling, upcycling, and education, it advances the
             circular economy and moves the world beyond the “take-make-dispose”
             model, as demonstrated through the movement of Just Go Zero Tilos,
-            the world’s first island to divert 100% of its waste from landfill
+            the world’s first island to divert 100% of its waste from landfill.
           </p>
         </li>
         <li>

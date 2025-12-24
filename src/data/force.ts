@@ -3,6 +3,7 @@ import iF3 from "@a/images/about/f3.png";
 import iF4 from "@a/images/about/f4.png";
 import iF5 from "@a/images/about/f5.png";
 import iF6 from "@a/images/about/f6.png";
+import iF7 from "@a/images/about/f7.png";
 
 const force = [
   {
@@ -28,6 +29,12 @@ const force = [
     name: "Andreas P. Vasiliadis ",
     role: "Global Director - R&D at Polygreen Group International ",
     link: "https://www.linkedin.com/in/andreas-p-vasiliadis",
+  },
+  {
+    image: iF7,
+    name: "Theodossios Kassapantoniou​",
+    role: "General Manager​",
+    link: "https://www.linkedin.com/in/theo-kass/",
   },
   {
     image: iF6,
