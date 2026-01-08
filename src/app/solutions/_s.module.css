@@ -1,0 +1,134 @@
+.p {
+  padding-top: 72rem;
+  padding-bottom: 40rem;
+  min-height: calc(100vh - var(--h-h) - var(--f-h));
+  min-height: calc(100dvh - var(--h-h) - var(--f-h));
+  @media (width > 770px) {
+    padding-top: 64rem;
+    padding-bottom: 80rem;
+  }
+}
+
+.s0 {
+  padding-inline: var(--p-i);
+}
+.s0 h1 {
+  margin-top: 100rem;
+  font-size: 60rem;
+  line-height: 65rem;
+  & span {
+    margin-left: 70rem;
+    display: block;
+    color: var(--c-green);
+  }
+}
+.s0 div {
+  margin-top: 50rem;
+  display: flex;
+  padding-left: 70rem;
+  justify-content: space-between;
+}
+.s0 p {
+  width: 610rem;
+  font-size: 20rem;
+  line-height: 120%;
+  letter-spacing: -0.02rem;
+  &:first-child {
+    width: 510rem;
+    font-weight: 600;
+  }
+}
+.s1 {
+  margin-top: 90rem;
+  padding-inline: var(--p-i);
+}
+.s1 > h2 {
+  position: relative;
+  font-size: 50rem;
+  line-height: 40rem;
+  & span:first-child {
+    margin-left: 140rem;
+    display: block;
+  }
+}
+.s1 .l {
+  display: block;
+  position: absolute;
+  top: 15rem;
+  left: 72rem;
+  height: 4rem;
+  background-color: black;
+  width: 60rem;
+  @media (width > 770px) {
+    width: 185rem;
+    top: 20rem;
+    left: 145rem;
+  }
+}
+.s1 .i {
+  position: relative;
+  margin-left: 70rem;
+  &:nth-of-type(1) {
+    margin-top: 80rem;
+  }
+}
+.s1 .i > span {
+  position: absolute;
+  font-size: 20rem;
+  left: 0;
+}
+.s1 .i h2 {
+  margin-left: 30rem;
+  font-size: 30rem;
+  line-height: 40rem;
+  & span {
+    display: block;
+    color: var(--c-green);
+  }
+}
+.s1 .i div {
+  margin-top: 64rem;
+  width: 620rem;
+  margin-left: auto;
+  font-size: 20rem;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+}
+.s1 ul {
+  margin-block: 24rem;
+  margin-left: 60rem;
+}
+.s1 li {
+  list-style: disc;
+}
+.s1 .i p:last-child {
+  font-weight: bold;
+}
+
+.s2 {
+  margin-top: 100rem;
+  padding-inline: var(--p-i);
+}
+.s2 h2 {
+  font-size: 60rem;
+  line-height: 65rem;
+}
+
+.s3 {
+  margin-top: 100rem;
+  text-align: center;
+}
+.s3 h2 {
+  font-size: 40rem;
+  line-height: 45rem;
+}
+.s3 a {
+  margin-top: 24rem;
+  border: 2px solid black;
+  color: black;
+  padding: 16rem 18rem;
+  border-radius: 100rem;
+  font-size: 15rem;
+  font-family: "sg";
+  display: inline-block;
+}

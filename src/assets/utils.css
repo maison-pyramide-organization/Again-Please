@@ -17,7 +17,6 @@
   visibility: hidden;
 }
 
-
 /*******************
 *  UTILS  */
 /******************/
@@ -33,5 +32,19 @@
   -ms-overflow-style: none;
   &::-webkit-scrollbar {
     display: none;
+  }
+}
+.v-h {
+  opacity: 0;
+  visibility: hidden;
+}
+.m-o {
+  @media (width > 770px) {
+    display: none !important;
+  }
+}
+.d-o {
+  @media (width <= 770px) {
+    display: none !important;
   }
 }
