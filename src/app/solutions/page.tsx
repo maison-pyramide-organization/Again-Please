@@ -1,8 +1,11 @@
 import s from "./_s.module.css";
 import Animation from "./_animation";
 import Image from "next/image";
-import bannI from "@im/solutions/banner.png";
 import Link from "next/link";
+import s11I from "@im/solutions/s1-1.png";
+import s12I from "@im/solutions/s1-2.png";
+import s13I from "@im/solutions/s1-3.png";
+import s2I from "@im/solutions/s2.png";
 
 export default function () {
   return (
@@ -10,7 +13,16 @@ export default function () {
       <div className={s.p}>
         <section className={s.s0}>
           <figure>
-            <Image src={bannI} alt="Again Please" />
+            <video
+              className={s.v}
+              autoPlay
+              loop
+              muted
+              playsInline
+              //   poster={`/vph.png`}
+            >
+              <source src="/videos/ap-animation.mp4" type="video/mp4" />
+            </video>
           </figure>
           <h1>
             AN END-TO-END REUSE SYSTEM
@@ -48,6 +60,7 @@ export default function () {
               Consumer Engagement
               <span>Simple to use. Easy to return. Designed to engage.</span>
             </h2>
+            <Image src={s11I} alt="Consumer Engagement" />
             <div>
               <p>
                 We design consumer journeys that make reuse intuitive and
@@ -84,6 +97,8 @@ export default function () {
               B2B Platform & Reporting
               <span>Operational control with measurable ESG impact</span>
             </h2>
+
+            <Image src={s12I} alt="B2B Platform & Reporting" />
             <div>
               <p>
                 Our dedicated B2B platform gives you full visibility and control
@@ -132,6 +147,7 @@ export default function () {
               Logistics, Washing & Circular Operations
               <span>Reliability and hygiene, managed end to end</span>
             </h2>
+            <Image src={s13I} alt="Logistics, Washing & Circular Operations" />
             <div>
               <p>
                 We handle the full operational backbone of reuse so you don’t
@@ -161,6 +177,9 @@ export default function () {
 
         <section className={s.s2}>
           <h2>THE CIRCULAR JOURNEY</h2>
+          <figure>
+            <Image src={s2I} alt="The Circular Journey" />
+          </figure>
         </section>
         <section className={s.s3}>
           <h2>

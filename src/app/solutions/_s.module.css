@@ -72,6 +72,38 @@
     margin-top: 80rem;
   }
 }
+.s1 .i > img {
+  position: absolute;
+  height: auto;
+}
+.s1 .i:nth-of-type(1) {
+  & img {
+    width: 450rem;
+    top: 120rem;
+    left: calc(-70rem - 75rem);
+  }
+}
+.s1 .i:nth-of-type(2) {
+  margin-top: 130rem;
+  & img {
+    width: 470rem;
+    top: 150rem;
+  }
+}
+.s1 .i:nth-of-type(3) {
+  margin-top: 115rem;
+  & img {
+    width: 470rem;
+    top: 125rem;
+  }
+}
+.s1 .i:nth-of-type(4) {
+  margin-top: 115rem;
+  & img {
+    width: 470rem;
+    top: 148rem;
+  }
+}
 .s1 .i > span {
   position: absolute;
   font-size: 20rem;
@@ -112,6 +144,11 @@
 .s2 h2 {
   font-size: 60rem;
   line-height: 65rem;
+}
+.s2 figure {
+  margin-top: 90rem;
+  margin-inline: auto;
+  width: 1110rem;
 }
 
 .s3 {
