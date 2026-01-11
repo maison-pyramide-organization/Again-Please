@@ -32,6 +32,11 @@ const textsA = () => {
         trigger: el, // 👈 each element triggers its own animation
         start: "top 90%",
       },
+      onComplete: () => {
+        t_split.masks.forEach((mask: any) => {
+          mask.style.overflow = "";
+        });
+      },
     });
   });
 };

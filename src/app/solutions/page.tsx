@@ -3,9 +3,11 @@ import Animation from "./_animation";
 import Image from "next/image";
 import Link from "next/link";
 import s11I from "@im/solutions/s1-1.png";
+import s11mI from "@im/solutions/s1-1m.png";
 import s12I from "@im/solutions/s1-2.png";
 import s13I from "@im/solutions/s1-3.png";
 import s2I from "@im/solutions/s2.png";
+import s2mI from "@im/solutions/s2m.png";
 
 export default function () {
   return (
@@ -49,9 +51,15 @@ export default function () {
         </section>
 
         <section className={s.s1}>
-          <h2>
+          <h2 className="d-o">
             OUR
             <span>COMPLETE SOLUTIONS</span>
+            <span className={s.l} />
+          </h2>
+          <h2 className="m-o">
+            OUR
+            <span>COMPLETE</span>
+            <span>SOLUTIONS</span>
             <span className={s.l} />
           </h2>
           <div className={s.i}>
@@ -60,7 +68,8 @@ export default function () {
               Consumer Engagement
               <span>Simple to use. Easy to return. Designed to engage.</span>
             </h2>
-            <Image src={s11I} alt="Consumer Engagement" />
+            <Image className="m-o" src={s11mI} alt="Consumer Engagement" />
+            <Image className="d-o" src={s11I} alt="Consumer Engagement" />
             <div>
               <p>
                 We design consumer journeys that make reuse intuitive and
@@ -94,10 +103,10 @@ export default function () {
           <div className={s.i}>
             <span>02</span>
             <h2>
-              B2B Platform & Reporting
+              B2B Platform &<br />
+              Reporting
               <span>Operational control with measurable ESG impact</span>
             </h2>
-
             <Image src={s12I} alt="B2B Platform & Reporting" />
             <div>
               <p>
@@ -178,7 +187,8 @@ export default function () {
         <section className={s.s2}>
           <h2>THE CIRCULAR JOURNEY</h2>
           <figure>
-            <Image src={s2I} alt="The Circular Journey" />
+            <Image className="m-o" src={s2mI} alt="The Circular Journey" />
+            <Image className="d-o" src={s2I} alt="The Circular Journey" />
           </figure>
         </section>
         <section className={s.s3}>

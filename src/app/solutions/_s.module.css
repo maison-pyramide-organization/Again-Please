@@ -10,52 +10,86 @@
 }
 
 .s0 {
-  padding-inline: var(--p-i);
+  padding-inline: 40;
+  @media (width > 770px) {
+    padding-inline: var(--p-i);
+  }
 }
+
 .s0 h1 {
-  margin-top: 100rem;
-  font-size: 60rem;
-  line-height: 65rem;
+  margin-top: 40rem;
+  font-size: 28rem;
+  line-height: 1;
   & span {
-    margin-left: 70rem;
+    margin-top: 8rem;
     display: block;
-    color: var(--c-green);
+    color: white;
+  }
+  @media (width > 770px) {
+    margin-top: 100rem;
+    font-size: 60rem;
+    line-height: 65rem;
+    & span {
+      margin-left: 70rem;
+      color: var(--c-green);
+    }
   }
 }
 .s0 div {
-  margin-top: 50rem;
-  display: flex;
-  padding-left: 70rem;
-  justify-content: space-between;
+  margin-top: 24rem;
+  @media (width > 770px) {
+    margin-top: 50rem;
+    display: flex;
+    padding-left: 70rem;
+    justify-content: space-between;
+  }
 }
 .s0 p {
-  width: 610rem;
-  font-size: 20rem;
+  font-size: 15rem;
   line-height: 120%;
   letter-spacing: -0.02rem;
   &:first-child {
-    width: 510rem;
+    margin-bottom: 16rem;
     font-weight: 600;
+  }
+  @media (width > 770px) {
+    width: 610rem;
+    font-size: 20rem;
+    &:first-child {
+      width: 510rem;
+    }
   }
 }
 .s1 {
-  margin-top: 90rem;
-  padding-inline: var(--p-i);
+  margin-top: 40rem;
+  @media (width > 770px) {
+    margin-top: 90rem;
+    padding-inline: var(--p-i);
+  }
 }
 .s1 > h2 {
+  margin-inline: 40rem;
   position: relative;
-  font-size: 50rem;
-  line-height: 40rem;
+  font-size: 30rem;
+  line-height: 28rem;
   & span:first-child {
-    margin-left: 140rem;
+    margin-left: 85rem;
     display: block;
+  }
+  @media (width > 770px) {
+    margin-inline: unset;
+    font-size: 50rem;
+    line-height: 40rem;
+    & span:first-child {
+      margin-left: 140rem;
+    }
   }
 }
 .s1 .l {
   display: block;
   position: absolute;
-  top: 15rem;
-  left: 72rem;
+  top: 12rem;
+  left: 85rem;
   height: 4rem;
   background-color: black;
   width: 60rem;
@@ -67,68 +101,125 @@
 }
 .s1 .i {
   position: relative;
-  margin-left: 70rem;
-  &:nth-of-type(1) {
-    margin-top: 80rem;
+  padding-inline: 40rem;
+  @media (width > 770px) {
+    margin-left: 70rem;
+    padding-inline: 0;
   }
 }
 .s1 .i > img {
-  position: absolute;
   height: auto;
+  /* display: none; */
+  @media (width > 770px) {
+    position: absolute;
+  }
 }
 .s1 .i:nth-of-type(1) {
+  margin-top: 40rem;
   & img {
-    width: 450rem;
-    top: 120rem;
-    left: calc(-70rem - 75rem);
+    width: 165rem;
+    position: absolute;
+    right: 0;
+    top: calc(100% - 50rem);
+  }
+  & p:last-child {
+    width: 170rem;
+  }
+  @media (width > 770px) {
+    margin-top: 80rem;
+    & img {
+      width: 450rem;
+      top: 120rem;
+      left: calc(-70rem - 75rem);
+    }
+    & p {
+      width: unset;
+    }
   }
 }
 .s1 .i:nth-of-type(2) {
-  margin-top: 130rem;
+  margin-top: 60rem;
   & img {
-    width: 470rem;
-    top: 150rem;
+    margin-top: 24rem;
+  }
+  @media (width > 770px) {
+    margin-top: 130rem;
+    & img {
+      margin-top: 0;
+      width: 470rem;
+      top: 150rem;
+    }
   }
 }
 .s1 .i:nth-of-type(3) {
-  margin-top: 115rem;
+  margin-top: 50rem;
   & img {
     width: 470rem;
     top: 125rem;
   }
+  @media (width > 770px) {
+    margin-top: 115rem;
+  }
 }
 .s1 .i:nth-of-type(4) {
-  margin-top: 115rem;
+  margin-top: 50rem;
   & img {
-    width: 470rem;
-    top: 148rem;
+    margin-top: 24rem;
+  }
+  @media (width > 770px) {
+    margin-top: 115rem;
+    & img {
+      margin-top: 0;
+      width: 470rem;
+      top: 148rem;
+    }
   }
 }
 .s1 .i > span {
   position: absolute;
-  font-size: 20rem;
+  font-size: 12rem;
   left: 0;
+  transform: translate(-100%, -100%);
+  @media (width > 770px) {
+    font-size: 20rem;
+    transform: unset;
+  }
 }
 .s1 .i h2 {
-  margin-left: 30rem;
-  font-size: 30rem;
-  line-height: 40rem;
+  font-size: 20rem;
+  line-height: 1;
   & span {
     display: block;
     color: var(--c-green);
   }
+  @media (width > 770px) {
+    margin-left: 30rem;
+    font-size: 30rem;
+    line-height: 40rem;
+    & br {
+      display: none;
+    }
+  }
 }
 .s1 .i div {
-  margin-top: 64rem;
-  width: 620rem;
+  margin-top: 24rem;
   margin-left: auto;
-  font-size: 20rem;
+  font-size: 15rem;
   line-height: 120%;
   letter-spacing: -0.02em;
+  @media (width > 770px) {
+    margin-top: 64rem;
+    width: 620rem;
+    font-size: 20rem;
+  }
 }
 .s1 ul {
-  margin-block: 24rem;
-  margin-left: 60rem;
+  margin-block: 20rem;
+  margin-left: 24rem;
+  @media (width > 770px) {
+    margin-block: 24rem;
+    margin-left: 60rem;
+  }
 }
 .s1 li {
   list-style: disc;
@@ -138,34 +229,60 @@
 }
 
 .s2 {
-  margin-top: 100rem;
+  margin-top: 50rem;
   padding-inline: var(--p-i);
+  @media (width > 770px) {
+    margin-top: 100rem;
+  }
 }
 .s2 h2 {
-  font-size: 60rem;
-  line-height: 65rem;
+  font-size: 30;
+  line-height: 1;
+  text-align: center;
+  @media (width > 770px) {
+    font-size: 60rem;
+    line-height: 65rem;
+    text-align: left;
+  }
 }
 .s2 figure {
-  margin-top: 90rem;
+  margin-top: 32rem;
   margin-inline: auto;
-  width: 1110rem;
+  /* width: 1110rem; */
+  @media (width > 770px) {
+    margin-top: 90rem;
+    width: 1110rem;
+  }
 }
 
 .s3 {
-  margin-top: 100rem;
+  margin-top: 50rem;
   text-align: center;
+  padding-inline: 40rem;
+  @media (width > 770px) {
+    margin-top: 100rem;
+    padding-inline: unset;
+  }
 }
 .s3 h2 {
-  font-size: 40rem;
-  line-height: 45rem;
+  font-size: 30rem;
+  line-height: 1;
+  @media (width > 770px) {
+    font-size: 40rem;
+    line-height: 45rem;
+  }
 }
 .s3 a {
   margin-top: 24rem;
   border: 2px solid black;
   color: black;
-  padding: 16rem 18rem;
+  padding: 8rem 12rem;
   border-radius: 100rem;
-  font-size: 15rem;
+  font-size: 10rem;
   font-family: "sg";
   display: inline-block;
+  @media (width > 770px) {
+    padding: 16rem 18rem;
+    font-size: 15rem;
+  }
 }

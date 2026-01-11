@@ -14,11 +14,13 @@ import s63I from "@im/insights/s63.png";
 import s64I from "@im/insights/s64.png";
 import IcArr from "@a/icons/c-arr.svg";
 import Link from "next/link";
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import Ipat from "@a/icons/ins-t-path.svg";
 
 export default function () {
   const listR = useRef(null) as any;
   const scrollVR = useRef(0);
+  const [vis, setVis] = useState(false);
 
   const onBtnClick = (d) => {
     const list = listR.current;
@@ -40,36 +42,37 @@ export default function () {
     <>
       <div className={s.p}>
         <section className={s.s0}>
-          <h1>INSPIRING THE SHIFT TO CIRCULAR SYSTEMS</h1>
+          <h1 a-t="r">INSPIRING THE SHIFT TO CIRCULAR SYSTEMS</h1>
           <div>
-            <figure>
+            <figure a-i="r">
               <Image src={s0I} alt="Insights and Impact" />
             </figure>
             <div className={s.r}>
-              <h3>We believe knowledge drives change.</h3>
+              <h3 a-t="r">We believe knowledge drives change.</h3>
               <p>Explore insights, success stories, and practical resources.</p>
             </div>
           </div>
-          <p>
+          <p a-t="r">
             From new sustainability regulations to major event partnerships, we
             share the latest updates shaping the future of reusable packaging
             and waste reduction.
           </p>
+          <Ipat g-s='tpath' />
         </section>
 
         <section className={s.s1}>
-          <span>UPCOMING EVENTS</span>
-          <h2>WORLD FUTURE ENERGY SUMMIT</h2>
+          <span a-t="r">UPCOMING EVENTS</span>
+          <h2 a-t="r">WORLD FUTURE ENERGY SUMMIT</h2>
           <div>
-            <figure className="d-o">
+            <figure className="d-o" a-i="r">
               <Image src={s1I} alt="Insights and Impact" />
             </figure>
             <div className={s.r}>
-              <h3>
+              <h3 a-t="r">
                 Again, Please will be exhibiting at the World Future Energy
                 Summit (WFES) at ADNEC Abu Dhabi from 13–15 January 2025.
               </h3>
-              <p>
+              <p a-t="r">
                 At the Polygreen stand, we will showcase how our reusable
                 packaging system helps events and F&B partners cut single-use
                 waste and move toward a circular, scalable solutions.
@@ -89,18 +92,18 @@ export default function () {
             </div>
           </div>
         </section>
-        <section className={s.s2}>
-          <h2>UNDERSTANDING REUSE & THE CIRCULAR ECONOMY</h2>
+        <section g-s="s2" className={s.s2}>
+          <h2 a-t="r">UNDERSTANDING REUSE & THE CIRCULAR ECONOMY</h2>
 
           <div className={s.i}>
-            <span>01.</span>
+            <span a-t="r">01.</span>
             <div>
-              <h3>What is a Circular Economy?</h3>
-              <figure>
+              <h3 a-t="r">What is a Circular Economy?</h3>
+              <figure a-i="r">
                 <Image src={s21I} alt="Circlar Economy" />
               </figure>
             </div>
-            <p>
+            <p a-t="r">
               A circular economy keeps materials in use for as long as possible,
               reducing waste at the source. Instead of throwing away packaging
               after one use, products circulate continuously through washing,
@@ -114,14 +117,14 @@ export default function () {
             </p>
           </div>
           <div className={s.i}>
-            <span>02.</span>
+            <span a-t="r">02.</span>
             <div>
-              <h3>Why Reuse Is Better for the Environment</h3>
-              <figure>
+              <h3 a-t="r">Why Reuse Is Better for the Environment</h3>
+              <figure a-i="r">
                 <Image src={s22I} alt="Circlar Economy" />
               </figure>
             </div>
-            <p>
+            <p a-t="r">
               Single-use packaging requires non-stop production, distribution
               and disposal — all of which carry a heavy environmental cost.
               Reusable systems break this cycle entirely.
@@ -137,13 +140,13 @@ export default function () {
           <div className={`${s.b} d-o`}>
             <h3>ENVIRONMENTAL IMPACT</h3>
             <div>
-              <span>75</span>
+              <span a-n="up">75</span>
               <br />
               <span>uses</span>
             </div>
             <h3>OF ONE REUSABLE CUP</h3>
           </div>
-          <p className="d-o">
+          <p className="d-o" a-t="r">
             Estimates based on average life-cycle assessment data for
             polypropylene reusable cups and single-use plastic cups, assuming 75
             reuse cycles and industrial washing. Actual impacts may vary by
@@ -154,9 +157,9 @@ export default function () {
         <section className={`${s.s3} d-o`}>
           <div className={s.i}>
             <div className={s.t}>
-              <span />
-              <h2>CO₂ EMISSIONS REDUCED</h2>
-              <span />
+              <span g-s="line" />
+              <h2 a-t="r">CO₂ EMISSIONS REDUCED</h2>
+              <span g-s="line" />
             </div>
             <div className={s.m}>
               <div>
@@ -219,9 +222,9 @@ export default function () {
           </div>
           <div className={s.i}>
             <div className={s.t}>
-              <span />
-              <h2>WATER SAVED</h2>
-              <span />
+              <span g-s="line" />
+              <h2 a-t="r">WATER SAVED</h2>
+              <span g-s="line" />
             </div>
             <div className={s.m}>
               <div>
@@ -251,9 +254,9 @@ export default function () {
           </div>
           <div className={s.i}>
             <div className={s.t}>
-              <span />
-              <h2>PLASTIC WASTE PREVENTED</h2>
-              <span />
+              <span g-s="line" />
+              <h2 a-t="r">PLASTIC WASTE PREVENTED</h2>
+              <span g-s="line" />
             </div>
             <div className={s.m}>
               <div>
@@ -310,9 +313,9 @@ export default function () {
           </div>
           <div className={s.i}>
             <div className={s.t}>
-              <span />
-              <h2>ENERGY SAVED</h2>
-              <span />
+              <span g-s="l" />
+              <h2 a-t="r">ENERGY SAVED</h2>
+              <span g-s="l" />
             </div>
             <div className={s.m}>
               <div>
@@ -338,7 +341,7 @@ export default function () {
           </div>
         </section>
 
-        <section className={s.s4}>
+        <section g-s="s4" className={s.s4}>
           <h2>POLICIES CHANGES AND UPDATES</h2>
           <p>
             The UAE is rapidly transitioning to a circular, low-waste future by
@@ -351,8 +354,32 @@ export default function () {
             implement a nationwide ban on the import, production and trade of
             most single-use plastic items - including cups, lids, cutlery,
             plates and food containers - starting 1 January 2026.
+            {vis && (
+              <span>
+                Dubai is also advancing circularity through the Circle Dubai
+                Initiative, which aligns with the Dubai Integrated Waste
+                Management Strategy 2041 and targets 100% landfill diversion and
+                56% recycling across the emirate. These policies collectively
+                signal one direction: single-use is being phased out, and reuse
+                systems will become the standard for events, venues, hospitality
+                and businesses across the UAE.
+                <br />
+                <br />
+                <b>Legal Disclaimer</b> :This section provides a high-level
+                summary of current UAE policies on single-use plastics. It is
+                not legal advice. For full regulatory requirements, businesses
+                should review official government publications or consult
+                qualified legal counsel.
+              </span>
+            )}
           </p>
-          <button>READ MORE</button>
+          <button
+            onClick={() => {
+              setVis(!vis);
+            }}
+          >
+            {vis ? "SHOW LESS" : "READ MORE"}
+          </button>
         </section>
 
         <section className={s.s5}>
@@ -369,28 +396,28 @@ export default function () {
           <span>Athanasios Polychronopoulos</span>
         </section>
 
-        <section className={s.s6}>
-          <figure>
+        <section g-s="s6" className={s.s6}>
+          <figure a-i="r">
             <Image src={s6I} alt="" />
           </figure>
-          <h3>
+          <h3 a-t="r">
             USE CASES & SUCCESS STORIES
             <span>CIRCULAR SYSTEMS IN ACTION</span>
           </h3>
-          <p>
+          <p a-t="r">
             See how venues, events, and hospitality brands are implementing
             circular systems that reduce waste and enhance operational
             performance. Our use cases highlight real results achieved through
             partnership, innovation, and sustainable design.
           </p>
           <div className={s.b}>
-            <h2>Imagine the Impact</h2>
-            <p>
+            <h2 a-t="r">Imagine the Impact</h2>
+            <p a-t="r">
               A concert where 40,000 people use Again, Please reusable cups
               instead of single-use cups. Using the verified 75 uses cycle
               metrics, we can expect the following results:
             </p>
-            <p className="m-o">
+            <p className="m-o" a-t="r">
               Estimates based on average life-cycle assessment data for
               polypropylene reusable cups and single-use plastic cups, assuming
               75 reuse cycles and industrial washing. Actual impacts may vary by
@@ -399,22 +426,22 @@ export default function () {
             <div>
               <ul ref={listR}>
                 <li>
-                  <figure>
+                  <figure a-i="r">
                     <Image src={s61I} alt="" />
                   </figure>
                 </li>
                 <li>
-                  <figure>
+                  <figure a-i="r">
                     <Image src={s62I} alt="" />
                   </figure>
                 </li>
                 <li>
-                  <figure>
+                  <figure a-i="r">
                     <Image src={s63I} alt="" />
                   </figure>
                 </li>
                 <li>
-                  <figure>
+                  <figure a-i="r">
                     <Image src={s64I} alt="" />
                   </figure>
                 </li>
@@ -427,7 +454,7 @@ export default function () {
           </div>
         </section>
         <section className={s.s7}>
-          <h2 className="d-o">
+          <h2 a-t="r" className="d-o">
             READY TO WRITE
             <br />
             YOUR OWN CIRCULAR SUCCESS STORY?
@@ -435,7 +462,7 @@ export default function () {
           <h2 className="m-o">
             READY TO <br /> GO CIRCULAR?
           </h2>
-          <p>
+          <p a-t="r">
             Let’s collaborate and design a reuse program that fits your venue,
             brand, and sustainability goals.
           </p>

@@ -10,6 +10,7 @@
 }
 
 .s0 {
+  position: relative;
   @media (width > 770px) {
     padding-inline: 180rem;
   }
@@ -20,6 +21,8 @@
   font-size: 28rem;
   line-height: 32rem;
   @media (width > 770px) {
+    padding-inline: unset;
+    font-size: 28rem;
     font-size: 60rem;
     line-height: 65rem;
   }
@@ -84,6 +87,16 @@
     width: 395rem;
     font-size: 20rem;
     line-height: 22rem;
+  }
+}
+.s0 svg {
+  position: absolute;
+  top: 420rem;
+  left: 50%;
+  transform: translateX(-50%);
+  @media (width > 770px) {
+    top: 400rem;
+    width: 90%;
   }
 }
 .s1 {
@@ -246,7 +259,7 @@
   margin-top: 64rem;
   margin-inline: auto;
   width: 1135rem;
-  font-size: 15rem;
+  font-size: 18rem;
   line-height: 22rem;
   text-align: center;
 }
@@ -334,6 +347,9 @@
     margin-top: 24rem;
     font-size: 20rem;
   }
+}
+.s4 span {
+  display: block;
 }
 .s4 button {
   margin-top: 20rem;
@@ -456,7 +472,7 @@
   line-height: 1;
 }
 
-.s6 .b div {
+.s6 .b > div {
   margin-top: 50rem;
   margin-inline: -40rem;
   overflow: hidden;
@@ -533,10 +549,14 @@
   margin-top: 20rem;
   border-radius: 100rem;
   padding: 8rem 12rem;
+  font-size: 10rem;
   display: inline-block;
   border: 2px solid var(--c-green);
+  font-family: "sg";
+  color: var(--c-green);
   @media (width > 770px) {
     margin-top: 32rem;
     padding: 16rem 20rem;
+    font-size: 15rem;
   }
 }
