@@ -226,7 +226,7 @@ export default function () {
             <br />
             YOUR CUSTOM CIRCULAR SOLUTION
           </h2>
-          <Link href="/contact">TALK TO OUR TEAM</Link>
+          <Link href="/contact-us">TALK TO OUR TEAM</Link>
         </section>
       </div>
       <Animation />

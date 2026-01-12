@@ -21,12 +21,12 @@
 
 .s0 h1 {
   margin-top: 40rem;
-  font-size: 28rem;
+  font-size: 26rem;
   line-height: 1;
   & span {
     margin-top: 8rem;
     display: block;
-    color: white;
+    color: var(--c-green);
   }
   @media (width > 770px) {
     margin-top: 100rem;
@@ -34,7 +34,6 @@
     line-height: 65rem;
     & span {
       margin-left: 70rem;
-      color: var(--c-green);
     }
   }
 }
@@ -133,7 +132,7 @@
     right: 0;
     top: calc(100% - 50rem);
   }
-  & > p:last-child {
+  & p:last-child {
     width: 170rem;
   }
   @media (width > 770px) {
