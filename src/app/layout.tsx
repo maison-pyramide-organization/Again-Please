@@ -9,9 +9,16 @@ import { FontsProvider } from "@/contexts/fontsContext";
 import { DimensionProvider } from "@/contexts/dimensionsContext";
 
 export const metadata: Metadata = {
-  title: "Again Please",
-  description:
-    "End-to-End Reusable Packaging Solutions for Events, Venues & HoReCa Spaces ",
+  title: "Again, Please by Polygreen | Circular Reuse Solutions",
+  description: `Practical circular economy solutions that replace single-use and disposables with reusable goods, streamlined operations, and proven impact through tracking and insights.`,
+  icons: {
+    icon: "/favicon.ico",
+  },
+  openGraph: {
+    title: "Again, Please by Polygreen | Circular Reuse Solutions",
+    description: `Practical circular economy solutions that replace single-use and disposables with reusable goods, streamlined operations, and proven impact through tracking and insights.`,
+    type: "website",
+  },
 };
 
 export default function RootLayout({

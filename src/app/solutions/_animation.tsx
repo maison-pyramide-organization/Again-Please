@@ -1,6 +1,7 @@
 "use client";
 
 import { FontsContext } from "@/contexts/fontsContext";
+import { imagesA, textsA } from "@/utils/animations";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
@@ -34,7 +35,8 @@ export default function Animation() {
     if (!loaded) return;
     initA();
     bgA();
+    imagesA();
+    textsA();
   }, [loaded]);
-
   return null;
 }
