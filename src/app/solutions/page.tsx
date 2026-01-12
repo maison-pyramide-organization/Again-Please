@@ -1,3 +1,4 @@
+"use client";
 import s from "./_s.module.css";
 import Animation from "./_animation";
 import Image from "next/image";
@@ -9,23 +10,34 @@ import s13I from "@im/solutions/s1-3.png";
 import s2I from "@im/solutions/s2.png";
 import s2mI from "@im/solutions/s2m.png";
 import ProductsMarquee from "@/components/products-marq";
+import { useEffect, useRef } from "react";
 
 export default function () {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
+  useEffect(() => {
+    const isMobile = window.innerWidth < 770;
+
+    const src = isMobile ? "/videos/ap-m.mp4" : "/videos/ap-animation.mp4";
+
+    if (!videoRef.current) return;
+
+    videoRef.current.src = src;
+    videoRef.current.load();
+  }, []);
   return (
     <>
       <div className={s.p}>
         <section className={s.s0}>
           <figure>
             <video
+              ref={videoRef}
               className={s.v}
               autoPlay
               loop
               muted
               playsInline
-              //   poster={`/vph.png`}
-            >
-              <source src="/videos/ap-animation.mp4" type="video/mp4" />
-            </video>
+            />
           </figure>
           <h1>
             AN END-TO-END REUSE SYSTEM
