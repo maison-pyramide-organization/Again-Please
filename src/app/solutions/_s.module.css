@@ -127,7 +127,7 @@
 }
 .s1 .i:nth-of-type(1) {
   margin-top: 40rem;
-  & img {
+  & > img {
     width: 165rem;
     position: absolute;
     right: 0;
@@ -138,7 +138,7 @@
   }
   @media (width > 770px) {
     margin-top: 80rem;
-    & img {
+    & > img {
       width: 450rem;
       top: 120rem;
       left: calc(-70rem - 75rem);
@@ -150,13 +150,14 @@
 }
 .s1 .i:nth-of-type(2) {
   margin-top: 60rem;
-  & img {
+  & > img {
     margin-top: 24rem;
   }
   @media (width > 770px) {
     margin-top: 130rem;
     & img {
       margin-top: 0;
+      margin-left: 30rem;
       width: 470rem;
       top: 150rem;
     }
@@ -164,7 +165,7 @@
 }
 .s1 .i:nth-of-type(3) {
   margin-top: 50rem;
-  & img {
+  & > img {
     width: 470rem;
     top: 125rem;
   }
@@ -172,15 +173,16 @@
     margin-top: 115rem;
   }
 }
-.s1 .i:nth-of-type(4) {
+.s1 .i:nth-of-type(5) {
   margin-top: 50rem;
-  & img {
+  & > img {
     margin-top: 24rem;
   }
   @media (width > 770px) {
     margin-top: 115rem;
-    & img {
+    & > img {
       margin-top: 0;
+      margin-left: 30rem;
       width: 470rem;
       top: 148rem;
     }
@@ -212,7 +214,7 @@
     }
   }
 }
-.s1 .i > div {
+.s1 .i .co {
   margin-top: 24rem;
   margin-left: auto;
   font-size: 15rem;
@@ -224,7 +226,7 @@
     font-size: 20rem;
   }
 }
-.s1 ul {
+.s1 .i .co ul {
   margin-block: 20rem;
   margin-left: 24rem;
   @media (width > 770px) {
@@ -232,7 +234,7 @@
     margin-left: 60rem;
   }
 }
-.s1 li {
+.s1 .i .co li {
   list-style: disc;
 }
 .s1 .i p:last-child {

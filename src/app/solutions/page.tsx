@@ -8,6 +8,7 @@ import s12I from "@im/solutions/s1-2.png";
 import s13I from "@im/solutions/s1-3.png";
 import s2I from "@im/solutions/s2.png";
 import s2mI from "@im/solutions/s2m.png";
+import ProductsMarquee from "@/components/products-marq";
 
 export default function () {
   return (
@@ -82,7 +83,7 @@ export default function () {
               src={s11I}
               alt="Consumer Engagement"
             />
-            <div>
+            <div className={s.co}>
               <p a-t="r">
                 We design consumer journeys that make reuse intuitive and
                 frictionless, even in fast-paced, high-volume settings.
@@ -124,7 +125,7 @@ export default function () {
               <span>Operational control with measurable ESG impact</span>
             </h2>
             <Image a-i="r" src={s12I} alt="B2B Platform & Reporting" />
-            <div>
+            <div className={s.co}>
               <p a-t="r">
                 Our dedicated B2B platform gives you full visibility and control
                 over your reuse system.
@@ -154,7 +155,7 @@ export default function () {
               Tailored Reusable Packaging
               <span>Built around your service, not the other way around</span>
             </h2>
-            <div>
+            <div className={s.co}>
               <p a-t="r">
                 We provide and we co-develop durable, high-performance reusable
                 packaging designed for repeated use in demanding environments.
@@ -172,6 +173,7 @@ export default function () {
               </p>
             </div>
           </div>
+          <ProductsMarquee />
           <div className={s.i}>
             <span a-t="r">04</span>
             <h2 a-t="r">
@@ -183,7 +185,7 @@ export default function () {
               src={s13I}
               alt="Logistics, Washing & Circular Operations"
             />
-            <div>
+            <div className={s.co}>
               <p a-t="r">
                 We handle the full operational backbone of reuse so you don’t
                 have to.
@@ -217,6 +219,7 @@ export default function () {
             <Image className="d-o" src={s2I} alt="The Circular Journey" />
           </figure>
         </section>
+
         <section className={s.s3}>
           <h2 a-t="r">
             LET’S BUILD
