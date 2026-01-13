@@ -78,7 +78,7 @@ export default function Animation() {
     gsap.from('[g-s="path"] #text', {
       attr: { startOffset: "-100%" },
       ease: "power1.inOut",
-      duration: 2,
+      duration: 3,
       scrollTrigger: {
         trigger: "[g-s='path']",
         start: "top 90%",
