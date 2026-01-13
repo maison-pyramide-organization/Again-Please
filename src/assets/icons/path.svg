@@ -1,0 +1,17 @@
+<svg width="1283" height="308" viewBox="0 0 1283 308" fill="none" xmlns="http://www.w3.org/2000/svg" overflow="visible">
+    <defs>
+        <path id="path" d="
+    M0.34375 139.513
+    C58.7519 84.5012 139.334 27.8459 229.844 6.70695
+    C415.844 -36.7341 593.844 161.207 618.344 186.207
+    C628.654 196.727 724.844 319.938 840.844 306.207
+    C1006.05 286.652 1161.34 152.707 1246.34 48.2071
+    C1259.91 31.5241 1271.65 17.1123 1281.77 4.70713
+  " fill="none" stroke="white" />
+    </defs>
+    <text fill="black" text-anchor="middle">
+        <textPath id='text' xlink:href="#path" startOffset="50%">
+            STAY AHEAD OF THE CIRCULAR ECONOMY CURVE
+        </textPath>
+    </text>
+</svg>

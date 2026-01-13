@@ -1,0 +1,33 @@
+.pm {
+  width: 100%;
+  margin-top: 50rem;
+  overflow: hidden;
+  @media (width > 770px) {
+    width: 100vw;
+    margin-inline: calc(var(--p-i) * -1);
+  }
+}
+.pm_c {
+  display: flex;
+  width: fit-content;
+}
+.pm ul {
+  display: flex;
+  /* gap: 16rem; */
+  width: fit-content;
+  align-items: flex-end;
+}
+.pm li {
+  padding-inline: 20rem;
+  flex-shrink: 0;
+  & img {
+    width: var(--wm);
+    height: auto;
+  }
+  @media (width > 770px) {
+    padding-inline: 40rem;
+    & img {
+      width: var(--w);
+    }
+  }
+}

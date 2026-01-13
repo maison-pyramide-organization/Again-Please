@@ -22,7 +22,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "@c/*": ["./src/components/*"],
-      "@a/*": ["./src/assets/*"]
+      "@a/*": ["./src/assets/*"],
+      "@im/*": ["./src/assets/images/*"]
     }
   },
   "include": [

@@ -12,6 +12,8 @@ export function FontsProvider({ children }: { children: React.ReactNode }) {
   );
 
   useEffect(() => {
+  
+
     if ((window as any).__fontsReady) {
       setLoaded(true);
       return;

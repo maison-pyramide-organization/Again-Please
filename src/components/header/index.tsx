@@ -39,11 +39,26 @@ export default function Header() {
 
         <nav>
           <Link
-            className={`${s.l} ${path == "/about" ? "active" : ""} `}
+            className={`${s.l} ${path == "/contact-us" ? "active" : ""}`}
             href="/about"
           >
             About us
           </Link>
+          <Link
+            className={`${s.l} ${path == "/solutions" ? "active" : ""} `}
+            href="/solutions"
+          >
+            Solutions
+          </Link>
+          <Link
+            className={`${s.l} ${
+              path == "/insights-and-impact" ? "active" : ""
+            }`}
+            href="/insights-and-impact"
+          >
+            Insights & Impact
+          </Link>
+
           <Link
             className={`${s.l} ${path == "/contact-us" ? "active" : ""}`}
             href="/contact-us"
@@ -63,6 +78,12 @@ export default function Header() {
         <div className={s.menu}>
           <Link href="/about" onClick={handleClick}>
             About us
+          </Link>
+          <Link href="/solutions" onClick={handleClick}>
+            Solutions
+          </Link>
+          <Link href="/insights-and-impact" onClick={handleClick}>
+            Insights & Impact
           </Link>
           <Link href="/contact-us" onClick={handleClick}>
             Contact us

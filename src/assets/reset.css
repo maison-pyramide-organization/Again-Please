@@ -44,6 +44,8 @@ body {
   font-size: 15rem;
   font-family: "b";
   user-select: none;
+  font-kerning: none;
+  text-rendering: optimizeSpeed;
 }
 h1,
 h2,
