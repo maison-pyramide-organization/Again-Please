@@ -39,7 +39,7 @@ export default function Header() {
 
         <nav>
           <Link
-            className={`${s.l} ${path == "/contact-us" ? "active" : ""}`}
+            className={`${s.l} ${path == "/about" ? "active" : ""}`}
             href="/about"
           >
             About us

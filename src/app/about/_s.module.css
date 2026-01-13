@@ -364,10 +364,10 @@ FORCE SECTION
   gap: 12rem;
   @media (width > 770px) {
     margin-top: 125rem;
-    margin-left: 208rem;
-    padding-right: var(--p-i);
-    flex-direction: row;
-    gap: 28rem;
+    padding-inline: 180rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80rem;
   }
 }
 .s-f li {
@@ -381,7 +381,6 @@ FORCE SECTION
   }
   @media (width > 770px) {
     display: block;
-    &:nth-child(2) p,
     &:nth-child(5) p {
       margin-top: 27rem;
     }

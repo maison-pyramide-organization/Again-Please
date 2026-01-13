@@ -9,9 +9,9 @@
     C1259.91 31.5241 1271.65 17.1123 1281.77 4.70713
   " fill="none" stroke="white" />
     </defs>
-    <text fill="black" text-anchor="middle">
+    <text fill="black" text-anchor="middle" xml:space="preserve">
         <textPath id='text' xlink:href="#path" startOffset="50%">
-            STAY AHEAD OF THE CIRCULAR ECONOMY CURVE
+            STAY AHEAD OF THE CIRCULAR  ECONOMY CURVE
         </textPath>
     </text>
 </svg>

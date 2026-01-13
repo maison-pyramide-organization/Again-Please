@@ -81,9 +81,7 @@ export default function Animation() {
       duration: 3,
       scrollTrigger: {
         trigger: "[g-s='path']",
-        start: "top 90%",
-        // end: "bottom 40%",
-        // scrub: true,
+        start: "top bottom",
       },
     });
   };
