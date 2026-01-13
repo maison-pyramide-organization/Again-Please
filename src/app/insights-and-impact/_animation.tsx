@@ -76,7 +76,7 @@ export default function Animation() {
 
   const tpathA = () => {
     gsap.from('[g-s="path"] #text', {
-      attr: { startOffset: "100%" },
+      attr: { startOffset: "-100%" },
       ease: "power1.inOut",
       duration: 2,
       scrollTrigger: {
