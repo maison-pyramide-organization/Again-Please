@@ -367,7 +367,9 @@ FORCE SECTION
     padding-inline: 180rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 80rem;
+    /* gap: 80rem; */
+    padding-inline: 120rem;
+    gap: 60rem;
   }
 }
 .s-f li {
@@ -382,7 +384,7 @@ FORCE SECTION
   @media (width > 770px) {
     display: block;
     &:nth-child(5) p {
-      margin-top: 27rem;
+      /* margin-top: 27rem; */
     }
   }
 }
@@ -397,7 +399,7 @@ FORCE SECTION
   flex-direction: column;
   min-width: 0;
   @media (width >770px) {
-    height: 155rem;
+    height: 120rem;
   }
 }
 .s-f li h4 {
@@ -415,6 +417,7 @@ FORCE SECTION
     margin-top: 48rem;
     font-size: 18rem;
     line-height: 20rem;
+    margin-top: 24rem;
   }
 }
 .s-f li a {
