@@ -16,6 +16,7 @@ import IcArr from "@a/icons/c-arr.svg";
 import Link from "next/link";
 import { useRef, useState } from "react";
 import Ipat from "@a/icons/ins-t-path.svg";
+import Ipath from "@a/icons/path.svg";
 
 export default function () {
   const listR = useRef(null) as any;
@@ -57,7 +58,8 @@ export default function () {
             share the latest updates shaping the future of reusable packaging
             and waste reduction.
           </p>
-          <Ipat g-s='tpath' />
+          {/* <Ipat g-s="tpath" /> */}
+          <Ipath g-s="path" />
         </section>
 
         <section className={s.s1}>

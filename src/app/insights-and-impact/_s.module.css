@@ -91,11 +91,16 @@
 }
 .s0 svg {
   position: absolute;
-  top: 420rem;
+  top: 440rem;
   left: 50%;
   transform: translateX(-50%);
+  width: 95%;
+  & text {
+    font-size: 50rem;
+    font-family: "sg";
+  }
   @media (width > 770px) {
-    top: 400rem;
+    top: 500rem;
     width: 90%;
   }
 }
@@ -551,12 +556,13 @@
   padding: 8rem 12rem;
   font-size: 10rem;
   display: inline-block;
-  border: 2px solid var(--c-green);
+  border: 1px solid black;
   font-family: "sg";
-  color: var(--c-green);
   @media (width > 770px) {
     margin-top: 32rem;
     padding: 16rem 20rem;
     font-size: 15rem;
+    color: var(--c-green);
+    border: 2px solid var(--c-green);
   }
 }

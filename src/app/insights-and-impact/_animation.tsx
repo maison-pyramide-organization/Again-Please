@@ -75,10 +75,16 @@ export default function Animation() {
   };
 
   const tpathA = () => {
-    gsap.from('[g-s="tpath"] path', {
-      drawSVG: 0,
-      ease: "none",
+    gsap.from('[g-s="path"] #text', {
+      attr: { startOffset: "100%" },
+      ease: "power1.inOut",
       duration: 2,
+      scrollTrigger: {
+        trigger: "[g-s='path']",
+        start: "top 90%",
+        // end: "bottom 40%",
+        // scrub: true,
+      },
     });
   };
 
