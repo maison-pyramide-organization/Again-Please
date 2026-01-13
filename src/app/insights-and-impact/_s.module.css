@@ -96,7 +96,7 @@
   transform: translateX(-50%);
   width: 95%;
   & text {
-    font-size: 50rem;
+    font-size: 48rem;
     font-family: "sg";
   }
   @media (width > 770px) {
@@ -239,6 +239,7 @@
 }
 .s2 .b h3 {
   font-size: 30rem;
+  width: 475rem;
 }
 .s2 .b div {
   background-color: var(--c-green);

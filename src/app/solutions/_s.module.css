@@ -145,7 +145,7 @@
       top: 120rem;
       left: calc(-70rem - 75rem);
     }
-    & p {
+    & p:last-child {
       width: unset;
     }
   }
