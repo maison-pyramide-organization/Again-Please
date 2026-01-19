@@ -429,22 +429,42 @@ export default function () {
               <ul ref={listR}>
                 <li>
                   <figure a-i="r">
-                    <Image src={s61I} alt="" />
+                    <Image
+                      src={s61I}
+                      alt="Again, Please"
+                      quality={90}
+                      sizes="(max-width: 768px) 100vw, 1200px"
+                    />
                   </figure>
                 </li>
                 <li>
                   <figure a-i="r">
-                    <Image src={s62I} alt="" />
+                    <Image
+                      src={s62I}
+                      sizes="(max-width: 768px) 100vw, 1200px"
+                      alt="Again, Please"
+                      quality={90}
+                    />
                   </figure>
                 </li>
                 <li>
                   <figure a-i="r">
-                    <Image src={s63I} alt="" />
+                    <Image
+                      src={s63I}
+                      width={800}
+                      alt="Again, Please"
+                      quality={90}
+                    />
                   </figure>
                 </li>
                 <li>
                   <figure a-i="r">
-                    <Image src={s64I} alt="" />
+                    <Image
+                      src={s64I}
+                      width={800}
+                      alt="Again, Please"
+                      quality={90}
+                    />
                   </figure>
                 </li>
               </ul>
