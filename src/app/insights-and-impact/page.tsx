@@ -72,7 +72,7 @@ export default function () {
             <div className={s.r}>
               <h3 a-t="r">
                 Again, Please will be exhibiting at the World Future Energy
-                Summit (WFES) at ADNEC Abu Dhabi from 13–15 January 2025.
+                Summit (WFES) at ADNEC Abu Dhabi from 13–15 January 2026.
               </h3>
               <p a-t="r">
                 At the Polygreen stand, we will showcase how our reusable

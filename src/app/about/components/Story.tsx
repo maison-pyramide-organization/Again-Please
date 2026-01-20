@@ -33,7 +33,7 @@ export default function Story() {
           </p>
         </li>
         <li>
-          <span a-t="r">02.</span>
+          <span a-t="r">03.</span>
           <h3 a-t="r">Connected, Scalable, Circular</h3>
           <p a-t="r">
             The result is a smooth, sanitary service that guests prefer. For us,
