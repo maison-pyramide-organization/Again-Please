@@ -30,6 +30,10 @@ export default function Footer() {
           Facebook
         </a>
         <span>|</span>
+        <a target="_blank" href="https://www.youtube.com/@againpleaseact">
+          Youtube
+        </a>
+        <span>|</span>
         <a target="_blank" href="https://x.com/againpleaseact">
           X
         </a>

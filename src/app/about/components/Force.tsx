@@ -6,6 +6,16 @@ import ceoI from "@a/images/about/ceo.png";
 export default function Force() {
   return (
     <section id="s-f" className={s["s-f"]}>
+      <figure>
+        <video
+          className={s.v}
+          autoPlay
+          loop
+          muted
+          playsInline
+          src="/videos/ap-about.mp4"
+        />
+      </figure>
       <h2 a-t="r">
         THE FORCE BEHIND
         <br />
@@ -40,7 +50,10 @@ export default function Force() {
             private-sector innovation can successfully collaborate with local
             governance to achieve lasting environmental impact.
           </p>
-          <a href="https://www.linkedin.com/in/athanasios-polychronopoulos-44824933/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/athanasios-polychronopoulos-44824933/"
+            target="_blank"
+          >
             LINKEDIN
           </a>
         </div>
