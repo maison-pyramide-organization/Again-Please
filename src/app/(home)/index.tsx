@@ -1,3 +1,4 @@
+import { getSectors } from "@/services/api/force";
 import Animation from "./_animation";
 import About from "./components/About";
 import Hero from "./components/Hero";
@@ -6,12 +7,13 @@ import Quote from "./components/Quote";
 import Sectors from "./components/Sectors";
 import Why from "./components/Why";
 
-export default function Home() {
+export default async function Home() {
+  const sectors = await getSectors()
   return (
     <>
       <Hero />
       <About />
-      <Sectors />
+      <Sectors sectors={sectors} />
       <Model />
       <Why />
       <Quote />

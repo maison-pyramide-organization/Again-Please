@@ -44,12 +44,11 @@ export default function Model() {
             <li
               key={i}
               className={i == activeInd ? s.active : ""}
-              onMouseEnter={() => onMouseEnter(i)}
               onClick={() => onClick(i)}
             >
               {/* <div className={s.h}> */}
               <span>0{i + 1}</span>
-              <h3>{_.title}</h3>
+              <h3 onMouseEnter={() => onMouseEnter(i)}>{_.title}</h3>
               <Iarr className={i == activeInd ? s.active : ""} />
               {/* </div> */}
               <div className={s.co}>

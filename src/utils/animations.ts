@@ -20,18 +20,13 @@ const imagesA = () => {
 
 const textsA = () => {
   gsap.utils.toArray('[a-t="r"]').forEach((el: any) => {
-    const t_split = SplitText.create(el, {
-      type: "lines",
-      mask: "lines",
-      autoSplit: true,
-    });
+    const t_split = SplitText.create(el, { type: "lines", mask: "lines" });
+
     gsap.from(t_split.lines, {
-      y: "100%",
-      duration: 0.4,
-      ease: "sine.out",
-      stagger: {
-        each: 0.1,
-      },
+      yPercent: 100,
+      duration: 1.2,
+      ease: "power4.out",
+      stagger: 0.05,
       scrollTrigger: {
         trigger: el, // 👈 each element triggers its own animation
         start: "top 90%",

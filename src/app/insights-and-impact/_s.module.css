@@ -168,6 +168,9 @@
     font-size: 20rem;
     line-height: 24rem;
   }
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 .s2 {

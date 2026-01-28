@@ -1,4 +1,3 @@
-"use client";
 import s from "./_s.module.css";
 import Animation from "./_animation";
 import Image from "next/image";
@@ -8,42 +7,22 @@ import s21I from "@im/insights/s2-1.png";
 import s22I from "@im/insights/s2-2.png";
 import arrI from "@im/arr.png";
 import s6I from "@im/insights/s6.png";
-import s61I from "@im/insights/s61.png";
-import s62I from "@im/insights/s62.png";
-import s63I from "@im/insights/s63.png";
-import s64I from "@im/insights/s64.png";
-import IcArr from "@a/icons/c-arr.svg";
 import Link from "next/link";
-import { useRef, useState } from "react";
-import Ipat from "@a/icons/ins-t-path.svg";
 import Ipath from "@a/icons/path.svg";
+import Products from "./components/products";
+import { getEvent } from "@/services/api/force";
+import RichText from "@/components/richtext";
 
-export default function () {
-  const listR = useRef(null) as any;
-  const scrollVR = useRef(0);
-  const [vis, setVis] = useState(false);
-
-  const onBtnClick = (d) => {
-    const list = listR.current;
-    const liW = list.querySelector("li").offsetWidth;
-    const itemsCount = list.querySelectorAll("li").length;
-
-    const maxScroll = -(itemsCount - 1) * liW;
-
-    let next = d === "prev" ? scrollVR.current + liW : scrollVR.current - liW;
-
-    if (next > 0) next = 0;
-    if (next < maxScroll) next = maxScroll;
-
-    list.style.transform = `translateX(${next}px)`;
-    scrollVR.current = next;
-  };
+export default async function () {
+  const events = (await getEvent()) as any;
+  const event = events[0];
 
   return (
     <>
       <div className={s.p}>
         <section className={s.s0}>
           <h1 a-t="r">INSPIRING THE SHIFT TO CIRCULAR SYSTEMS</h1>
+
           <div>
             <figure a-i="r">
               <Image src={s0I} alt="Insights and Impact" />
@@ -53,47 +32,31 @@ export default function () {
               <p>Explore insights, success stories, and practical resources.</p>
             </div>
           </div>
+
           <p a-t="r">
             From new sustainability regulations to major event partnerships, we
             share the latest updates shaping the future of reusable packaging
             and waste reduction.
           </p>
+
           {/* <Ipat g-s="tpath" /> */}
+
           <Ipath g-s="path" />
         </section>
 
         <section className={s.s1}>
-          <span a-t="r">UPCOMING EVENTS</span>
+          <span a-t="r">OUR EVENTS</span>
           <h2 a-t="r">WORLD FUTURE ENERGY SUMMIT</h2>
           <div>
             <figure className="d-o" a-i="r">
               <Image src={s1I} alt="Insights and Impact" />
             </figure>
             <div className={s.r}>
-              <h3 a-t="r">
-                Again, Please will be exhibiting at the World Future Energy
-                Summit (WFES) at ADNEC Abu Dhabi from 13–15 January 2026.
-              </h3>
-              <p a-t="r">
-                At the Polygreen stand, we will showcase how our reusable
-                packaging system helps events and F&B partners cut single-use
-                waste and move toward a circular, scalable solutions.
-                <br />
-                <br />
-                Polygreen will also take the stage with two sessions, including
-                Just Go Zero: How Tilos Became the World’s First Zero Waste
-                Island and the panel Designing Out Waste: Breaking the
-                Throw-Away Mindset.
-                <br />
-                <br />
-                If you’re attending WFES, come meet us at the Polygreen stand to
-                experience the system firsthand, explore opportunities for
-                collaboration, and see how reuse can work for your venue or
-                organisation.
-              </p>
+              {event.details && <RichText content={event?.details} />}
             </div>
           </div>
         </section>
+
         <section g-s="s2" className={s.s2}>
           <h2 a-t="r">UNDERSTANDING REUSE & THE CIRCULAR ECONOMY</h2>
 
@@ -343,47 +306,6 @@ export default function () {
           </div>
         </section>
 
-        <section g-s="s4" className={s.s4}>
-          <h2>POLICIES CHANGES AND UPDATES</h2>
-          <p>
-            The UAE is rapidly transitioning to a circular, low-waste future by
-            phasing out single-use plastics across the country. Abu Dhabi banned
-            single-use plastic bags in 2022, and Dubai followed with a full ban
-            in 2024.
-            <br />
-            <br />
-            Under Federal Ministerial Resolution No. 380 of 2022, the UAE will
-            implement a nationwide ban on the import, production and trade of
-            most single-use plastic items - including cups, lids, cutlery,
-            plates and food containers - starting 1 January 2026.
-            {vis && (
-              <span>
-                Dubai is also advancing circularity through the Circle Dubai
-                Initiative, which aligns with the Dubai Integrated Waste
-                Management Strategy 2041 and targets 100% landfill diversion and
-                56% recycling across the emirate. These policies collectively
-                signal one direction: single-use is being phased out, and reuse
-                systems will become the standard for events, venues, hospitality
-                and businesses across the UAE.
-                <br />
-                <br />
-                <b>Legal Disclaimer</b> :This section provides a high-level
-                summary of current UAE policies on single-use plastics. It is
-                not legal advice. For full regulatory requirements, businesses
-                should review official government publications or consult
-                qualified legal counsel.
-              </span>
-            )}
-          </p>
-          <button
-            onClick={() => {
-              setVis(!vis);
-            }}
-          >
-            {vis ? "SHOW LESS" : "READ MORE"}
-          </button>
-        </section>
-
         <section className={s.s5}>
           <p>
             <span>“</span>At Again, Please, we’re building circular systems by
@@ -425,56 +347,11 @@ export default function () {
               75 reuse cycles and industrial washing. Actual impacts may vary by
               location, energy mix, and operations.
             </p>
-            <div>
-              <ul ref={listR}>
-                <li>
-                  <figure a-i="r">
-                    <Image
-                      src={s61I}
-                      alt="Again, Please"
-                      quality={90}
-                      sizes="(max-width: 768px) 100vw, 1200px"
-                    />
-                  </figure>
-                </li>
-                <li>
-                  <figure a-i="r">
-                    <Image
-                      src={s62I}
-                      sizes="(max-width: 768px) 100vw, 1200px"
-                      alt="Again, Please"
-                      quality={90}
-                    />
-                  </figure>
-                </li>
-                <li>
-                  <figure a-i="r">
-                    <Image
-                      src={s63I}
-                      width={800}
-                      alt="Again, Please"
-                      quality={90}
-                    />
-                  </figure>
-                </li>
-                <li>
-                  <figure a-i="r">
-                    <Image
-                      src={s64I}
-                      width={800}
-                      alt="Again, Please"
-                      quality={90}
-                    />
-                  </figure>
-                </li>
-              </ul>
-            </div>
-            <nav className="m-o">
-              <IcArr onClick={() => onBtnClick("prev")} />
-              <IcArr onClick={() => onBtnClick("next")} />
-            </nav>
+
+            <Products />
           </div>
         </section>
+
         <section className={s.s7}>
           <h2 a-t="r" className="d-o">
             READY TO WRITE

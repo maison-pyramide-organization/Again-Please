@@ -1,16 +1,13 @@
 "use client";
 import s from "../_s.module.css";
-import iS1 from "@a/images/sector-1.png";
-import iS2 from "@a/images/sector-2.png";
-import iS3 from "@a/images/sector-3.png";
-import iS1m from "@a/images/s1-m.png";
-import iS2m from "@a/images/s2-m.png";
-import iS3m from "@a/images/s3-m.png";
-import Image from "next/image";
 import Ichev from "@a/icons/chev.svg";
 import { useRef } from "react";
 
-export default function Sectors() {
+export default function Sectors(props: any) {
+  let { sectors } = props;
+
+  sectors = sectors.sort((a, b) => a.index - b.index);
+
   const listR = useRef(null) as any;
   const scrollVR = useRef(0);
 
@@ -50,34 +47,24 @@ export default function Sectors() {
           <Ichev onClick={() => onBtnClick("next")} />
         </nav>
         <ul ref={listR}>
-          <li>
-            <span a-t="r">01</span>
-            <figure>
-              <Image a-i="r" src={iS1m} alt="" />
-              <Image a-i="r" src={iS1} alt="" />
-            </figure>
-            <p a-t="r">
-              Event Venues, Arenas, Entertainment Parks, Exhibition Centers
-            </p>
-          </li>
-          <li>
-            <span a-t="r">02</span>
-            <figure>
-              <Image a-i="r" src={iS2m} alt="" />
-              <Image a-i="r" src={iS2} alt="" />
-            </figure>
-            <p a-t="r">HoReCa Chains</p>
-          </li>
-          <li>
-            <span a-t="r">03</span>
-            <figure>
-              <Image a-i="r" src={iS3m} alt="" />
-              <Image a-i="r" src={iS3} alt="" />
-            </figure>
-            <p a-t="r">
-              SMEs including independent venues, smaller HoReCa spaces
-            </p>
-          </li>
+          {sectors.map((sector) => (
+            <li key={sector.index}>
+              <span a-t="r">0{sector.index}</span>
+              <figure>
+                <img
+                  a-i="r"
+                  src={`https:${sector.smallImage?.fields.file.url}`}
+                  alt={sector.name}
+                />
+                <img
+                  a-i="r"
+                  src={`https:${sector.largeImage?.fields.file.url}`}
+                  alt={sector.name}
+                />
+              </figure>
+              <p a-t="r">{sector.name}</p>
+            </li>
+          ))}
         </ul>
       </div>
     </section>

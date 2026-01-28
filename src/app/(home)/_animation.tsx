@@ -2,7 +2,7 @@
 
 import { DimensionContext } from "@/contexts/dimensionsContext";
 import { FontsContext } from "@/contexts/fontsContext";
-import { textsA } from "@/utils/animations";
+import { imagesA, textsA } from "@/utils/animations";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger, DrawSVGPlugin, SplitText, CustomEase } from "gsap/all";
@@ -17,7 +17,7 @@ export default function Animation() {
     ScrollTrigger,
     SplitText,
     DrawSVGPlugin,
-    CustomEase
+    CustomEase,
   );
 
   // BG
@@ -163,7 +163,7 @@ export default function Animation() {
       .from(
         '[g-s="he-line-d"] path:last-child',
         { drawSVG: "0", ease: "none", duration: 4 },
-        0
+        0,
       )
       .from(
         $he_t1,
@@ -171,7 +171,7 @@ export default function Animation() {
           y: "150%",
           opacity: 0,
         },
-        0
+        0,
       )
       .to(
         $he_t1,
@@ -179,7 +179,7 @@ export default function Animation() {
           y: "-120%",
           opacity: 0,
         },
-        1
+        1,
       )
       .from(
         he_t2_split.lines,
@@ -190,7 +190,7 @@ export default function Animation() {
             each: 0.1,
           },
         },
-        2
+        2,
       )
       .to(
         he_t2_split.lines,
@@ -201,7 +201,7 @@ export default function Animation() {
             each: 0.1,
           },
         },
-        3
+        3,
       );
 
     lo_tl
@@ -258,7 +258,7 @@ export default function Animation() {
           y: "150%",
           opacity: 0,
         },
-        0
+        0,
       )
       .to(
         $he_t1,
@@ -266,7 +266,7 @@ export default function Animation() {
           y: "-120%",
           opacity: 0,
         },
-        1
+        1,
       )
       .from(
         he_t2_split.lines,
@@ -277,7 +277,7 @@ export default function Animation() {
             each: 0.1,
           },
         },
-        2
+        2,
       )
       .to(
         he_t2_split.lines,
@@ -288,7 +288,7 @@ export default function Animation() {
             each: 0.1,
           },
         },
-        3
+        3,
       )
       .from("[g-s='he-ab']", {
         y: "80%",
@@ -457,6 +457,7 @@ export default function Animation() {
 
     initA();
     textsA();
+    imagesA();
     headerA();
     isMobile ? bgAM() : bgA();
     isMobile ? heroAM() : heroA();

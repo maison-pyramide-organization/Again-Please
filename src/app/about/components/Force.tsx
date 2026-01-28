@@ -1,9 +1,13 @@
 import s from "../_s.module.css";
-import force from "@/data/force";
-import Image from "next/image";
-import ceoI from "@a/images/about/ceo.png";
+import { getForce } from "@/services/api/force";
 
-export default function Force() {
+export default async function Force() {
+  const f = (await getForce()) as any;
+  const ceo = f.find((item) => item.index === 0);
+  const force = f
+    .filter((item) => item.index !== 0)
+    .sort((a, b) => a.index - b.index);
+
   return (
     <section id="s-f" className={s["s-f"]}>
       <figure>
@@ -23,33 +27,16 @@ export default function Force() {
       </h2>
       <div className={s.ceo}>
         <figure>
-          <Image a-i="r" src={ceoI} alt="ATHANASIOS POLYCHRONOPOULOS" />
+          <img src={`https:${ceo.image?.fields.file.url}`} alt={ceo.name} />
         </figure>
         <div>
           <h3 a-t="r">Athanasios Polychronopoulos</h3>
           <span a-t="r">Chairman & CEO of Polygreen Group of Companies </span>
-          <p a-t="r">
-            Mr. Athanasios Polychronopoulos is the Founder and President of
-            Polygreen S.A., a global leader in circular economy solutions,
-            providing innovative, reliable, and cost-effective waste and marine
-            pollution management services.
-          </p>
-          <p a-t="r">
-            A graduate of the University of Piraeus with executive training from
-            Stanford and Harvard, he brings over 20 years of experience leading
-            some of the most demanding and technically complex environmental
-            projects worldwide.
-          </p>
-          <p a-t="r">
-            In 2021, under his vision and leadership, Polygreen launched the
-            flagship initiative Just Go Zero Tilos, a pioneering circular
-            economy project in partnership with the Municipality of Tilos. This
-            groundbreaking effort transformed Tilos into the world’s first
-            island to divert 100% of its waste from landfill, setting a global
-            benchmark for zero-waste communities and demonstrating how
-            private-sector innovation can successfully collaborate with local
-            governance to achieve lasting environmental impact.
-          </p>
+          {ceo.description.split("\n\n").map((p, i) => (
+            <p key={i} a-t="r">
+              {p}
+            </p>
+          ))}
           <a
             href="https://www.linkedin.com/in/athanasios-polychronopoulos-44824933/"
             target="_blank"
@@ -63,12 +50,13 @@ export default function Force() {
         {force.map((f, i) => (
           <li key={i}>
             <figure>
-              <Image a-i="r" src={f.image} alt={f.name} />
+              <img a-i='r' src={`https:${f.image?.fields.file.url}`} alt={ceo.name} />
             </figure>
+
             <div className={s.b}>
               <h4 a-t="r">{f.name}</h4>
-              <p a-t="r">{f.role}</p>
-              <a target="_blank" href={f.link}>
+              <p a-t="r">{f.title}</p>
+              <a target="_blank" href={f.url}>
                 LINKEDIN
               </a>
             </div>
