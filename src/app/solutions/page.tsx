@@ -170,7 +170,7 @@ export default function () {
             <div className={s.co}>
               <p a-t="r">
                 We provide and we co-develop durable, high-performance reusable
-                packaging designed for repeated use in demanding environments.
+                foodware packaging designed for repeated use in demanding environments.
               </p>
               <ul>
                 <li a-t="r">Cold and hot beverage cups in multiple sizes</li>

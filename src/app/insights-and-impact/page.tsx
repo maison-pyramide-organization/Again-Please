@@ -35,7 +35,7 @@ export default async function () {
 
           <p a-t="r">
             From new sustainability regulations to major event partnerships, we
-            share the latest updates shaping the future of reusable packaging
+            share the latest updates shaping the future of reusable foodwawre packaging
             and waste reduction.
           </p>
 
@@ -81,6 +81,7 @@ export default async function () {
               national transition to circularity.
             </p>
           </div>
+
           <div className={s.i}>
             <span a-t="r">02.</span>
             <div>
@@ -111,6 +112,7 @@ export default async function () {
             </div>
             <h3>OF ONE REUSABLE CUP</h3>
           </div>
+
           <p className="d-o" a-t="r">
             Estimates based on average life-cycle assessment data for
             polypropylene reusable cups and single-use plastic cups, assuming 75

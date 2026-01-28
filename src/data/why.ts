@@ -9,7 +9,7 @@ const why = [
   },
   {
     q: "End-to-end circular solution provider ",
-    a: "From design to logistics and washing, we deliver fully integrated circular packaging systems tailored to your operations.",
+    a: "From design to logistics and washing, we deliver fully integrated circular foodware packaging systems tailored to your operations.",
   },
 ];
 export default why;
