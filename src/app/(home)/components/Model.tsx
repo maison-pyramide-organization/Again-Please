@@ -33,7 +33,7 @@ export default function Model() {
           <span>EVERY STOP COVERED.</span>
         </h2>
         <p a-t="r">
-          We handle your reusable foodware packaging solution from start to finish so you
+          We handle your reusable foodware solution from start to finish so you
           can focus on your guests and operations.
         </p>
       </div>

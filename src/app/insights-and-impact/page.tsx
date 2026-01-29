@@ -35,7 +35,7 @@ export default async function () {
 
           <p a-t="r">
             From new sustainability regulations to major event partnerships, we
-            share the latest updates shaping the future of reusable foodwawre packaging
+            share the latest updates shaping the future of reusable food packaging
             and waste reduction.
           </p>
 
