@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import "@a/utils.css";
-import "@a/reset.css";
+import "@s/utils.css";
+import "@s/reset.css";
 import Lenis from "@/components/lenis";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
