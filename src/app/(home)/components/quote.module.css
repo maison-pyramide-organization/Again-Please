@@ -1,0 +1,56 @@
+/*************** 
+QUOTE SECTION
+***************/
+.s-q {
+  margin-top: 80rem;
+  padding-bottom: 80rem;
+  text-align: center;
+  @media (width > 770px) {
+    margin-top: 180rem;
+    padding-bottom: 120rem;
+  }
+}
+.s-q h2 {
+  font-size: 30rem;
+  line-height: 1;
+  @media (width > 770px) {
+    font-size: 60rem;
+    & br {
+      display: none;
+    }
+  }
+}
+.s-q p {
+  margin-top: 16rem;
+  margin-inline: auto;
+  font-size: 15rem;
+  line-height: 22rem;
+  max-width: 250rem;
+  @media (width > 770px) {
+    margin-top: 42rem;
+    font-size: 30rem;
+    line-height: 40rem;
+    max-width: unset;
+  }
+}
+.s-q button {
+  margin-top: 20rem;
+  display: inline;
+  font-size: 10rem;
+  font-family: "sg";
+  color: var(--c-green);
+  border: 1px solid var(--c-green);
+  border-radius: 100px;
+  & a {
+    display: block;
+    padding: 8rem 12rem;
+  }
+  @media (width > 770px) {
+    margin-top: 44rem;
+    font-size: 15rem;
+    & a {
+      padding: 16rem 20rem;
+    }
+  }
+}
+

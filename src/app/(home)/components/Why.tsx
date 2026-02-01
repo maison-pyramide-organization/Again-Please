@@ -1,10 +1,9 @@
 "use client";
-import s from "../_s.module.css";
+import s from "./why.module.css";
 import IlineD from "@a/icons/why-line-d.svg";
 import IlineM from "@a/icons/why-line-m.svg";
 
 export default function Why() {
-
   return (
     <section id="s-w" className={s["s-w"]}>
       <h2 a-t="r">
@@ -35,8 +34,8 @@ export default function Why() {
           <p>Build measurable ESG impact</p>
         </div>
         <div id="why-line" className={s.line}>
-          <IlineM g-s="why-line-m"  />
-          <IlineD  g-s="why-line-d" />
+          <IlineM g-s="why-line-m" />
+          <IlineD g-s="why-line-d" />
         </div>
       </div>
     </section>

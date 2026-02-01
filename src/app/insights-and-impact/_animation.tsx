@@ -21,7 +21,7 @@ export default function Animation() {
         left: "-600rem",
         width: "3000rem",
       },
-      { opacity: 1, duration: 1, ease: "power2.inOut" }
+      { opacity: 1, duration: 1, ease: "power2.inOut" },
     );
     gsap.to("#bg", {
       opacity: 0,
@@ -113,6 +113,7 @@ export default function Animation() {
 
   useGSAP(() => {
     if (!loaded) return;
+
     initA();
     bgA();
     numA();

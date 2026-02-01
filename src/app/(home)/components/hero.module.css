@@ -1,0 +1,90 @@
+/*************** 
+HERO SECTION
+***************/
+
+.s-he {
+  position: relative;
+  padding-top: 369rem;
+  @media (width > 770px) {
+    padding-top: 0;
+  }
+}
+.s-he img {
+  position: absolute;
+  height: auto;
+  width: 173rem;
+  top: 277rem;
+  left: 51rem;
+  @media (width > 770px) {
+    width: 208rem;
+    top: 359rem;
+    left: 60rem;
+  }
+}
+
+.s-he svg:first-child {
+  @media (width > 770px) {
+    display: none;
+  }
+}
+.s-he svg:last-child {
+  display: none;
+  @media (width > 770px) {
+    display: unset;
+  }
+}
+.s-he .c {
+  /* display: none; */
+  pointer-events: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  top: 0;
+  left: 0;
+}
+.s-he h1 {
+  position: absolute;
+  top: 50%;
+  left: 70rem;
+  transform: translateY(-50%);
+  font-size: 30rem;
+  line-height: 1;
+  font-weight: normal;
+  max-width: 220rem;
+  @media (width > 770px) {
+    position: absolute;
+    top: 50%;
+    left: 630rem;
+    max-width: 750rem;
+  }
+}
+.s-he .t2 {
+  font-size: 20rem;
+  line-height: 120%;
+  max-width: 300rem;
+  @media (width > 770px) {
+    font-size: 40rem;
+    max-width: 690rem;
+  }
+}
+.he_ab {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 70rem;
+  transform: translateY(-50%);
+  @media (width > 770px) {
+    display: none;
+  }
+}
+.he_ab > div {
+  max-width: 300rem;
+  font-size: 20rem;
+  line-height: 120%;
+  font-family: "sg";
+}
+.s-he .c .t3 {
+  color: var(--c-green);
+  margin-bottom: 32rem;
+}

@@ -1,0 +1,123 @@
+/*************** 
+WHY SECTION
+***************/
+.s-w {
+  padding-top: 80rem;
+  @media (width > 770px) {
+    padding-top: 150rem;
+  }
+}
+.s-w h2 {
+  margin-left: 20rem;
+  font-size: 30rem;
+  line-height: 32rem;
+  @media (width > 770px) {
+    margin-left: 180rem;
+    font-size: 60rem;
+    line-height: 1;
+  }
+}
+.s-w .c {
+  margin-top: 40rem;
+  position: relative;
+  @media (width > 770px) {
+    margin-top: 0;
+  }
+}
+.s-w .c > div {
+  position: absolute;
+  &:nth-child(1) {
+    top: 0;
+    left: 90rem;
+  }
+  &:nth-child(2) {
+    top: 180rem;
+    left: 218;
+  }
+  &:nth-child(3) {
+    top: 340rem;
+    left: 96rem;
+  }
+  &:nth-child(4) {
+    top: 520rem;
+    left: 218rem;
+  }
+  &:nth-child(5) {
+    top: 725rem;
+    left: 116rem;
+  }
+
+  @media (width > 770px) {
+    &:nth-child(1) {
+      top: 0;
+      left: 905rem;
+    }
+    &:nth-child(2) {
+      top: 220rem;
+      left: 240rem;
+    }
+    &:nth-child(3) {
+      top: 380rem;
+      left: 905rem;
+    }
+    &:nth-child(4) {
+      top: 515rem;
+      left: 240rem;
+    }
+    &:nth-child(5) {
+      top: 690rem;
+      left: 905rem;
+    }
+  }
+}
+.s-w span {
+  display: block;
+  font-family: "sg";
+  color: var(--c-green);
+  font-size: 30rem;
+  line-height: unset;
+  @media (width > 770px) {
+    font-size: 60rem;
+    line-height: 1;
+  }
+}
+.s-w p {
+  margin-top: 5rem;
+  font-size: 18rem;
+  letter-spacing: -0.02em;
+  max-width: 170rem;
+  @media (width > 770px) {
+    font-size: 30rem;
+    margin-top: 45rem;
+    max-width: 330rem;
+  }
+}
+.s-w :global(#why-line-d) {
+  display: none;
+  @media (width > 770px) {
+    display: block;
+  }
+}
+.s-w :global(#why-line-m) {
+  @media (width > 770px) {
+    display: none;
+  }
+}
+
+.s-w .line svg:first-child {
+  @media (width > 770px) {
+    display: none;
+  }
+}
+.s-w .line {
+  position: unset !important;
+}
+.s-w .line svg:last-child {
+  display: none;
+  @media (width > 770px) {
+    display: unset;
+  }
+}
+.s-w svg g {
+  /* opacity: 0; */
+}

@@ -1,4 +1,4 @@
-import s from "../_s.module.css";
+import s from "./hero.module.css";
 import Image from "next/image";
 import logoI from "@a/icons/lo-logo.png";
 import ILine from "@a/icons/hero-line.svg";

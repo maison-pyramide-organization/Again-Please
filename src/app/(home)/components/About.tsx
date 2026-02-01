@@ -1,4 +1,4 @@
-import s from "../_s.module.css";
+import s from "./about.module.css";
 import Iline from "@a/icons/about-line.svg";
 
 export default function About() {

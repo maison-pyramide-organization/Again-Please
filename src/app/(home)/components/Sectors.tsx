@@ -1,5 +1,5 @@
 "use client";
-import s from "../_s.module.css";
+import s from "./sectors.module.css";
 import Ichev from "@a/icons/chev.svg";
 import { useRef } from "react";
 

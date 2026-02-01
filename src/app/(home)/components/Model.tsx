@@ -1,6 +1,6 @@
 "use client";
 
-import s from "../_s.module.css";
+import s from "./model.module.css";
 import model from "@/data/model";
 import Image from "next/image";
 import { useContext, useEffect, useState } from "react";

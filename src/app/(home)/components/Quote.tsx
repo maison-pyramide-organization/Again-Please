@@ -1,5 +1,5 @@
+import s from "./quote.module.css";
 import Link from "next/link";
-import s from "../_s.module.css";
 
 export default function Quote() {
   return (

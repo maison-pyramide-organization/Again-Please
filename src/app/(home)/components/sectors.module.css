@@ -1,0 +1,114 @@
+/*************** 
+SECTORS SECTION
+***************/
+.s-s {
+  padding-top: 150rem;
+  @media (width > 770px) {
+    padding-top: 200rem;
+    display: flex;
+    align-items: flex-start;
+  }
+}
+.s-s .l {
+  margin-left: var(--p-i);
+  @media (width > 770px) {
+    width: 400rem;
+    position: sticky;
+    top: 315rem;
+    height: calc(100vh - 200rem);
+    height: calc(100dvh - 200rem);
+  }
+}
+
+.s-s .l h2 {
+  font-size: 30rem;
+  line-height: 1;
+  max-width: 200rem;
+  @media (width > 770px) {
+    max-width: unset;
+  }
+}
+
+.s-s .r {
+  margin-top: 40rem;
+  margin-left: 90rem;
+  overflow: hidden;
+  position: relative;
+  @media (width > 770px) {
+    position: unset;
+    overflow: unset;
+    margin-left: 245rem;
+    margin-top: 0;
+  }
+}
+.s-s nav {
+  position: absolute;
+  top: 0;
+  right: var(--p-i);
+  display: flex;
+  gap: 8rem;
+  z-index: 1;
+  @media (width > 770px) {
+    display: none;
+  }
+}
+.s-s nav svg:first-child {
+  transform: rotate(-180deg);
+}
+.s-s ul {
+  display: flex;
+  @media (width > 770px) {
+    display: block;
+  }
+}
+.s-s li {
+  @media (width > 770px) {
+    position: relative;
+    height: calc(max(80vh, 0.8 * var(--vh)));
+  }
+}
+.s-s li span {
+  font-family: "sg";
+  font-size: 20rem;
+  line-height: 1;
+  @media (width > 770px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(calc(-100% - 20rem), calc(-100% + 4rem));
+    font-size: 30rem;
+  }
+}
+.s-s li figure {
+  aspect-ratio: 3/4;
+  width: 310rem;
+  margin-top: 16rem;
+  & img:last-child {
+    display: none;
+  }
+  @media (width > 770px) {
+    margin-top: 0;
+    aspect-ratio: unset;
+    width: 720rem;
+    height: auto;
+    & img:first-child {
+      display: none;
+    }
+    & img:last-child {
+      display: unset;
+    }
+  }
+}
+.s-s li p {
+  max-width: 250rem;
+  margin-top: 12rem;
+  font-size: 15rem;
+  line-height: 22rem;
+  font-weight: 600;
+  @media (width > 770px) {
+    max-width: 484rem;
+    margin-top: 8rem;
+    font-size: 24rem;
+    line-height: 30rem;
+  }
+}

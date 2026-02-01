@@ -1,0 +1,45 @@
+/*************** 
+ABOUT SECTION
+***************/
+.s-a {
+  position: relative;
+  /* height: 100vh;
+  height: 100dvh;
+  min-height: calc(max(100vh, var(--vh))); */
+  overflow-x: hidden;
+  display: none;
+  @media (width > 770px) {
+    display: block;
+  }
+}
+.s-a .c {
+  position: absolute;
+  /* top: 50%; */
+  top: 180rem;
+  left: 460rem;
+  /* transform: translateY(-50%); */
+}
+.s-a .c > div {
+  font-size: 30rem;
+  line-height: 1;
+  font-family: "sg";
+  color: var(--c-green);
+  max-width: 660rem;
+  &:last-of-type {
+    color: black;
+    margin-top: 48rem;
+    margin-left: 125rem;
+  }
+}
+
+/* .s-a button {
+  border: 2px solid white;
+  color: white;
+  font-size: 15rem;
+  padding: 12rem 32rem;
+  font-family: "sg";
+} */
+
+.s-a svg {
+  pointer-events: none;
+}
