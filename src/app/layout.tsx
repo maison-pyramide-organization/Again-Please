@@ -9,6 +9,10 @@ import { FontsProvider } from "@/contexts/fontsContext";
 import { DimensionProvider } from "@/contexts/dimensionsContext";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.againplease.com"),
+  alternates: {
+    canonical: "/",
+  },
   title: "Again, Please by Polygreen | Circular Reuse Solutions",
   description: `Practical circular economy solutions that replace single-use and disposables with reusable goods, streamlined operations, and proven impact through tracking and insights.`,
   icons: {
