@@ -7,6 +7,7 @@ import Footer from "@/components/footer";
 import Bg from "@/components/bg";
 import { FontsProvider } from "@/contexts/fontsContext";
 import { DimensionProvider } from "@/contexts/dimensionsContext";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.againplease.com"),
@@ -32,6 +33,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-FFX4E5QD0P"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-FFX4E5QD0P');
+          `}
+        </Script>
+      </head>
       <body>
         <Lenis>
           <DimensionProvider>
