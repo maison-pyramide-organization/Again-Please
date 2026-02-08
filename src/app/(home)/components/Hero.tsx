@@ -13,8 +13,8 @@ export default function Hero() {
           DESIGNED FOR REUSE
         </h1>
         <h1 g-s="he-t2" className={s.t2}>
-          END-TO-END REUSABLE FOODWARE SOLUTIONS FOR EVENTS, VENUES & HORECA
-          SPACES 
+          AGAIN, PLEASE IS AN END-TO-END REUSABLE FOODWARE SOLUTION FOR EVENTS,
+          VENUES & HORECA OPERATORS
         </h1>
 
         <div g-s="he-ab" className={s.he_ab}>

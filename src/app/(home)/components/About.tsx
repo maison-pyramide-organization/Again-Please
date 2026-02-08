@@ -6,12 +6,13 @@ export default function About() {
     <section id="s-a" className={s["s-a"]}>
       <div className={s.c}>
         <div g-s="ab-t1" className={s.t1}>
-          FROM DESIGN AND CUSTOMIZATION TO WASHING, LOGISTICS, AND
-          REDISTRIBUTION.
+          AGAIN, PLEASE ELIMINATES SINGLE-USE WASTE THROUGH CIRCULAR REUSE
+          SYSTEMS.
         </div>
         <div g-s="ab-t2" className={s.t2}>
-          We partner with your business to eliminate single-use waste with
-          seamless circular systems. 
+          We replace single-use cups and food packaging with reusable ones,
+          providing the complete ecosystem, from design and customization to
+          logistics, industrial washing, tracking and redistribution.
         </div>
       </div>
 

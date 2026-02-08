@@ -14,14 +14,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
-  title: "Again, Please by Polygreen | Circular Reuse Solutions",
-  description: `Practical circular economy solutions that replace single-use and disposables with reusable goods, streamlined operations, and proven impact through tracking and insights.`,
+  title: "Again, Please by Polygreen | Reusable Foodware & Cup System",
+  description: `Again, Please delivers end-to-end reusable cups and foodware: design, co-branding, logistics, collection, industrial washing, and redistribution.`,
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: "Again, Please by Polygreen | Circular Reuse Solutions",
-    description: `Practical circular economy solutions that replace single-use and disposables with reusable goods, streamlined operations, and proven impact through tracking and insights.`,
+    title: "Again, Please by Polygreen | Reusable Foodware & Cup System",
+    description: `Again, Please delivers end-to-end reusable cups and foodware: design, co-branding, logistics, collection, industrial washing, and redistribution.`,
     type: "website",
   },
 };
@@ -34,6 +34,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Again Please",
+              url: "https://againplease.com",
+              logo: "https://againplease.com/logo.png",
+            }),
+          }}
+        />
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-FFX4E5QD0P"
