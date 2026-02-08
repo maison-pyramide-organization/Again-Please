@@ -41,11 +41,16 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "Again Please",
-              url: "https://againplease.com",
-              logo: "https://againplease.com/logo.png",
+              url: "https://www.againplease.com",
+              logo: "https://www.againplease.com/logo.png",
+              sameAs: [
+                "https://www.instagram.com/againpleaseact",
+                "https://www.linkedin.com/company/again-please/",
+              ],
             }),
           }}
         />
+
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-FFX4E5QD0P"
