@@ -33,8 +33,8 @@ export default function Model() {
           <span>EVERY STOP COVERED.</span>
         </h2>
         <p a-t="r">
-          We handle your reusable foodware solution from start to finish so you
-          can focus on your guests and operations.
+          Again, Please manages the full loop of your reusable foodware from
+          start to finish so you can focus on your guests and operations.
         </p>
       </div>
       <h2>THE MODEL</h2>
