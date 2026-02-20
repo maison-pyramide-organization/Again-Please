@@ -3,11 +3,11 @@ import s from "../_s.module.css";
 export default function Header() {
   return (
     <div className={s.h}>
-      <nav>
-        <a href="">In the press</a>
-        <a href="">Blog</a>
+      <nav className="d-o">
+        <a href="#press">In the press</a>
+        <a href="#blogs">Blogs</a>
         <a href="">Perspectives</a>
-        <a href="">All</a>
+        <a href="#events">Events</a>
       </nav>
       <p>
         <span>Discover the latest from Again, Please</span>

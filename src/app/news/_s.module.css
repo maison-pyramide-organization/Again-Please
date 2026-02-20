@@ -7,9 +7,14 @@ HEADER
 ******************/
 .h {
   padding-inline: var(--p-i);
-  margin-top: 80rem;
+  margin-top: 20rem;
   display: flex;
   gap: 90rem;
+  justify-content: center;
+  @media (width > 770px) {
+    margin-top: 80rem;
+    justify-content: unset;
+  }
 }
 .h nav {
   flex-shrink: 0;
@@ -21,11 +26,18 @@ HEADER
   font-size: 15rem;
 }
 .h p {
-  font-size: 30rem;
+  font-size: 15rem;
   letter-spacing: -0.02em;
+  text-align: center;
+  width: 300rem;
   & span {
     display: block;
     font-weight: 600;
+  }
+  @media (width > 770px) {
+    width: unset;
+    font-size: 30rem;
+    text-align: left;
   }
 }
 
@@ -80,7 +92,9 @@ EVENTS
   display: flex;
   gap: 40rem;
   flex-direction: column;
+  margin-top: 16rem;
   @media (width > 770px) {
+    margin-top: 0;
     gap: 80rem;
   }
 }
@@ -140,35 +154,56 @@ PRESS
 }
 
 .pArticle {
-  margin-top: 32rem;
+  margin-top: 16rem;
+  @media (width > 770px) {
+    margin-top: 32rem;
+  }
 }
 .pArticle h2 {
-  font-size: 40rem;
-  line-height: 1;
+  font-size: 22rem;
+  line-height: 24rem;
   text-transform: uppercase;
+  @media (width > 770px) {
+  }
 }
 .pArticle > div {
-  margin-top: 56rem;
-  display: flex;
-  gap: 90rem;
-  justify-content: flex-end;
+  margin-top: 24rem;
+  @media (width > 770px) {
+    margin-top: 56rem;
+    display: flex;
+    gap: 90rem;
+    justify-content: flex-end;
+  }
 }
 .pArticle figure {
-  width: 500rem;
+  @media (width > 770px) {
+    width: 500rem;
+  }
 }
 .pArticle aside {
-  width: 610rem;
-  font-size: 20rem;
-  line-height: 24rem;
+  margin-top: 32rem;
+  font-size: 15rem;
+  line-height: 17rem;
   letter-spacing: -0.02em;
+  @media (width > 770px) {
+    margin-top: 0;
+    width: 610rem;
+    font-size: 20rem;
+    line-height: 24rem;
+  }
 }
 .pArticle button {
-  margin-top: 40rem;
-  padding: 16rem 48rem;
-  font-size: 15rem;
+  margin-top: 24rem;
+  padding: 12rem 32rem;
+  font-size: 10rem;
   border: 2rem solid black;
   border-radius: 100rem;
   font-family: "sg";
+  @media (width > 770px) {
+    margin-top: 40rem;
+    padding: 16rem 48rem;
+    font-size: 15rem;
+  }
 }
 
 .press > ul {
@@ -242,9 +277,11 @@ BLOGS
     margin-top: unset;
   }
 }
-
 .blog {
   position: relative;
+  &:not(:first-of-type) {
+    margin-top: 32rem;
+  }
   @media (width > 770px) {
     width: 600rem;
   }
@@ -274,17 +311,20 @@ BLOGS
   margin-top: 24rem;
 }
 .blog button {
-  margin-top: 24rem;
-  font-size: 15rem;
-  color: var(--c-green);
+  margin-top: 16rem;
+  font-size: 10rem;
+  color: black;
   font-family: "sg";
   text-decoration: underline;
+  @media (width > 770px) {
+    margin-top: 24rem;
+    font-size: 15rem;
+    color: var(--c-green);
+  }
 }
-
 /******************
 BLOG POPUP
 ******************/
-
 .popup {
   position: fixed;
   top: 0;
@@ -308,15 +348,17 @@ BLOG POPUP
   display: block;
   pointer-events: unset;
 }
-
 .popup_h {
   display: flex;
   justify-content: space-between;
 }
 .popup_h h2 {
-  font-size: 50rem;
+  font-size: 30rem;
   color: var(--c-green);
   text-transform: uppercase;
+  @media (width > 770px) {
+    font-size: 50rem;
+  }
 }
 .popup_h svg {
   width: 24rem;
@@ -331,7 +373,6 @@ BLOG POPUP
   display: flex;
   gap: 24rem;
 }
-
 .popup nav svg {
   width: 40rem;
   &:nth-of-type(1) {
@@ -342,26 +383,45 @@ BLOG POPUP
   }
 }
 .title h3 {
-  font-size: 40rem;
-  line-height: 1;
+  font-size: 18rem;
+  line-height: 19rem;
   text-transform: uppercase;
+  @media (width > 770px) {
+    font-size: 40rem;
+    line-height: 1;
+  }
 }
 .popup figure {
-  margin-top: 40rem;
-  height: 600rem;
+  margin-top: 24rem;
+  height: 300rem;
+  @media (width > 770px) {
+    margin-top: 40rem;
+    height: 600rem;
+  }
 }
 .popup_content {
-  display: flex;
-  gap: 90rem;
-  justify-content: center;
-  margin-top: 40rem;
-  font-size: 20rem;
-  line-height: 24rem;
+  padding-inline: 16rem;
+  margin-top: 24rem;
+  font-size: 15rem;
+  line-height: 17rem;
   letter-spacing: -0.02em;
+  @media (width > 770px) {
+    padding-inline: 0;
+    margin-top: 40rem;
+    display: flex;
+    gap: 90rem;
+    justify-content: center;
+    font-size: 20rem;
+    line-height: 24rem;
+  }
 }
 .popup_content .l {
-  width: 510rem;
+  @media (width > 770px) {
+    width: 510rem;
+  }
 }
 .popup_content .r {
-  width: 610rem;
+  @media (width > 770px) {
+    width: 610rem;
+  }
 }

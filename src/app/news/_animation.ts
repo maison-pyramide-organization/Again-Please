@@ -1,5 +1,6 @@
 "use client";
 
+import { DimensionContext } from "@/contexts/dimensionsContext";
 import { FontsContext } from "@/contexts/fontsContext";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -8,6 +9,7 @@ import { useContext } from "react";
 
 export default function Animation() {
   const { loaded } = useContext(FontsContext);
+  const { isMobile } = useContext(DimensionContext);
 
   gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -44,6 +46,15 @@ export default function Animation() {
     });
   };
 
+  const bgAM = () => {
+    gsap.set("#bg", {
+      opacity: 1,
+      top: "-40rem",
+      left: "-395rem",
+      width: "1300rem",
+    });
+  };
+
   const initA = () => {
     // Page
     gsap.set("#p_", {
@@ -57,8 +68,8 @@ export default function Animation() {
   useGSAP(() => {
     if (!loaded) return;
     initA();
-    bgA();
-  }, [loaded]);
+    isMobile ? bgAM() : bgA();
+  }, [loaded, isMobile]);
 
   return null;
 }

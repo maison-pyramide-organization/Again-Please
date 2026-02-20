@@ -23,7 +23,7 @@ export default function Press(props: Iprops) {
   };
 
   return (
-    <section g-s="s-p" className={s.press}>
+    <section g-s="s-p" className={s.press} id="press">
       <h2>IN THE PRESS</h2>
       {/* MAIN ARTICLE */}
       <div className={s.pArticle}>

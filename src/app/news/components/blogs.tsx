@@ -18,7 +18,7 @@ export default function Blogs(props: Iprops) {
   };
 
   return (
-    <section g-s="s-b" className={s.blogs}>
+    <section g-s="s-b" className={s.blogs} id="blogs">
       <h2>BLOG</h2>
       <ul>
         {blogs.map((blog, i) => (

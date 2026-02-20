@@ -10,7 +10,7 @@ export default function Events(props: Iprops) {
   const { events } = props;
 
   return (
-    <section className={s.events}>
+    <section className={s.events} id="events">
       <h2>EVENTS</h2>
       <ul>
         {events.map((event, i) => (
