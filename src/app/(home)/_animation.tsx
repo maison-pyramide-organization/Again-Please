@@ -8,17 +8,17 @@ import gsap from "gsap";
 import { ScrollTrigger, DrawSVGPlugin, SplitText, CustomEase } from "gsap/all";
 import { useContext } from "react";
 
+gsap.registerPlugin(
+  useGSAP,
+  ScrollTrigger,
+  SplitText,
+  DrawSVGPlugin,
+  CustomEase,
+);
+
 export default function Animation() {
   const { loaded } = useContext(FontsContext);
   const { isMobile } = useContext(DimensionContext);
-
-  gsap.registerPlugin(
-    useGSAP,
-    ScrollTrigger,
-    SplitText,
-    DrawSVGPlugin,
-    CustomEase,
-  );
 
   // BG
   const bgA = () => {
@@ -455,6 +455,7 @@ export default function Animation() {
   useGSAP(() => {
     if (!loaded) return;
 
+    // document.fonts.ready.then(() => {
     initA();
     textsA();
     imagesA();
@@ -463,6 +464,7 @@ export default function Animation() {
     isMobile ? heroAM() : heroA();
     !isMobile && aboutA();
     isMobile ? whyAM() : whyA();
+    // });
   }, [loaded]);
 
   return null;

@@ -1,5 +1,5 @@
 import s from "../_s.module.css";
-import { getForce } from "@/services/api/force";
+import { getForce } from "@/services/api";
 
 export default async function Force() {
   const f = (await getForce()) as any;
@@ -50,7 +50,11 @@ export default async function Force() {
         {force.map((f, i) => (
           <li key={i}>
             <figure>
-              <img a-i='r' src={`https:${f.image?.fields.file.url}`} alt={ceo.name} />
+              <img
+                a-i="r"
+                src={`https:${f.image?.fields.file.url}`}
+                alt={ceo.name}
+              />
             </figure>
 
             <div className={s.b}>

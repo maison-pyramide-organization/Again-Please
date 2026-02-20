@@ -58,6 +58,12 @@ export default function Header() {
           >
             Insights & Impact
           </Link>
+          <Link
+            className={`${s.l} ${path == "/news" ? "active" : ""}`}
+            href="/news"
+          >
+            News
+          </Link>
 
           <Link
             className={`${s.l} ${path == "/contact-us" ? "active" : ""}`}
@@ -84,6 +90,9 @@ export default function Header() {
           </Link>
           <Link href="/insights-and-impact" onClick={handleClick}>
             Insights & Impact
+          </Link>
+          <Link href="/news" onClick={handleClick}>
+            News
           </Link>
           <Link href="/contact-us" onClick={handleClick}>
             Contact us

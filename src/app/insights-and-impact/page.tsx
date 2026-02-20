@@ -2,7 +2,6 @@ import s from "./_s.module.css";
 import Animation from "./_animation";
 import Image from "next/image";
 import s0I from "@im/insights/s0.png";
-import s1I from "@im/insights/s1.png";
 import s21I from "@im/insights/s2-1.png";
 import s22I from "@im/insights/s2-2.png";
 import arrI from "@im/arr.png";
@@ -10,13 +9,8 @@ import s6I from "@im/insights/s6.png";
 import Link from "next/link";
 import Ipath from "@a/icons/path.svg";
 import Products from "./components/products";
-import { getEvent } from "@/services/api/force";
-import RichText from "@/components/richtext";
 
 export default async function () {
-  const events = (await getEvent()) as any;
-  const event = events[0];
-
   return (
     <>
       <div className={s.p}>
@@ -35,26 +29,11 @@ export default async function () {
 
           <p a-t="r">
             From new sustainability regulations to major event partnerships, we
-            share the latest updates shaping the future of reusable food packaging
-            and waste reduction.
+            share the latest updates shaping the future of reusable food
+            packaging and waste reduction.
           </p>
 
-          {/* <Ipat g-s="tpath" /> */}
-
           <Ipath g-s="path" />
-        </section>
-
-        <section className={s.s1}>
-          <span a-t="r">OUR EVENTS</span>
-          <h2 a-t="r">WORLD FUTURE ENERGY SUMMIT</h2>
-          <div>
-            <figure className="d-o" a-i="r">
-              <Image src={s1I} alt="Insights and Impact" />
-            </figure>
-            <div className={s.r}>
-              {event.details && <RichText content={event?.details} />}
-            </div>
-          </div>
         </section>
 
         <section g-s="s2" className={s.s2}>
@@ -308,7 +287,7 @@ export default async function () {
           </div>
         </section>
 
-        <section className={s.s5}>
+        <section g-s="s5" className={s.s5}>
           <p>
             <span>“</span>At Again, Please, we’re building circular systems by
             replacing single-use packaging with reusable packaging.

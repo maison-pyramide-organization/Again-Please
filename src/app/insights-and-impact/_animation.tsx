@@ -39,7 +39,7 @@ export default function Animation() {
       opacity: 1,
       immediateRender: false,
       scrollTrigger: {
-        trigger: "[g-s='s4']",
+        trigger: "[g-s='s5']",
         start: "top center",
         end: "bottom center",
         scrub: true,

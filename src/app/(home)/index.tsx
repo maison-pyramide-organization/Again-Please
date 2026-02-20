@@ -1,4 +1,4 @@
-import { getSectors } from "@/services/api/force";
+import { getSectors } from "@/services/api";
 import Animation from "./_animation";
 // import About from "./components/About";
 // import Hero from "./components/Hero";

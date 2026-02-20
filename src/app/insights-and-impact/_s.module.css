@@ -104,81 +104,13 @@
     width: 90%;
   }
 }
-.s1 {
-  margin-top: 50rem;
-  padding-inline: 40rem;
-  @media (width > 770px) {
-    margin-top: 165rem;
-    padding-inline: 80rem;
-  }
-}
-.s1 span {
-  font-size: 12rem;
-  line-height: 1;
-  @media (width > 770px) {
-    font-size: 30rem;
-  }
-}
-
-.s1 h2 {
-  margin-top: 8rem;
-  font-size: 20rem;
-  letter-spacing: -0.02em;
-  line-height: 110%;
-  @media (width > 770px) {
-    margin-top: 12rem;
-    font-size: 40rem;
-    letter-spacing: unset;
-    line-height: unset;
-  }
-}
-.s1 > div {
-  margin-top: 24rem;
-  @media (width > 770px) {
-    margin-top: 40rem;
-    display: flex;
-    justify-content: space-between;
-  }
-}
-.s1 figure {
-  width: 500rem;
-}
-.s1 .r {
-  @media (width > 770px) {
-    width: 730rem;
-  }
-}
-.s1 h3 {
-  font-family: "b";
-  font-weight: bold;
-  font-size: 15rem;
-  line-height: 120%;
-  letter-spacing: -0.02em;
-  @media (width > 770px) {
-    font-size: 20rem;
-    line-height: 24rem;
-  }
-}
-.s1 p {
-  margin-top: 24rem;
-  font-size: 15rem;
-  line-height: 120%;
-  letter-spacing: -0.02em;
-  @media (width > 770px) {
-    font-size: 20rem;
-    line-height: 24rem;
-  }
-  &:first-child {
-    margin-top: 0;
-  }
-}
 
 .s2 {
   margin-top: 50rem;
   padding-inline: 40rem;
   @media (width > 770px) {
     padding-inline: unset;
-    margin-top: 88rem;
+    margin-top: 180rem;
   }
 }
 

@@ -1,0 +1,367 @@
+.p {
+  padding-top: 64rem;
+  padding-bottom: 80rem;
+}
+/******************
+HEADER
+******************/
+.h {
+  padding-inline: var(--p-i);
+  margin-top: 80rem;
+  display: flex;
+  gap: 90rem;
+}
+.h nav {
+  flex-shrink: 0;
+  width: 580rem;
+  display: flex;
+  justify-content: space-between;
+}
+.h a {
+  font-size: 15rem;
+}
+.h p {
+  font-size: 30rem;
+  letter-spacing: -0.02em;
+  & span {
+    display: block;
+    font-weight: 600;
+  }
+}
+
+/******************
+SLIDER
+******************/
+.slider {
+  overflow: hidden;
+}
+
+.slider_ {
+  position: relative;
+  white-space: nowrap;
+  display: flex;
+  width: fit-content;
+}
+.slider p {
+  font-size: 30rem;
+  font-family: "sg";
+  @media (width > 770px) {
+    font-size: 60rem;
+  }
+}
+.slider p:nth-of-type(1) {
+  position: absolute;
+  left: 100%;
+}
+.slider p:nth-of-type(2) {
+  position: absolute;
+  left: 200%;
+}
+.slider p:nth-of-type(3) {
+  position: absolute;
+  left: 300%;
+}
+/******************
+EVENTS
+******************/
+.events {
+  margin-top: 50rem;
+  padding-inline: var(--p-i);
+}
+
+.events > h2 {
+  font-size: 25rem;
+  color: var(--c-green);
+  @media (width > 770px) {
+    font-size: 50rem;
+  }
+}
+.events > ul {
+  display: flex;
+  gap: 40rem;
+  flex-direction: column;
+  @media (width > 770px) {
+    gap: 80rem;
+  }
+}
+
+.event h3 {
+  font-size: 20rem;
+  letter-spacing: -0.02em;
+  line-height: 110%;
+  text-transform: uppercase;
+  @media (width > 770px) {
+    font-size: 50rem;
+    line-height: unset;
+    letter-spacing: unset;
+  }
+}
+.event > div {
+  margin-top: 8rem;
+  @media (width > 770px) {
+    margin-top: 40rem;
+    display: flex;
+    gap: 90rem;
+  }
+}
+.event figure {
+  flex-shrink: 0;
+  @media (width > 770px) {
+    width: 580rem;
+  }
+}
+.event aside {
+  margin-top: 20rem;
+  font-size: 15rem;
+  line-height: 17rem;
+  letter-spacing: -0.02em;
+  @media (width > 770px) {
+    margin-top: 0;
+    font-size: 20rem;
+    line-height: 24rem;
+  }
+}
+/******************
+PRESS
+******************/
+.press {
+  margin-top: 50rem;
+  padding-inline: var(--p-i);
+  @media (width > 770px) {
+    margin-top: 100rem;
+  }
+}
+.press > h2 {
+  font-size: 25rem;
+  color: var(--c-green);
+  @media (width > 770px) {
+    font-size: 50rem;
+  }
+}
+
+.pArticle {
+  margin-top: 32rem;
+}
+.pArticle h2 {
+  font-size: 40rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.pArticle > div {
+  margin-top: 56rem;
+  display: flex;
+  gap: 90rem;
+  justify-content: flex-end;
+}
+.pArticle figure {
+  width: 500rem;
+}
+.pArticle aside {
+  width: 610rem;
+  font-size: 20rem;
+  line-height: 24rem;
+  letter-spacing: -0.02em;
+}
+.pArticle button {
+  margin-top: 40rem;
+  padding: 16rem 48rem;
+  font-size: 15rem;
+  border: 2rem solid black;
+  border-radius: 100rem;
+  font-family: "sg";
+}
+
+.press > ul {
+  margin-top: 24rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40rem;
+  @media (width > 770px) {
+    margin-top: 80rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 90rem;
+  }
+}
+.article figure {
+  height: 300rem;
+}
+.article span {
+  display: block;
+  color: var(--c-green);
+  margin-top: 16rem;
+  font-weight: 500;
+  font-size: 15rem;
+  letter-spacing: -0.02em;
+  @media (width > 770px) {
+    margin-top: 20rem;
+  }
+}
+.article h3 {
+  margin-top: 14rem;
+  font-size: 17rem;
+  line-height: 19rem;
+  @media (width > 770px) {
+    margin-top: 8rem;
+    font-size: 20rem;
+    line-height: 21rem;
+  }
+}
+.article > div {
+  margin-top: 16rem;
+  font-size: 15rem;
+  line-height: 17rem;
+  @media (width > 770px) {
+    margin-top: 24rem;
+    font-size: 18rem;
+    line-height: 20rem;
+  }
+}
+/******************
+BLOGS
+******************/
+.blogs {
+  margin-top: 50rem;
+  padding-inline: var(--p-i);
+  @media (width > 770px) {
+    margin-top: 100rem;
+    display: flex;
+    gap: 90rem;
+  }
+}
+.blogs h2 {
+  font-size: 25rem;
+  color: var(--c-green);
+  flex-basis: 100%;
+  @media (width > 770px) {
+    font-size: 50rem;
+  }
+}
+.blogs > ul {
+  margin-top: 16rem;
+  @media (width > 770px) {
+    margin-top: unset;
+  }
+}
+
+.blog {
+  position: relative;
+  @media (width > 770px) {
+    width: 600rem;
+  }
+}
+.blog span {
+  font-size: 15rem;
+  letter-spacing: -0.02em;
+  @media (width > 770px) {
+    padding-top: 8rem;
+    position: absolute;
+    right: calc(100% + 24rem);
+    white-space: nowrap;
+  }
+}
+.blog h3 {
+  font-size: 18rem;
+  line-height: 19rem;
+  @media (width > 770px) {
+    font-size: 30rem;
+    line-height: 40rem;
+  }
+}
+.blog figure {
+  margin-top: 16rem;
+}
+.blog p {
+  margin-top: 24rem;
+}
+.blog button {
+  margin-top: 24rem;
+  font-size: 15rem;
+  color: var(--c-green);
+  font-family: "sg";
+  text-decoration: underline;
+}
+
+/******************
+BLOG POPUP
+******************/
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  background-color: white;
+  padding-inline: var(--p-i);
+  padding-block: 32rem 24rem;
+  z-index: 9999;
+  display: none;
+  pointer-events: none;
+  overflow: auto;
+  @media (width > 770px) {
+    padding-inline: 80rem;
+    padding-block: 40rem;
+  }
+}
+.popup.active {
+  display: block;
+  pointer-events: unset;
+}
+
+.popup_h {
+  display: flex;
+  justify-content: space-between;
+}
+.popup_h h2 {
+  font-size: 50rem;
+  color: var(--c-green);
+  text-transform: uppercase;
+}
+.popup_h svg {
+  width: 24rem;
+  cursor: pointer;
+}
+.popup .title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40rem;
+}
+.popup nav {
+  display: flex;
+  gap: 24rem;
+}
+
+.popup nav svg {
+  width: 40rem;
+  &:nth-of-type(1) {
+    transform: rotate(-180deg);
+  }
+  & > * {
+    stroke: black !important;
+  }
+}
+.title h3 {
+  font-size: 40rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.popup figure {
+  margin-top: 40rem;
+  height: 600rem;
+}
+.popup_content {
+  display: flex;
+  gap: 90rem;
+  justify-content: center;
+  margin-top: 40rem;
+  font-size: 20rem;
+  line-height: 24rem;
+  letter-spacing: -0.02em;
+}
+.popup_content .l {
+  width: 510rem;
+}
+.popup_content .r {
+  width: 610rem;
+}

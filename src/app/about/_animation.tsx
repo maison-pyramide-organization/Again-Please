@@ -27,7 +27,7 @@ export default function Animation() {
         opacity: 1,
         duration: 1,
         ease: "power2.inOut",
-      }
+      },
     );
 
     gsap.to("#bg", {
@@ -78,10 +78,12 @@ export default function Animation() {
   useGSAP(() => {
     if (!loaded) return;
 
-    initA();
-    textsA();
-    imagesA();
-    isMobile ? bgAM() : bgA();
+    // document.fonts.ready.then(() => {
+      initA();
+      textsA();
+      imagesA();
+      isMobile ? bgAM() : bgA();
+    // });
   }, [loaded, isMobile]);
 
   return null;
