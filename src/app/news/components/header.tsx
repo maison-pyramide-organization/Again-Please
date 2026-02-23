@@ -5,7 +5,7 @@ export default function Header() {
     <div className={s.h}>
       <nav className="d-o">
         <a href="#press">In the press</a>
-        <a href="#blogs">Blogs</a>
+        <a href="#blogs">Blog</a>
         <a href="#events">Events</a>
       </nav>
       <p>
