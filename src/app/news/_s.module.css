@@ -222,7 +222,7 @@ PRESS
     gap: 90rem;
   }
 }
-.article a{
+.article a {
   display: block;
 }
 .article figure {
@@ -423,6 +423,12 @@ BLOG POPUP
     line-height: 24rem;
   }
 }
+.popup_content p:not(:first-of-type) {
+  margin-top: 16rem;
+  @media (width > 770px) {
+    margin-top: 24rem;
+  }
+}
 .popup_content .l {
   @media (width > 770px) {
     width: 510rem;
@@ -431,5 +437,13 @@ BLOG POPUP
 .popup_content .r {
   @media (width > 770px) {
     width: 610rem;
+  }
+}
+.popup_content sup {
+  font-family: "sg";
+  font-weight: normal !important;
+  display: block;
+  & strong {
+    font-weight: normal !important;
   }
 }
