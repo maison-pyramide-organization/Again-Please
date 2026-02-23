@@ -1,4 +1,3 @@
-import { AnyAaaaRecord } from "node:dns";
 import client from "../contentful";
 
 export const getForce = async () => {
@@ -33,7 +32,7 @@ export const getSectors = async () => {
   return sectors;
 };
 
-export const getEvent = async () => {
+export const getEvents = async () => {
   const { items } = await client.getEntries({
     content_type: "event",
     limit: 100,
@@ -62,24 +61,7 @@ export const getArticles = async () => {
     modifiedAt: sys.updatedAt, // ISO8601 UTC
   }));
 
-  const grouped = articles.reduce(
-    (acc: any, item: any) => {
-      const firstType = item.type?.[0]?.toLowerCase();
-
-      if (firstType === "event") {
-        acc.events.push(item);
-      } else if (firstType === "press") {
-        acc.press.push(item);
-      } else if (firstType === "blog") {
-        acc.blogs.push(item);
-      }
-
-      return acc;
-    },
-    { events: [], press: [], blogs: [] },
-  );
-
-  return grouped;
+  return articles;
 };
 
 export const getBlogs = async () => {
@@ -91,8 +73,6 @@ export const getBlogs = async () => {
   const blogs = items.map(({ fields, sys }) => ({
     ...fields,
     id: sys.id,
-    // createdAt: sys.createdAt, // ISO8601 UTC
-    // modifiedAt: sys.updatedAt, // ISO8601 UTC
   }));
 
   return blogs;

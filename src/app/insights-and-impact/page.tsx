@@ -10,7 +10,7 @@ import Link from "next/link";
 import Ipath from "@a/icons/path.svg";
 import Products from "./components/products";
 
-export default async function () {
+export default function () {
   return (
     <>
       <div className={s.p}>
