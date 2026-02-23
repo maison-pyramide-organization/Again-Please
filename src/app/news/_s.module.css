@@ -21,6 +21,9 @@ HEADER
   width: 580rem;
   display: flex;
   justify-content: space-between;
+  @media (width > 770px) {
+    padding-top: 14rem;
+  }
 }
 .h a {
   font-size: 15rem;
@@ -219,6 +222,9 @@ PRESS
     gap: 90rem;
   }
 }
+.article a{
+  display: block;
+}
 .article figure {
   height: 300rem;
 }
@@ -243,7 +249,7 @@ PRESS
     line-height: 21rem;
   }
 }
-.article > div {
+.article a > div {
   margin-top: 16rem;
   font-size: 15rem;
   line-height: 17rem;
@@ -398,7 +404,7 @@ BLOG POPUP
   height: 300rem;
   @media (width > 770px) {
     margin-top: 40rem;
-    height: 600rem;
+    height: 700rem;
   }
 }
 .popup_content {

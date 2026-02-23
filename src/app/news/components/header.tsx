@@ -4,9 +4,9 @@ export default function Header() {
   return (
     <div className={s.h}>
       <nav className="d-o">
+        <a href="#events">Events</a>
         <a href="#press">In the press</a>
         <a href="#blogs">Blog</a>
-        <a href="#events">Events</a>
       </nav>
       <p>
         <span>Discover the latest from Again, Please</span>

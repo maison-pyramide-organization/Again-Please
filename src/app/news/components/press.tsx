@@ -50,14 +50,16 @@ export default function Press(props: Iprops) {
       <ul>
         {restOfPress.map((article, i) => (
           <li key={i} className={s.article}>
-            <figure>
-              <img src={article.image?.fields.file.url} alt="" />
-            </figure>
-            <span>{article.date}</span>
-            <h3>{article.title}</h3>
-            <div>
-              <RichTextDetails content={article.description} />
-            </div>
+            <a href={article.link}>
+              <figure>
+                <img src={article.image?.fields.file.url} alt="" />
+              </figure>
+              <span>{article.date}</span>
+              <h3>{article.title}</h3>
+              <div>
+                <RichTextDetails content={article.description} />
+              </div>
+            </a>
           </li>
         ))}
       </ul>
