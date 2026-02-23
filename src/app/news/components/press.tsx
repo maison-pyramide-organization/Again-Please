@@ -50,7 +50,7 @@ export default function Press(props: Iprops) {
       <ul>
         {restOfPress.map((article, i) => (
           <li key={i} className={s.article}>
-            <a href={article.link}>
+            <a href={article.link} target="_blank">
               <figure>
                 <img src={article.image?.fields.file.url} alt="" />
               </figure>
