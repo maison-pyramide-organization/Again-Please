@@ -6,7 +6,6 @@ export default function Header() {
       <nav className="d-o">
         <a href="#press">In the press</a>
         <a href="#blogs">Blogs</a>
-        <a href="">Perspectives</a>
         <a href="#events">Events</a>
       </nav>
       <p>

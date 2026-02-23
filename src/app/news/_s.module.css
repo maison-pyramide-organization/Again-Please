@@ -57,7 +57,9 @@ SLIDER
 .slider p {
   font-size: 30rem;
   font-family: "sg";
+  padding-right: 16rem;
   @media (width > 770px) {
+    padding-right: 24rem;
     font-size: 60rem;
   }
 }
