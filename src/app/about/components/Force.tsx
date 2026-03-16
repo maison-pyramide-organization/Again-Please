@@ -30,17 +30,14 @@ export default async function Force() {
           <img src={`https:${ceo.image?.fields.file.url}`} alt={ceo.name} />
         </figure>
         <div>
-          <h3 a-t="r">Athanasios Polychronopoulos</h3>
-          <span a-t="r">Chairman & CEO of Polygreen Group of Companies </span>
+          <h3 a-t="r">{ceo.name}</h3>
+          <span a-t="r">{ceo.title}</span>
           {ceo.description.split("\n\n").map((p, i) => (
             <p key={i} a-t="r">
               {p}
             </p>
           ))}
-          <a
-            href="https://www.linkedin.com/in/athanasios-polychronopoulos-44824933/"
-            target="_blank"
-          >
+          <a target="_blank" href={ceo.url}>
             LINKEDIN
           </a>
         </div>
@@ -53,7 +50,7 @@ export default async function Force() {
               <img
                 a-i="r"
                 src={`https:${f.image?.fields.file.url}`}
-                alt={ceo.name}
+                alt={f.name}
               />
             </figure>
 

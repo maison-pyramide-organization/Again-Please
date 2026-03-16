@@ -69,9 +69,10 @@ interface Iprops {
 export default function ProductsMarquee(props: Iprops) {
   const productsCRef = useRef<HTMLDivElement>(null);
   const tl = useRef<GSAPTimeline>(null);
-  const { products } = props;
+  let { products } = props;
 
   if (!products) return null;
+  products = products.sort((a, b) => a.index - b.index);
 
   useGSAP(() => {
     const setTl = () => {
