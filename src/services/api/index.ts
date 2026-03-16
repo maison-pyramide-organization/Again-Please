@@ -78,3 +78,17 @@ export const getBlogs = async () => {
 
   return blogs;
 };
+
+export const getProducts = async () => {
+  const { items } = await client.getEntries({
+    content_type: "product",
+    limit: 100,
+  });
+
+  const products = items.map(({ fields, sys }) => ({
+    ...fields,
+    id: sys.id,
+  }));
+
+  return products;
+};

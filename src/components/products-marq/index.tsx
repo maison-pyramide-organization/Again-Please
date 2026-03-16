@@ -11,7 +11,6 @@ import p6I from "@im/products/p6.png";
 import p7I from "@im/products/p7.png";
 import p8I from "@im/products/p8.png";
 import p9I from "@im/products/p9.png";
-import Image from "next/image";
 import { useRef } from "react";
 import gsap from "gsap";
 
@@ -62,9 +61,17 @@ const products = [
     widthM: 70,
   },
 ];
-export default function ProductsMarquee() {
+
+interface Iprops {
+  products: any[];
+}
+
+export default function ProductsMarquee(props: Iprops) {
   const productsCRef = useRef<HTMLDivElement>(null);
   const tl = useRef<GSAPTimeline>(null);
+  const { products } = props;
+
+  if (!products) return null;
 
   useGSAP(() => {
     const setTl = () => {
@@ -88,15 +95,16 @@ export default function ProductsMarquee() {
       <div className={s.pm}>
         <div className={s.pm_c} ref={productsCRef}>
           <ul>
-            {products.map((p, i) => (
+            {products?.map((p, i) => (
               <li key={i}>
-                <Image
-                  src={p.img}
+                <img
+                  // src={p.img}
+                  src={p.image?.fields.file.url}
                   alt="again please cup"
                   style={
                     {
-                      "--w": `${p.width}rem`,
-                      "--wm": `${p.widthM}rem`,
+                      "--w": `${p?.width}rem`,
+                      "--wm": `${p?.mobileWidth}rem`,
                     } as React.CSSProperties
                   }
                 />
@@ -106,8 +114,8 @@ export default function ProductsMarquee() {
           <ul>
             {products.map((p, i) => (
               <li key={i}>
-                <Image
-                  src={p.img}
+                <img
+                  src={p.image?.fields.file.url}
                   alt="again please cup"
                   style={
                     {

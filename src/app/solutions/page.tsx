@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import s from "./_s.module.css";
 import Animation from "./_animation";
 import Image from "next/image";
@@ -10,35 +10,17 @@ import s13I from "@im/solutions/s1-3.png";
 import s2I from "@im/solutions/s2.png";
 import s2mI from "@im/solutions/s2m.png";
 import ProductsMarquee from "@/components/products-marq";
-import { useEffect, useRef } from "react";
+// import { useEffect, useRef } from "react";
+import HeroVid from "./components/video";
+import { getProducts } from "@/services/api";
 
-export default function () {
-  const videoRef = useRef<HTMLVideoElement | null>(null);
-
-  useEffect(() => {
-    const isMobile = window.innerWidth < 770;
-
-    const src = isMobile ? "/videos/ap-m.mp4" : "/videos/ap-animation.mp4";
-
-    if (!videoRef.current) return;
-
-    videoRef.current.src = src;
-    videoRef.current.load();
-  }, []);
+export default async function () {
+  const products = await getProducts();
   return (
     <>
       <div className={s.p}>
         <section className={s.s0}>
-          <figure>
-            <video
-              ref={videoRef}
-              className={s.v}
-              autoPlay
-              loop
-              muted
-              playsInline
-            />
-          </figure>
+          <HeroVid />
           <h1>
             AN END-TO-END REUSE SYSTEM
             <span a-t="r">DESIGNED FOR EVERY OPERATION</span>
@@ -185,7 +167,7 @@ export default function () {
               </p>
             </div>
           </div>
-          <ProductsMarquee />
+          <ProductsMarquee products={products} />
           <div className={s.i}>
             <span a-t="r">04</span>
             <h2 a-t="r">
