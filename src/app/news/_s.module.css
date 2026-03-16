@@ -292,6 +292,9 @@ BLOGS
   }
   @media (width > 770px) {
     width: 600rem;
+    &:not(:first-of-type) {
+      margin-top: 48rem;
+    }
   }
 }
 .blog span {
@@ -440,6 +443,14 @@ BLOG POPUP
   }
 }
 .popup_content sup {
+  font-family: "sg";
+  font-weight: normal !important;
+  display: block;
+  & strong {
+    font-weight: normal !important;
+  }
+}
+.popup_content strong {
   font-family: "sg";
   font-weight: normal !important;
   display: block;

@@ -44,6 +44,7 @@ export const getEvents = async () => {
     // createdAt: sys.createdAt, // ISO8601 UTC
     modifiedAt: sys.updatedAt, // ISO8601 UTC
   }));
+  // console.log("e", events);
 
   return events;
 };
