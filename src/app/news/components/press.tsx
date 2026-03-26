@@ -9,6 +9,8 @@ interface Iprops {
 }
 export default function Press(props: Iprops) {
   const { press } = props;
+  console.log("p", press);
+
   const pArticle = press.find((item) => item.withPopup === true);
   const restOfPress = press.filter((item) => item.id !== pArticle?.id);
   const [isOp, setIsOp] = useState(false);

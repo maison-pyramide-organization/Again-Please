@@ -259,6 +259,9 @@ PRESS
     line-height: 20rem;
   }
 }
+.article p:not(:first-child) {
+  margin-top: 24rem;
+}
 /******************
 BLOGS
 ******************/

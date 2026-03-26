@@ -1,3 +1,5 @@
+export const revalidate = 60;
+
 import s from "./_s.module.css";
 import Animation from "./_animation";
 import Slider from "./components/slider";
@@ -7,7 +9,7 @@ import Events from "./components/events";
 import Press from "./components/press";
 import Header from "./components/header";
 
-export default async function () {
+export default async function NewsPage() {
   const articles = await getArticles();
   const blogs = await getBlogs();
   const events = await getEvents();
