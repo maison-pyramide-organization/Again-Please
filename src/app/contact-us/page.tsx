@@ -1,47 +1,81 @@
 "use client";
-
-import { useRef } from "react";
+import { useEffect, useState } from "react";
 import Animation from "./_animation";
 import s from "./_s.module.css";
-import sendEmail from "@/utils/sendEmail";
+import { getFaqs } from "@/services/api";
+import Accordion from "@/components/accordion";
+import Markdown from "react-markdown";
+import tabs from "@/data/faqs";
+import Talk from "./components/Talk";
 
-export default function () {
-  const formR = useRef(null);
-  const onsubmit = async (e) => {
-    e.preventDefault();
-    const form = e.target;
-    const formData = {
-      email: form.email.value,
-      name: form.name.value,
-      phone: form.phone.value,
-      message: form.message.value,
-      company: form.company.value,
-    };
-    // console.log(formData);
+export default function Contact() {
+  const [active, setActive] = useState<string>("about");
+  const [faqs, setFaqs] = useState<any[]>([]);
+  const [activeFaqs, setActiveFaqs] = useState<any[]>([]);
 
-    await sendEmail(formData);
-    form.reset()
+  const getActiveFaqs = (tabId: string, faqList: any[]) => {
+    return faqList.filter((faq) => faq.type === tabId);
   };
+
+  useEffect(() => {
+    getFaqs().then((fetchedFaqs) => {
+      setFaqs(fetchedFaqs);
+      setActiveFaqs(getActiveFaqs("about", fetchedFaqs)); // ✅ use resolved value, not stale state
+    });
+  }, []);
+
+  const handleTabC = (tabId: string) => {
+    // ✅ receive id, not full object
+    setActive(tabId);
+    setActiveFaqs(getActiveFaqs(tabId, faqs)); // ✅ tabId is now defined
+  };
+
+  const activeTab = tabs.find((tab) => tab.id === active); // ✅ look up tab for the heading
+
   return (
     <>
       <div className={s.p}>
         <main className={s.m}>
-          <h1>
-            TALK TO US
-            <span>AGAIN, AND AGAIN.</span>
-            <span className={s.l} />
-          </h1>
+          <section className={s["s-faq"]}>
+            <h1>
+              FREQUENTLY
+              <span>ASKED QUESTIONS</span>
+              <span className={s.l} />
+            </h1>
+            <ul className={` ${s["tabs-list"]} h-s`}>
+              {tabs.map((tab, i) => (
+                <li
+                  key={i}
+                  className={
+                    active === tab.id ? `${s.tab} ${s.active}` : `${s.tab}`
+                  }
+                  onClick={() => handleTabC(tab.id)}
+                >
+                  {tab.name}
+                </li>
+              ))}
+            </ul>
+            <h3>{activeTab?.name}</h3> {/* ✅ use derived activeTab */}
+            <div className={s["faq-list"]}>
+              {activeFaqs?.map((faq, i) => (
+                <div className={s.faq} key={`${active}-${i}`}>
+                  <Accordion title={faq.question}>
+                    <div className={s.markdown}>
+                      <Markdown>{faq.answer}</Markdown>
+                    </div>
+                  </Accordion>
+                </div>
+              ))}
+            </div>
+          </section>
 
-          <form ref={formR} onSubmit={onsubmit}>
-            <input type="text" name="name" placeholder="Name*" required />
-            <input type="text" name="phone" placeholder="Phone Number" />
-            <input type="email" name="email" placeholder="Email*" required />
-            <input type="text" name="company" placeholder="Company" />
-            {/* <input type="text" name="message" placeholder="Message" /> */}
-            {/* <input type="textarea" name="message" placeholder="Message" /> */}
-            <textarea name="message" placeholder="Message*" required></textarea>
-            <button type="submit">SUBMIT</button>
-          </form>
+          <h3>
+            GOT MORE
+            <br />
+            QUESTIONS?
+          </h3>
+
+          <Talk />
         </main>
       </div>
       <Animation />

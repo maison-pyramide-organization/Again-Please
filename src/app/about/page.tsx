@@ -5,7 +5,7 @@ import Story from "./components/Story";
 import Vmv from "./components/Vmv";
 import Why from "./components/Why";
 
-export default function () {
+export default function About () {
   return (
     <div className={s.p}>
       <Story />

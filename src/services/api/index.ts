@@ -92,3 +92,17 @@ export const getProducts = async () => {
 
   return products;
 };
+
+export const getFaqs = async () => {
+  const { items } = await client.getEntries({
+    content_type: "qa",
+    limit: 100,
+  });
+
+  const faqs = items.map(({ fields, sys }) => ({
+    ...fields,
+    id: sys.id,
+  }));
+
+  return faqs;
+};
