@@ -7,6 +7,8 @@ import Accordion from "@/components/accordion";
 import Markdown from "react-markdown";
 import tabs from "@/data/faqs";
 import Talk from "./components/Talk";
+import Ichev from "@a/icons/chev.svg";
+import { useRef } from "react";
 
 export default function Contact() {
   const [active, setActive] = useState<string>("about");
@@ -32,6 +34,22 @@ export default function Contact() {
 
   const activeTab = tabs.find((tab) => tab.id === active); // ✅ look up tab for the heading
 
+  // ...inside your component
+  const tabsListRef = useRef(null) as any;
+
+  const scrollTabs = (direction) => {
+    const container = tabsListRef.current;
+    if (!container) return;
+
+    // scroll by ~80% of the visible width each click
+    const scrollAmount = container.clientWidth * 0.5;
+
+    container.scrollBy({
+      left: direction === "next" ? scrollAmount : -scrollAmount,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
       <div className={s.p}>
@@ -42,7 +60,11 @@ export default function Contact() {
               <span>ASKED QUESTIONS</span>
               <span className={s.l} />
             </h1>
-            <ul className={` ${s["tabs-list"]} h-s`}>
+            <nav className={s["tabs-nav"]}>
+              <Ichev onClick={() => scrollTabs("prev")} />
+              <Ichev onClick={() => scrollTabs("next")} />
+            </nav>
+            <ul ref={tabsListRef} className={` ${s["tabs-list"]} h-s`}>
               {tabs.map((tab, i) => (
                 <li
                   key={i}

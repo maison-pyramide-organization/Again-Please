@@ -72,8 +72,22 @@
     font-size: 30rem;
   }
 }
-.tabs-list {
+.tabs-nav {
   margin-top: 64rem;
+  display: flex;
+  gap: 10rem;
+  @media (width > 770px) {
+    display: none;
+  }
+}
+.tabs-nav svg {
+  width: 24rem;
+  &:nth-child(1) {
+    transform: rotate(180deg);
+  }
+}
+.tabs-list {
+  margin-top: 24rem;
   display: flex;
   gap: 16rem;
   overflow: auto;
