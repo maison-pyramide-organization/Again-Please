@@ -5,7 +5,7 @@ import Animation from "./_animation";
 import s from "./_s.module.css";
 import sendEmail from "@/utils/sendEmail";
 
-export default function () {
+export default function Contact() {
   const formR = useRef(null);
   const onsubmit = async (e) => {
     e.preventDefault();
