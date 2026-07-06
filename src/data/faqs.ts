@@ -8,7 +8,7 @@ const tabs = [
   { name: "TRACKING, REPORTING & DATA", id: "tracking" },
   { name: "pos & systems integration", id: "pos" },
   { name: "return infrastructure", id: "return" },
-  { name: "instant borrow” system", id: "instant" },
+  { name: '"instant borrow” system', id: "instant" },
 ];
 
-export default tabs
+export default tabs;

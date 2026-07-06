@@ -16,7 +16,10 @@ export default function Contact() {
   const [activeFaqs, setActiveFaqs] = useState<any[]>([]);
 
   const getActiveFaqs = (tabId: string, faqList: any[]) => {
-    return faqList.filter((faq) => faq.type === tabId);
+    return faqList
+      .filter((faq) => faq.type === tabId)
+      .sort((a, b) => a.index - b.index);
+    // return faqList.filter((faq) => faq.type === tabId);
   };
 
   useEffect(() => {
