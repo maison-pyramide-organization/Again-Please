@@ -22,14 +22,14 @@ export default function Accordion(props: any) {
   };
 
   return (
-    <div onClick={handleClick}>
-      <div className={s.item_t}>
-        <span>{title}</span>
+    <div className="acc" onClick={handleClick}>
+      <div className={`acc_h ${s.item_t}`}>
+        <span className="acc_title">{title}</span>
         {active ? <Iminus /> : <Iplus />}
       </div>
 
-      <div className={s.item_b_} ref={itemBodyW}>
-        <div className={s.item_b}>{children}</div>
+      <div className={`acc_b_ ${s.item_b_}`} ref={itemBodyW}>
+        <div className={`acc_b ${s.item_b}`}>{children}</div>
       </div>
     </div>
   );
