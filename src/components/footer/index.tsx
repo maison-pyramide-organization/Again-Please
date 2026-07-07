@@ -26,7 +26,7 @@ export default function Footer() {
           Tiktok
         </a>
         <span>|</span>
-        <a target="_blank" href="https://www.facebook.com/againpleaseco">
+        <a target="_blank" href="https://www.facebook.com/againpleaseact">
           Facebook
         </a>
         <span>|</span>

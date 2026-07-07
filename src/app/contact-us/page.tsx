@@ -29,6 +29,7 @@ export default function Contact() {
     });
   }, []);
 
+
   const handleTabC = (tabId: string) => {
     // ✅ receive id, not full object
     setActive(tabId);
