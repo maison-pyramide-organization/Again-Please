@@ -4,8 +4,9 @@ import Force from "./components/Force";
 import Story from "./components/Story";
 import Vmv from "./components/Vmv";
 import Why from "./components/Why";
+export const revalidate = 3600;
 
-export default function About () {
+export default function About() {
   return (
     <div className={s.p}>
       <Story />
