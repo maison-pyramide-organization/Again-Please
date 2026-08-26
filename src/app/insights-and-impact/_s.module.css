@@ -98,11 +98,15 @@
   & text {
     font-size: 48rem;
     font-family: "sg";
+      @media (width > 1440px){
+        font-size: 48px;
+      }
   }
   @media (width > 770px) {
     top: 500rem;
     width: 90%;
   }
+
 }
 
 .s2 {
