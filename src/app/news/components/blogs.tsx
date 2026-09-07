@@ -23,11 +23,11 @@ export default function Blogs(props: Iprops) {
       <ul>
         {blogs.map((blog, i) => (
           <li className={s.blog} key={i}>
-            <span>{blog.date}</span>
             <h3>{blog.title}</h3>
             <figure>
               <img src={blog.image?.fields.file.url} alt="" />
             </figure>
+            <span>{blog.date}</span>
             <p>{blog.caption}</p>
             <button onClick={() => handleClick(i)}>READ MORE</button>
           </li>

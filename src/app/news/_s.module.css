@@ -279,8 +279,8 @@ BLOGS
   padding-inline: var(--p-i);
   @media (width > 770px) {
     margin-top: 100rem;
-    display: flex;
-    gap: 90rem;
+    /* display: flex;
+    gap: 90rem; */
   }
 }
 .blogs h2 {
@@ -293,29 +293,31 @@ BLOGS
 }
 .blogs > ul {
   margin-top: 16rem;
+  display: flex;
+  flex-direction: column;
+  gap: 40rem;
   @media (width > 770px) {
-    margin-top: unset;
+    margin-top: 40rem;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0 40rem;
   }
 }
 .blog {
   position: relative;
-  &:not(:first-of-type) {
-    margin-top: 32rem;
-  }
   @media (width > 770px) {
     width: 600rem;
-    &:not(:first-of-type) {
-      margin-top: 48rem;
-    }
   }
 }
 .blog span {
+  display: block;
   font-size: 15rem;
   letter-spacing: -0.02em;
+  margin-top: 16rem;
   @media (width > 770px) {
+    margin-top: 24rem;
     padding-top: 8rem;
-    position: absolute;
-    right: calc(100% + 24rem);
     white-space: nowrap;
   }
 }
@@ -324,14 +326,15 @@ BLOGS
   line-height: 19rem;
   @media (width > 770px) {
     font-size: 30rem;
-    line-height: 40rem;
+    line-height: 32rem;
   }
 }
 .blog figure {
   margin-top: 16rem;
+  aspect-ratio: 3/2;
 }
 .blog p {
-  margin-top: 24rem;
+  margin-top: 16rem;
 }
 .blog button {
   margin-top: 16rem;
@@ -415,11 +418,12 @@ BLOG POPUP
   }
 }
 .popup figure {
+  aspect-ratio: 3/2;
   margin-top: 24rem;
-  height: 300rem;
+  /* height: 300rem; */
   @media (width > 770px) {
     margin-top: 40rem;
-    height: 700rem;
+    /* height: 700rem; */
   }
 }
 .popup_content {
