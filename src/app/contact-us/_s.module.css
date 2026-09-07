@@ -23,13 +23,15 @@
   @media (width > 770px) {
     margin-inline: auto;
     width: 100%;
-    max-width: 1000rem;
+    /* max-width: 1000rem; */
   }
 }
 .s-faq h1 {
   font-size: 30rem;
   line-height: 40rem;
   position: relative;
+  max-width: 1000rem;
+  margin-inline: auto;
 
   & span:first-child {
     display: block;
@@ -70,6 +72,8 @@
   @media (width > 770px) {
     margin-top: 80rem;
     font-size: 30rem;
+    max-width: 1000rem;
+    margin-inline: auto;
   }
 }
 .tabs-nav {
@@ -94,7 +98,7 @@
   @media (width > 770px) {
     margin-top: 80rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 32rem;
   }
 }
@@ -104,7 +108,8 @@
   max-width: 200rem;
   padding: 8rem;
   color: var(--c-green);
-  font-size: 12rem;
+  /* font-size: 12rem; */
+  font-size: 10rem;
   text-transform: uppercase;
   text-align: center;
   border: 1rem solid var(--c-green);
@@ -128,6 +133,8 @@
 
 .faq-list {
   margin-top: 16rem;
+  max-width: 1000rem;
+  margin-inline: auto;
 }
 .faq :global(.acc) {
   border-top: 1rem solid black;

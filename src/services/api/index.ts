@@ -53,6 +53,7 @@ export const getArticles = async () => {
   const { items } = await client.getEntries({
     content_type: "article",
     limit: 100,
+    order: ["-sys.createdAt"], // newest first
   });
 
   const articles = items.map(({ fields, sys }) => ({

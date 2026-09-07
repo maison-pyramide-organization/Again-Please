@@ -18,10 +18,10 @@ export default function HeroVid() {
   }, []);
 
   return (
-    <>
+    <div className={s.video_}>
       <figure>
         <video ref={videoRef} className={s.v} autoPlay loop muted playsInline />
       </figure>
-    </>
+    </div>
   );
 }

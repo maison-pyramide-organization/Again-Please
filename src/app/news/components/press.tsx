@@ -1,34 +1,35 @@
-"use client";
-import { useState } from "react";
+// "use client";
+// import { useState } from "react";
 import s from "../_s.module.css";
 import RichTextDetails from "@/components/richtext";
-import ArticlePopup from "./article-popup";
+// import ArticlePopup from "./article-popup";
 
 interface Iprops {
   press: any[];
 }
 export default function Press(props: Iprops) {
   const { press } = props;
-  console.log("p", press);
+  // console.log("p", press);
 
-  const pArticle = press.find((item) => item.withPopup === true);
-  const restOfPress = press.filter((item) => item.id !== pArticle?.id);
-  const [isOp, setIsOp] = useState(false);
+  // const pArticle = press.find((item) => item.withPopup === true);
+  // const restOfPress = press.filter((item) => item.id !== pArticle?.id);
+  // const [isOp, setIsOp] = useState(false);
 
-  const openPopup = () => {
-    document.body.classList.add("d-s");
-    setIsOp(true);
-  };
-  const closePopup = () => {
-    document.body.classList.remove("d-s");
-    setIsOp(false);
-  };
+  // const openPopup = () => {
+  //   document.body.classList.add("d-s");
+  //   setIsOp(true);
+  // };
+  // const closePopup = () => {
+  //   document.body.classList.remove("d-s");
+  //   setIsOp(false);
+  // };
 
   return (
     <section g-s="s-p" className={s.press} id="press">
       <h2>IN THE PRESS</h2>
       {/* MAIN ARTICLE */}
-      <div className={s.pArticle}>
+
+      {/* <div className={s.pArticle}>
         <h2>{pArticle.title}</h2>
         <div>
           <figure>
@@ -39,27 +40,31 @@ export default function Press(props: Iprops) {
             <button onClick={openPopup}>READ MORE</button>
           </aside>
         </div>
-      </div>
+      </div> */}
       {/* MAIN ARTICLE POPUP */}
-      {isOp && (
+      {/* {isOp && (
         <ArticlePopup
           article={pArticle}
           close={closePopup}
           title="in the press"
         />
-      )}
+      )} */}
       {/* PRESS ARTICLES */}
       <ul>
-        {restOfPress.map((article, i) => (
+        {/* {restOfPress.map((article, i) => ( */}
+        {press.map((article, i) => (
           <li key={i} className={s.article}>
             <a href={article.link} target="_blank">
               <figure>
                 <img src={article.image?.fields.file.url} alt="" />
               </figure>
-              <span>{article.date}</span>
+              {/* <span>{article.date}</span> */}
+              <span>{article.date || "\u00A0"}</span>
               <h3>{article.title}</h3>
               <div>
-                <RichTextDetails content={article.description} />
+                <RichTextDetails
+                  content={article.description || article.caption}
+                />
               </div>
             </a>
           </li>

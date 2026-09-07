@@ -4,7 +4,8 @@
   min-height: calc(100vh - var(--h-h) - var(--f-h));
   min-height: calc(100dvh - var(--h-h) - var(--f-h));
   @media (width > 770px) {
-    padding-top: 64rem;
+    /* padding-top: 64rem; */
+    padding-top: 40rem;
     padding-bottom: 80rem;
   }
 }
@@ -15,8 +16,17 @@
     padding-inline: var(--p-i);
   }
 }
+.s0 .video_ {
+  @media (width > 770px) {
+    height: calc(100vh - var(--h-h) - 40rem);
+    height: calc(100dvh - var(--h-h) - 40rem);
+  }
+}
 .s0 figure {
   @media (width > 770px) {
+    margin-inline: auto;
+    width: auto;
+    height: 100%;
     aspect-ratio: 16/9;
   }
 }
@@ -39,7 +49,7 @@
     }
   }
 }
-.s0 > div {
+.s0 > div:last-of-type {
   margin-top: 24rem;
   @media (width > 770px) {
     margin-top: 50rem;
@@ -132,7 +142,7 @@
     width: 165rem;
     position: absolute;
     right: 0;
-    top: calc(100% - 50rem);
+    top: calc(100% - 120rem);
   }
   & p:last-child {
     width: 170rem;
@@ -237,6 +247,21 @@
 }
 .s1 .i .co li {
   list-style: disc;
+}
+.s1 .i .co > div {
+  display: flex;
+  gap: 40rem;
+  margin-top: 24rem;
+  flex-direction: column;
+  @media (width > 770px) {
+    flex-direction: row;
+  }
+}
+.s1 .i .co > div a {
+  width: 160rem;
+  @media (width > 770px) {
+    width: 140rem;
+  }
 }
 .s1 .i p:last-child {
   font-weight: bold;

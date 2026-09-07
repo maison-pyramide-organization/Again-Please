@@ -9,12 +9,14 @@ import s12I from "@im/solutions/s1-2.png";
 import s13I from "@im/solutions/s1-3.png";
 import s2I from "@im/solutions/s2.png";
 import s2mI from "@im/solutions/s2m.png";
+import googleplayI from "@im/solutions/googleplay.png";
+import appstoreI from "@im/solutions/appstore.png";
 import ProductsMarquee from "@/components/products-marq";
 // import { useEffect, useRef } from "react";
 import HeroVid from "./components/video";
 import { getProducts } from "@/services/api";
 
-export default async function () {
+export default async function Soultions() {
   const products = await getProducts();
   return (
     <>
@@ -105,6 +107,14 @@ export default async function () {
                 Reuse becomes a positive brand experience, not a behavioral
                 hurdle.
               </p>
+              <div>
+                <a href="#">
+                  <Image src={googleplayI} alt="Again Please Google Play" />
+                </a>
+                <a href="#">
+                  <Image src={appstoreI} alt="Again Please App Store" />
+                </a>
+              </div>
             </div>
           </div>
           <div className={s.i}>
