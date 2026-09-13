@@ -30,7 +30,7 @@
   font-size: 30rem;
   line-height: 40rem;
   position: relative;
-  max-width: 1000rem;
+  max-width: 1050rem;
   margin-inline: auto;
 
   & span:first-child {
@@ -38,7 +38,9 @@
     margin-top: -6rem;
     @media (width > 770px) {
       margin-top: 0;
-      margin-left: 420rem;
+      /* margin-left: 420rem; */
+      margin-left: auto;
+      width: fit-content;
     }
   }
 
@@ -96,10 +98,12 @@
   gap: 16rem;
   overflow: auto;
   @media (width > 770px) {
+    width: 1080rem;
+    margin-inline: auto;
     margin-top: 80rem;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 32rem;
+    gap: 32rem 24rem;
   }
 }
 .tab {
@@ -122,8 +126,9 @@
   @media (width > 770px) {
     flex-shrink: 0;
     max-width: unset;
-    font-size: 14rem;
+    font-size: 13rem;
     border: 2rem solid var(--c-green);
+    padding: 10rem 0;
   }
 }
 .tab.active {

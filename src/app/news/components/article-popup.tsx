@@ -1,6 +1,6 @@
 import s from "../_s.module.css";
 import Iclose from "@a/icons/close.svg";
-import Ichev from "@a/icons/chev.svg";
+// import Ichev from "@a/icons/chev.svg";
 import RichTextDetails from "@/components/richtext";
 
 interface Iprops {
