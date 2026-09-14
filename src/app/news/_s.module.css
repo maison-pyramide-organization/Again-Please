@@ -240,7 +240,8 @@ PRESS
   display: block;
 }
 .article figure {
-  height: 300rem;
+  /* height: 300rem; */
+  aspect-ratio: 5/3.5;
 }
 .article span {
   display: block;
