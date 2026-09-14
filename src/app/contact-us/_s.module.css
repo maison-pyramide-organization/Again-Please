@@ -126,7 +126,7 @@
   @media (width > 770px) {
     flex-shrink: 0;
     max-width: unset;
-    font-size: 13rem;
+    font-size: 12rem;
     border: 2rem solid var(--c-green);
     padding: 10rem 0;
   }
