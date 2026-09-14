@@ -177,7 +177,9 @@ export default async function Soultions() {
               </p>
             </div>
           </div>
+
           <ProductsMarquee products={products} />
+
           <div className={s.i}>
             <span a-t="r">04</span>
             <h2 a-t="r">

@@ -70,6 +70,7 @@ export default function ProductsMarquee(props: Iprops) {
   const productsCRef = useRef<HTMLDivElement>(null);
   const tl = useRef<GSAPTimeline>(null);
   let { products } = props;
+  // console.log(products);
 
   if (!products) return null;
   products = products.sort((a, b) => a.index - b.index);
@@ -121,7 +122,7 @@ export default function ProductsMarquee(props: Iprops) {
                   style={
                     {
                       "--w": `${p.width}rem`,
-                      "--wm": `${p.widthM}rem`,
+                      "--wm": `${p.mobileWidth}rem`,
                     } as React.CSSProperties
                   }
                 />
